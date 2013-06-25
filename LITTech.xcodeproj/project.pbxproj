@@ -10,20 +10,29 @@
 		677F99921779A4B900D42449 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677F99911779A4B900D42449 /* UIKit.framework */; };
 		677F99941779A4B900D42449 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677F99931779A4B900D42449 /* Foundation.framework */; };
 		677F99961779A4B900D42449 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677F99951779A4B900D42449 /* CoreGraphics.framework */; };
-		677F999C1779A4B900D42449 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 677F999A1779A4B900D42449 /* InfoPlist.strings */; };
 		677F999E1779A4B900D42449 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 677F999D1779A4B900D42449 /* main.m */; };
-		677F99A21779A4B900D42449 /* LITAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 677F99A11779A4B900D42449 /* LITAppDelegate.m */; };
-		677F99A41779A4B900D42449 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F99A31779A4B900D42449 /* Default.png */; };
-		677F99A61779A4B900D42449 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F99A51779A4B900D42449 /* Default@2x.png */; };
-		677F99A81779A4B900D42449 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F99A71779A4B900D42449 /* Default-568h@2x.png */; };
-		677F99AB1779A4B900D42449 /* LITFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677F99AA1779A4B900D42449 /* LITFirstViewController.m */; };
-		677F99AD1779A4B900D42449 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F99AC1779A4B900D42449 /* first.png */; };
-		677F99AF1779A4B900D42449 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F99AE1779A4B900D42449 /* first@2x.png */; };
-		677F99B21779A4B900D42449 /* LITSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677F99B11779A4B900D42449 /* LITSecondViewController.m */; };
-		677F99B41779A4B900D42449 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F99B31779A4B900D42449 /* second.png */; };
-		677F99B61779A4B900D42449 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F99B51779A4B900D42449 /* second@2x.png */; };
-		677F99B91779A4B900D42449 /* LITFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677F99B71779A4B900D42449 /* LITFirstViewController.xib */; };
-		677F99BC1779A4B900D42449 /* LITSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677F99BA1779A4B900D42449 /* LITSecondViewController.xib */; };
+		677F99DF1779A5ED00D42449 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 677F99CD1779A5ED00D42449 /* InfoPlist.strings */; };
+		677F99E01779A5ED00D42449 /* LITFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677F99CF1779A5ED00D42449 /* LITFirstViewController.xib */; };
+		677F99E11779A5ED00D42449 /* LITSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677F99D11779A5ED00D42449 /* LITSecondViewController.xib */; };
+		677F99E21779A5ED00D42449 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F99D41779A5ED00D42449 /* Default-568h@2x.png */; };
+		677F99E31779A5ED00D42449 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F99D51779A5ED00D42449 /* Default.png */; };
+		677F99E41779A5ED00D42449 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F99D61779A5ED00D42449 /* Default@2x.png */; };
+		677F99F91779A68A00D42449 /* LITAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 677F99EF1779A68A00D42449 /* LITAppDelegate.m */; };
+		677F99FA1779A68A00D42449 /* LITFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677F99F11779A68A00D42449 /* LITFirstViewController.m */; };
+		677F99FB1779A68A00D42449 /* LITSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677F99F31779A68A00D42449 /* LITSecondViewController.m */; };
+		677F99FE1779A6A900D42449 /* LITBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677F99FD1779A6A900D42449 /* LITBaseViewController.m */; };
+		677F9A041779A74100D42449 /* LITPersonalFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677F9A021779A74100D42449 /* LITPersonalFileViewController.m */; };
+		677F9A051779A74100D42449 /* LITPersonalFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677F9A031779A74100D42449 /* LITPersonalFileViewController.xib */; };
+		677F9A111779AC1800D42449 /* alcohol.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F9A071779AC1800D42449 /* alcohol.png */; };
+		677F9A121779AC1800D42449 /* alcohol@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F9A081779AC1800D42449 /* alcohol@2x.png */; };
+		677F9A131779AC1800D42449 /* caloric_scale.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F9A091779AC1800D42449 /* caloric_scale.png */; };
+		677F9A141779AC1800D42449 /* caloric_scale@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F9A0A1779AC1800D42449 /* caloric_scale@2x.png */; };
+		677F9A151779AC1800D42449 /* med_dex.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F9A0B1779AC1800D42449 /* med_dex.png */; };
+		677F9A161779AC1800D42449 /* med_dex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F9A0C1779AC1800D42449 /* med_dex@2x.png */; };
+		677F9A171779AC1800D42449 /* personal_file.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F9A0D1779AC1800D42449 /* personal_file.png */; };
+		677F9A181779AC1800D42449 /* personal_file@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F9A0E1779AC1800D42449 /* personal_file@2x.png */; };
+		677F9A191779AC1800D42449 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F9A0F1779AC1800D42449 /* settings.png */; };
+		677F9A1A1779AC1800D42449 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F9A101779AC1800D42449 /* settings@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,25 +40,36 @@
 		677F99911779A4B900D42449 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		677F99931779A4B900D42449 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		677F99951779A4B900D42449 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		677F99991779A4B900D42449 /* LITTech-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LITTech-Info.plist"; sourceTree = "<group>"; };
-		677F999B1779A4B900D42449 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		677F999D1779A4B900D42449 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		677F999F1779A4B900D42449 /* LITTech-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LITTech-Prefix.pch"; sourceTree = "<group>"; };
-		677F99A01779A4B900D42449 /* LITAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LITAppDelegate.h; sourceTree = "<group>"; };
-		677F99A11779A4B900D42449 /* LITAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LITAppDelegate.m; sourceTree = "<group>"; };
-		677F99A31779A4B900D42449 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		677F99A51779A4B900D42449 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		677F99A71779A4B900D42449 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		677F99A91779A4B900D42449 /* LITFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LITFirstViewController.h; sourceTree = "<group>"; };
-		677F99AA1779A4B900D42449 /* LITFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LITFirstViewController.m; sourceTree = "<group>"; };
-		677F99AC1779A4B900D42449 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		677F99AE1779A4B900D42449 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		677F99B01779A4B900D42449 /* LITSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LITSecondViewController.h; sourceTree = "<group>"; };
-		677F99B11779A4B900D42449 /* LITSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LITSecondViewController.m; sourceTree = "<group>"; };
-		677F99B31779A4B900D42449 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		677F99B51779A4B900D42449 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		677F99B81779A4B900D42449 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LITFirstViewController.xib; sourceTree = "<group>"; };
-		677F99BB1779A4B900D42449 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LITSecondViewController.xib; sourceTree = "<group>"; };
+		677F99CE1779A5ED00D42449 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		677F99D01779A5ED00D42449 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LITFirstViewController.xib; sourceTree = "<group>"; };
+		677F99D21779A5ED00D42449 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LITSecondViewController.xib; sourceTree = "<group>"; };
+		677F99D41779A5ED00D42449 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		677F99D51779A5ED00D42449 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		677F99D61779A5ED00D42449 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		677F99DE1779A5ED00D42449 /* LITTech-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LITTech-Info.plist"; sourceTree = "<group>"; };
+		677F99EE1779A68A00D42449 /* LITAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITAppDelegate.h; sourceTree = "<group>"; };
+		677F99EF1779A68A00D42449 /* LITAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITAppDelegate.m; sourceTree = "<group>"; };
+		677F99F01779A68A00D42449 /* LITFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITFirstViewController.h; sourceTree = "<group>"; };
+		677F99F11779A68A00D42449 /* LITFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITFirstViewController.m; sourceTree = "<group>"; };
+		677F99F21779A68A00D42449 /* LITSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITSecondViewController.h; sourceTree = "<group>"; };
+		677F99F31779A68A00D42449 /* LITSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITSecondViewController.m; sourceTree = "<group>"; };
+		677F99FC1779A6A900D42449 /* LITBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITBaseViewController.h; sourceTree = "<group>"; };
+		677F99FD1779A6A900D42449 /* LITBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITBaseViewController.m; sourceTree = "<group>"; };
+		677F9A011779A74100D42449 /* LITPersonalFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITPersonalFileViewController.h; sourceTree = "<group>"; };
+		677F9A021779A74100D42449 /* LITPersonalFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITPersonalFileViewController.m; sourceTree = "<group>"; };
+		677F9A031779A74100D42449 /* LITPersonalFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITPersonalFileViewController.xib; sourceTree = "<group>"; };
+		677F9A071779AC1800D42449 /* alcohol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alcohol.png; sourceTree = "<group>"; };
+		677F9A081779AC1800D42449 /* alcohol@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alcohol@2x.png"; sourceTree = "<group>"; };
+		677F9A091779AC1800D42449 /* caloric_scale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = caloric_scale.png; sourceTree = "<group>"; };
+		677F9A0A1779AC1800D42449 /* caloric_scale@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "caloric_scale@2x.png"; sourceTree = "<group>"; };
+		677F9A0B1779AC1800D42449 /* med_dex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = med_dex.png; sourceTree = "<group>"; };
+		677F9A0C1779AC1800D42449 /* med_dex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "med_dex@2x.png"; sourceTree = "<group>"; };
+		677F9A0D1779AC1800D42449 /* personal_file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personal_file.png; sourceTree = "<group>"; };
+		677F9A0E1779AC1800D42449 /* personal_file@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "personal_file@2x.png"; sourceTree = "<group>"; };
+		677F9A0F1779AC1800D42449 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		677F9A101779AC1800D42449 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,18 +116,8 @@
 		677F99971779A4B900D42449 /* LITTech */ = {
 			isa = PBXGroup;
 			children = (
-				677F99A01779A4B900D42449 /* LITAppDelegate.h */,
-				677F99A11779A4B900D42449 /* LITAppDelegate.m */,
-				677F99A91779A4B900D42449 /* LITFirstViewController.h */,
-				677F99AA1779A4B900D42449 /* LITFirstViewController.m */,
-				677F99AC1779A4B900D42449 /* first.png */,
-				677F99AE1779A4B900D42449 /* first@2x.png */,
-				677F99B01779A4B900D42449 /* LITSecondViewController.h */,
-				677F99B11779A4B900D42449 /* LITSecondViewController.m */,
-				677F99B31779A4B900D42449 /* second.png */,
-				677F99B51779A4B900D42449 /* second@2x.png */,
-				677F99B71779A4B900D42449 /* LITFirstViewController.xib */,
-				677F99BA1779A4B900D42449 /* LITSecondViewController.xib */,
+				677F99EB1779A68A00D42449 /* Classes */,
+				677F99CC1779A5ED00D42449 /* Resources */,
 				677F99981779A4B900D42449 /* Supporting Files */,
 			);
 			path = LITTech;
@@ -116,15 +126,132 @@
 		677F99981779A4B900D42449 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				677F99991779A4B900D42449 /* LITTech-Info.plist */,
-				677F999A1779A4B900D42449 /* InfoPlist.strings */,
 				677F999D1779A4B900D42449 /* main.m */,
 				677F999F1779A4B900D42449 /* LITTech-Prefix.pch */,
-				677F99A31779A4B900D42449 /* Default.png */,
-				677F99A51779A4B900D42449 /* Default@2x.png */,
-				677F99A71779A4B900D42449 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		677F99CC1779A5ED00D42449 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				677F99CD1779A5ED00D42449 /* InfoPlist.strings */,
+				677F99CF1779A5ED00D42449 /* LITFirstViewController.xib */,
+				677F99D11779A5ED00D42449 /* LITSecondViewController.xib */,
+				677F99D31779A5ED00D42449 /* Icons */,
+				677F99D71779A5ED00D42449 /* Images */,
+				677F99DE1779A5ED00D42449 /* LITTech-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		677F99D31779A5ED00D42449 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				677F99D41779A5ED00D42449 /* Default-568h@2x.png */,
+				677F99D51779A5ED00D42449 /* Default.png */,
+				677F99D61779A5ED00D42449 /* Default@2x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		677F99D71779A5ED00D42449 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				677F9A061779AC1800D42449 /* Tabbar */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		677F99EB1779A68A00D42449 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				677F99EE1779A68A00D42449 /* LITAppDelegate.h */,
+				677F99EF1779A68A00D42449 /* LITAppDelegate.m */,
+				677F99F01779A68A00D42449 /* LITFirstViewController.h */,
+				677F99F11779A68A00D42449 /* LITFirstViewController.m */,
+				677F99F21779A68A00D42449 /* LITSecondViewController.h */,
+				677F99F31779A68A00D42449 /* LITSecondViewController.m */,
+				677F99EC1779A68A00D42449 /* Categories */,
+				677F99ED1779A68A00D42449 /* DataModel */,
+				677F99F41779A68A00D42449 /* Managers */,
+				677F99F51779A68A00D42449 /* MVC */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		677F99EC1779A68A00D42449 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		677F99ED1779A68A00D42449 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		677F99F41779A68A00D42449 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		677F99F51779A68A00D42449 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				677F99F61779A68A00D42449 /* Controller */,
+				677F99F71779A68A00D42449 /* Model */,
+				677F99F81779A68A00D42449 /* View */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		677F99F61779A68A00D42449 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				677F99FC1779A6A900D42449 /* LITBaseViewController.h */,
+				677F99FD1779A6A900D42449 /* LITBaseViewController.m */,
+				677F9A011779A74100D42449 /* LITPersonalFileViewController.h */,
+				677F9A021779A74100D42449 /* LITPersonalFileViewController.m */,
+				677F9A031779A74100D42449 /* LITPersonalFileViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		677F99F71779A68A00D42449 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		677F99F81779A68A00D42449 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		677F9A061779AC1800D42449 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				677F9A071779AC1800D42449 /* alcohol.png */,
+				677F9A081779AC1800D42449 /* alcohol@2x.png */,
+				677F9A091779AC1800D42449 /* caloric_scale.png */,
+				677F9A0A1779AC1800D42449 /* caloric_scale@2x.png */,
+				677F9A0B1779AC1800D42449 /* med_dex.png */,
+				677F9A0C1779AC1800D42449 /* med_dex@2x.png */,
+				677F9A0D1779AC1800D42449 /* personal_file.png */,
+				677F9A0E1779AC1800D42449 /* personal_file@2x.png */,
+				677F9A0F1779AC1800D42449 /* settings.png */,
+				677F9A101779AC1800D42449 /* settings@2x.png */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,16 +306,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				677F999C1779A4B900D42449 /* InfoPlist.strings in Resources */,
-				677F99A41779A4B900D42449 /* Default.png in Resources */,
-				677F99A61779A4B900D42449 /* Default@2x.png in Resources */,
-				677F99A81779A4B900D42449 /* Default-568h@2x.png in Resources */,
-				677F99AD1779A4B900D42449 /* first.png in Resources */,
-				677F99AF1779A4B900D42449 /* first@2x.png in Resources */,
-				677F99B41779A4B900D42449 /* second.png in Resources */,
-				677F99B61779A4B900D42449 /* second@2x.png in Resources */,
-				677F99B91779A4B900D42449 /* LITFirstViewController.xib in Resources */,
-				677F99BC1779A4B900D42449 /* LITSecondViewController.xib in Resources */,
+				677F99DF1779A5ED00D42449 /* InfoPlist.strings in Resources */,
+				677F99E01779A5ED00D42449 /* LITFirstViewController.xib in Resources */,
+				677F99E11779A5ED00D42449 /* LITSecondViewController.xib in Resources */,
+				677F99E21779A5ED00D42449 /* Default-568h@2x.png in Resources */,
+				677F99E31779A5ED00D42449 /* Default.png in Resources */,
+				677F99E41779A5ED00D42449 /* Default@2x.png in Resources */,
+				677F9A051779A74100D42449 /* LITPersonalFileViewController.xib in Resources */,
+				677F9A111779AC1800D42449 /* alcohol.png in Resources */,
+				677F9A121779AC1800D42449 /* alcohol@2x.png in Resources */,
+				677F9A131779AC1800D42449 /* caloric_scale.png in Resources */,
+				677F9A141779AC1800D42449 /* caloric_scale@2x.png in Resources */,
+				677F9A151779AC1800D42449 /* med_dex.png in Resources */,
+				677F9A161779AC1800D42449 /* med_dex@2x.png in Resources */,
+				677F9A171779AC1800D42449 /* personal_file.png in Resources */,
+				677F9A181779AC1800D42449 /* personal_file@2x.png in Resources */,
+				677F9A191779AC1800D42449 /* settings.png in Resources */,
+				677F9A1A1779AC1800D42449 /* settings@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,35 +334,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				677F999E1779A4B900D42449 /* main.m in Sources */,
-				677F99A21779A4B900D42449 /* LITAppDelegate.m in Sources */,
-				677F99AB1779A4B900D42449 /* LITFirstViewController.m in Sources */,
-				677F99B21779A4B900D42449 /* LITSecondViewController.m in Sources */,
+				677F99F91779A68A00D42449 /* LITAppDelegate.m in Sources */,
+				677F99FA1779A68A00D42449 /* LITFirstViewController.m in Sources */,
+				677F99FB1779A68A00D42449 /* LITSecondViewController.m in Sources */,
+				677F99FE1779A6A900D42449 /* LITBaseViewController.m in Sources */,
+				677F9A041779A74100D42449 /* LITPersonalFileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		677F999A1779A4B900D42449 /* InfoPlist.strings */ = {
+		677F99CD1779A5ED00D42449 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				677F999B1779A4B900D42449 /* en */,
+				677F99CE1779A5ED00D42449 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		677F99B71779A4B900D42449 /* LITFirstViewController.xib */ = {
+		677F99CF1779A5ED00D42449 /* LITFirstViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				677F99B81779A4B900D42449 /* en */,
+				677F99D01779A5ED00D42449 /* en */,
 			);
 			name = LITFirstViewController.xib;
 			sourceTree = "<group>";
 		};
-		677F99BA1779A4B900D42449 /* LITSecondViewController.xib */ = {
+		677F99D11779A5ED00D42449 /* LITSecondViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				677F99BB1779A4B900D42449 /* en */,
+				677F99D21779A5ED00D42449 /* en */,
 			);
 			name = LITSecondViewController.xib;
 			sourceTree = "<group>";
@@ -297,7 +433,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LITTech/LITTech-Prefix.pch";
-				INFOPLIST_FILE = "LITTech/LITTech-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/LITTech/Resources/LITTech-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -308,7 +444,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LITTech/LITTech-Prefix.pch";
-				INFOPLIST_FILE = "LITTech/LITTech-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/LITTech/Resources/LITTech-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

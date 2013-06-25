@@ -12,16 +12,20 @@
 
 #import "LITSecondViewController.h"
 
+#import "LITPersonalFileViewController.h"
+
+
 @implementation LITAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    UIViewController *personalFileViewController = [[LITPersonalFileViewController alloc] initWithNibName:@"LITPersonalFileViewController" bundle:nil];
     UIViewController *viewController1 = [[LITFirstViewController alloc] initWithNibName:@"LITFirstViewController" bundle:nil];
     UIViewController *viewController2 = [[LITSecondViewController alloc] initWithNibName:@"LITSecondViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
+    self.tabBarController.viewControllers = @[personalFileViewController, viewController1, viewController2];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
