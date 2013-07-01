@@ -7,12 +7,11 @@
 //
 
 #import "LITAppDelegate.h"
-
-#import "LITFirstViewController.h"
-
-#import "LITSecondViewController.h"
-
 #import "LITPersonalFileViewController.h"
+#import "LITMedicalDictionaryViewController.h"
+#import "LITAlcoholTestViewController.h"
+#import "LITCalorieCalculatorViewController.h"
+#import "LITSettingsViewController.h"
 
 
 @implementation LITAppDelegate
@@ -22,10 +21,12 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     UIViewController *personalFileViewController = [[LITPersonalFileViewController alloc] initWithNibName:@"LITPersonalFileViewController" bundle:nil];
-    UIViewController *viewController1 = [[LITFirstViewController alloc] initWithNibName:@"LITFirstViewController" bundle:nil];
-    UIViewController *viewController2 = [[LITSecondViewController alloc] initWithNibName:@"LITSecondViewController" bundle:nil];
+    UIViewController *medicalDictionaryViewController = [[LITMedicalDictionaryViewController alloc] initWithNibName:@"LITMedicalDictionaryViewController" bundle:nil];
+    UIViewController *alcoholTesterViewController = [[LITAlcoholTestViewController alloc] initWithNibName:@"LITAlcoholTestViewController" bundle:nil];
+    UIViewController *calorieCalculatorViewController = [[LITCalorieCalculatorViewController alloc] initWithNibName:@"LITCalorieCalculatorViewController" bundle:nil];
+    UIViewController *settingsViewController = [[LITSettingsViewController alloc] initWithNibName:@"LITSettingsViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[personalFileViewController, viewController1, viewController2];
+    self.tabBarController.viewControllers = @[personalFileViewController, medicalDictionaryViewController, alcoholTesterViewController, calorieCalculatorViewController, settingsViewController];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

@@ -1,24 +1,24 @@
 //
-//  LITPersonalFileViewController.m
+//  LITAlcoholTestViewController.m
 //  LITTech
 //
-//  Created by Bogdan Poplauschi on 6/25/13.
+//  Created by Bogdan Poplauschi on 7/1/13.
 //  Copyright (c) 2013 Bogdan Poplauschi. All rights reserved.
 //
 
-#import "LITPersonalFileViewController.h"
+#import "LITAlcoholTestViewController.h"
 
-@interface LITPersonalFileViewController ()
+@interface LITAlcoholTestViewController ()
 
 @end
 
-@implementation LITPersonalFileViewController
+@implementation LITAlcoholTestViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Personal File", @"");
-        self.tabBarItem.image = [UIImage imageNamed:@"personal_file.png"];
+        self.title = NSLocalizedString(@"Alcohol Tester", @"");
+        self.tabBarItem.image = [UIImage imageNamed:@"alcohol.png"];
     }
     return self;
 }

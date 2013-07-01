@@ -1,24 +1,24 @@
 //
-//  LITPersonalFileViewController.m
+//  LITMedicalDictionaryViewController.m
 //  LITTech
 //
-//  Created by Bogdan Poplauschi on 6/25/13.
+//  Created by Bogdan Poplauschi on 7/1/13.
 //  Copyright (c) 2013 Bogdan Poplauschi. All rights reserved.
 //
 
-#import "LITPersonalFileViewController.h"
+#import "LITMedicalDictionaryViewController.h"
 
-@interface LITPersonalFileViewController ()
+@interface LITMedicalDictionaryViewController ()
 
 @end
 
-@implementation LITPersonalFileViewController
+@implementation LITMedicalDictionaryViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Personal File", @"");
-        self.tabBarItem.image = [UIImage imageNamed:@"personal_file.png"];
+        self.title = NSLocalizedString(@"MEDICAL DICT", @"");
+        self.tabBarItem.image = [UIImage imageNamed:@"med_dex.png"];
     }
     return self;
 }
