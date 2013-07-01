@@ -62,7 +62,7 @@
             return 1;
             break;
         case 1:
-            return 3;
+            return 4;
             break;
         case 2:
             return 5;
@@ -100,6 +100,9 @@
             cell.textLabel.text = NSLocalizedString(@"Height", @"");
             cell.detailTextLabel.text = @"168 cm";
         } else if (2 == indexPath.row) {
+            cell.textLabel.text = NSLocalizedString(@"Weight", @"");
+            cell.detailTextLabel.text = @"48 kg";
+        } else if (3 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Age", @"");
             cell.detailTextLabel.text = NSLocalizedString(@"20 years", @"");
         }
