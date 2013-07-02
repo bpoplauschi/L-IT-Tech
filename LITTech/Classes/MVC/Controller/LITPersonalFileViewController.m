@@ -68,7 +68,7 @@
             return 5;
             break;
         case 3:
-            return 3;
+            return 30;
             break;
         default:
             break;
@@ -129,18 +129,25 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"historyCell"];
         if (!cell) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"historyCell"];
-            cell.detailTextLabel.minimumScaleFactor = 0.25;
+            cell.detailTextLabel.adjustsFontSizeToFitWidth = YES;
         }
         
-        if (0 == indexPath.row) {
-            cell.textLabel.text = @"Meal";
-            cell.detailTextLabel.text = @"Total of 948 calories on 6/30/2013";
-        } else if (1 == indexPath.row) {
-            cell.textLabel.text = @"Alcohol entry";
-            cell.detailTextLabel.text = @"You had 0.4 mg of alcohol in your blood on 6/30/2013. You weren't able to drive for 4 hours.";
-        } else if (2 == indexPath.row) {
-            cell.textLabel.text = @"Workout";
-            cell.detailTextLabel.text = @"600 calories burnt on 6/30/2013";
+        UIImage *alcoholImage = [UIImage imageNamed:@"alcohol.png"];
+        UIImage *mealImage = [UIImage imageNamed:@"meal.png"];
+        UIImage *workoutImage = [UIImage imageNamed:@"workout.png"];
+        
+        if (0 == indexPath.row % 3) {
+            cell.textLabel.text = [NSString stringWithFormat:@"Meal - 6/%d/2013", indexPath.row];
+            cell.detailTextLabel.text = @"Total of 948 calories";
+            cell.imageView.image = mealImage;
+        } else if (1 == indexPath.row % 3) {
+            cell.textLabel.text = [NSString stringWithFormat:@"Alcohol entry - 6/%d/2013", indexPath.row];
+            cell.detailTextLabel.text = @"You had 0.4 mg of alcohol in your blood.";
+            cell.imageView.image = alcoholImage;
+        } else if (2 == indexPath.row % 3) {
+            cell.textLabel.text = [NSString stringWithFormat:@"Workout - 6/%d/2013", indexPath.row];
+            cell.detailTextLabel.text = @"600 calories burnt.";
+            cell.imageView.image = workoutImage;
         }
     }
     
