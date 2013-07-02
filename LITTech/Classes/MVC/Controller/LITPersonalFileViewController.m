@@ -7,6 +7,7 @@
 //
 
 #import "LITPersonalFileViewController.h"
+#import "LITPerson.h"
 
 
 @interface LITPersonalFileViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -29,6 +30,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView.backgroundView = nil;
 }
 
 #pragma mark - UITableViewDataSource methods
@@ -86,7 +90,7 @@
         }
         
         cell.textLabel.text = NSLocalizedString(@"Name", @"");
-        cell.detailTextLabel.text = @"Alina";
+        cell.detailTextLabel.text = self.person.name;
     } else if (1 == indexPath.section) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"personalInfoCell"];
         if (!cell) {
@@ -95,16 +99,17 @@
         
         if (0 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Sex", @"");
-            cell.detailTextLabel.text = NSLocalizedString(@"Female", @"");
+            cell.detailTextLabel.text = self.person.isMale ? NSLocalizedString(@"Male", @"") : NSLocalizedString(@"Female", @"");
         } else if (1 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Height", @"");
-            cell.detailTextLabel.text = @"168 cm";
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%d cm", self.person.height];
         } else if (2 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Weight", @"");
-            cell.detailTextLabel.text = @"48 kg";
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f kg", self.person.weight];
         } else if (3 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Age", @"");
-            cell.detailTextLabel.text = NSLocalizedString(@"20 years", @"");
+            NSDateComponents *components = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self.person.birthDate toDate:[NSDate date] options:0];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%d years", components.year];
         }
     } else if (2 == indexPath.section) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"computedInfoCell"];

@@ -12,22 +12,58 @@
 #import "LITAlcoholTestViewController.h"
 #import "LITCalorieCalculatorViewController.h"
 #import "LITSettingsViewController.h"
+#import "LITEditPersonViewController.h"
 
+
+
+#import "LITDataManager.h"
+//#import "LITPerson.h"
 
 @implementation LITAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    UIViewController *personalFileViewController = [[LITPersonalFileViewController alloc] initWithNibName:@"LITPersonalFileViewController" bundle:nil];
+    LITPersonalFileViewController *personalFileViewController = [[LITPersonalFileViewController alloc] initWithNibName:@"LITPersonalFileViewController" bundle:nil];
     UIViewController *medicalDictionaryViewController = [[LITMedicalDictionaryViewController alloc] initWithNibName:@"LITMedicalDictionaryViewController" bundle:nil];
     UIViewController *alcoholTesterViewController = [[LITAlcoholTestViewController alloc] initWithNibName:@"LITAlcoholTestViewController" bundle:nil];
     UIViewController *calorieCalculatorViewController = [[LITCalorieCalculatorViewController alloc] initWithNibName:@"LITCalorieCalculatorViewController" bundle:nil];
     UIViewController *settingsViewController = [[LITSettingsViewController alloc] initWithNibName:@"LITSettingsViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[personalFileViewController, medicalDictionaryViewController, alcoholTesterViewController, calorieCalculatorViewController, settingsViewController];
+    
+    NSArray *persons = [[LITDataManager sharedInstance] loadPersons];
+    if (persons.count == 0) {
+        LITEditPersonViewController *addPersonViewController = [[LITEditPersonViewController alloc] initWithNibName:@"LITEditPersonViewController" bundle:nil];
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:addPersonViewController];
+        [self.tabBarController presentModalViewController:navigationController animated:NO];
+    } else {
+        personalFileViewController.person = [persons objectAtIndex:0];
+    }
+    
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
+    
+//    if (persons.count > 0) {
+//        LITPerson *currentPerson = [persons objectAtIndex:0];
+//        currentPerson.height += 10;
+//        [[LITDataManager sharedInstance] savePerson:currentPerson];
+//    } else {
+//        LITPerson *person = [[LITPerson alloc] init];
+//        person.name = @"Bogdan";
+//        person.male = YES;
+//        person.height = 178;
+//        person.weight = 80.0;
+//        
+//        NSDateComponents *comps = [[NSDateComponents alloc] init];
+//        [comps setDay:4];
+//        [comps setMonth:6];
+//        [comps setYear:1985];
+//        person.birthDate = [[NSCalendar currentCalendar] dateFromComponents:comps];
+//        [[LITDataManager sharedInstance] savePerson:person];
+//    }
+    
+    
     return YES;
 }
 

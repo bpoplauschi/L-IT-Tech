@@ -8,6 +8,11 @@
 
 #import "LITBaseViewController.h"
 
+@class LITPerson;
+
+
 @interface LITPersonalFileViewController : LITBaseViewController
+
+@property (nonatomic, strong) LITPerson *person;
 
 @end
