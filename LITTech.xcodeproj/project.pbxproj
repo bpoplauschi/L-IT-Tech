@@ -29,7 +29,6 @@
 		677F9A181779AC1800D42449 /* personal_file@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F9A0E1779AC1800D42449 /* personal_file@2x.png */; };
 		677F9A191779AC1800D42449 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F9A0F1779AC1800D42449 /* settings.png */; };
 		677F9A1A1779AC1800D42449 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 677F9A101779AC1800D42449 /* settings@2x.png */; };
-		679F2C011782B2C000E7682C /* Default-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 679F2C001782B2C000E7682C /* Default-568h.png */; };
 		679F2C061782B2D000E7682C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 679F2C021782B2D000E7682C /* Icon.png */; };
 		679F2C071782B2D000E7682C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 679F2C031782B2D000E7682C /* Icon@2x.png */; };
 		679F2C081782B2D000E7682C /* icon512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 679F2C041782B2D000E7682C /* icon512x512.png */; };
@@ -73,7 +72,6 @@
 		677F9A0E1779AC1800D42449 /* personal_file@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "personal_file@2x.png"; sourceTree = "<group>"; };
 		677F9A0F1779AC1800D42449 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		677F9A101779AC1800D42449 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
-		679F2C001782B2C000E7682C /* Default-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h.png"; sourceTree = "<group>"; };
 		679F2C021782B2D000E7682C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		679F2C031782B2D000E7682C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		679F2C041782B2D000E7682C /* icon512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon512x512.png; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 		677F99D31779A5ED00D42449 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				679F2C001782B2C000E7682C /* Default-568h.png */,
 				677F99D41779A5ED00D42449 /* Default-568h@2x.png */,
 				677F99D51779A5ED00D42449 /* Default.png */,
 				677F99D61779A5ED00D42449 /* Default@2x.png */,
@@ -356,7 +353,6 @@
 				67AC89171781B9EB00373159 /* LITAlcoholTestViewController.xib in Resources */,
 				67AC891C1781BA8D00373159 /* LITCalorieCalculatorViewController.xib in Resources */,
 				67AC89211781BB3800373159 /* LITSettingsViewController.xib in Resources */,
-				679F2C011782B2C000E7682C /* Default-568h.png in Resources */,
 				679F2C061782B2D000E7682C /* Icon.png in Resources */,
 				679F2C071782B2D000E7682C /* Icon@2x.png in Resources */,
 				679F2C081782B2D000E7682C /* icon512x512.png in Resources */,
