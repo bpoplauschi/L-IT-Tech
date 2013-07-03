@@ -13,6 +13,7 @@
 #import "LITCalorieCalculatorViewController.h"
 #import "LITSettingsViewController.h"
 #import "LITEditPersonViewController.h"
+#import "LITFirstAidViewController.h"
 #import "LITConstants.h"
 
 
@@ -28,9 +29,10 @@
     UIViewController *medicalDictionaryViewController = [[LITMedicalDictionaryViewController alloc] initWithNibName:@"LITMedicalDictionaryViewController" bundle:nil];
     UIViewController *alcoholTesterViewController = [[LITAlcoholTestViewController alloc] initWithNibName:@"LITAlcoholTestViewController" bundle:nil];
     UIViewController *calorieCalculatorViewController = [[LITCalorieCalculatorViewController alloc] initWithNibName:@"LITCalorieCalculatorViewController" bundle:nil];
+    UIViewController *firstAidViewController = [[LITFirstAidViewController alloc] initWithNibName:@"LITFirstAidViewController" bundle:nil];
     UIViewController *settingsViewController = [[LITSettingsViewController alloc] initWithNibName:@"LITSettingsViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[personalFileViewController, medicalDictionaryViewController, alcoholTesterViewController, calorieCalculatorViewController, settingsViewController];
+    self.tabBarController.viewControllers = @[personalFileViewController, calorieCalculatorViewController, alcoholTesterViewController, medicalDictionaryViewController, firstAidViewController, settingsViewController];
     
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];

@@ -26,7 +26,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"MEDICAL DICT", @"");
-        self.tabBarItem.image = [UIImage imageNamed:@"med_dex.png"];
+        self.tabBarItem.image = [UIImage imageNamed:@"dict.png"];
         
         _words = @{@"abces" : @"Colectie purulenta constituita, plecand de la un focar local de infectie, pe seama tesuturilor normale. Prin extensie se mai numeste abces sau empiem, colectia purulenta constituita intr-o cavitate seroasa (peritoneu, pleura, meninge). Abcesele se pot dezvolta in oricare punct al organismului. abcesul superficial, accesibil vederii si palparii este amplasat cel mai des la degete (panaritiu) sau pe marginea anusului dar si in gat, pe sezut, subsuoara sau pe partea ventrala. abcesul profund poate fi localizat la nivelul ficatului, rinichiului, creierului, plamanului. Gravitatea sa depinde de localizare: abcesul creierului, fiind asemanator cu tumora, poate provoca hipertensiune intracraniana. Dupa modul lor de constituire si dupa viteza de evolutie, se pot distinge abcesele calde de abcesele reci.",
                    @"balonare" : @"Simptom caracterizat prin marirea volumului abdomenului provocata de acumularea de gaze in stomac sau in intestin.",

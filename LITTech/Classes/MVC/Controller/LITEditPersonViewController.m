@@ -24,10 +24,8 @@
 @property (nonatomic, strong) LITInputTableViewCell *heightCell;
 @property (nonatomic, strong) LITInputTableViewCell *weightCell;
 @property (nonatomic, strong) LITInputTableViewCell *birthdateCell;
-@property (nonatomic, assign, getter = isMale) BOOL male;
 
 - (void)save:(id)sender;
-- (void)updateSwitch:(UISwitch *)inSwitch;
 
 @end
 
@@ -37,7 +35,6 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.male = YES;
     }
     return self;
 }
@@ -54,9 +51,6 @@
                                                                   action:@selector(save:)];
     self.navigationItem.rightBarButtonItem = saveButton;
     
-//    self.view.backgroundColor = [UIColor lightGrayColor];
-//    self.tableView.backgroundColor = [UIColor clearColor];
-//    self.tableView.backgroundView = nil;
     self.tableView.allowsSelection = NO;
 }
 
@@ -82,11 +76,10 @@
     if (!_sexCell) {
         _sexCell = [[LITInputTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"sex"];
         _sexCell.textLabel.text = NSLocalizedString(@"Sex", @"");
+        _sexCell.textField.keyboardType = UIKeyboardTypeDefault;
+        _sexCell.detailTextLabel.text = @"M/F";
+        _sexCell.textField.textColor = [UIColor lightGrayColor];
         
-        UISwitch *aSwitch = [[UISwitch alloc] initWithFrame:CGRectZero];
-		[aSwitch addTarget:self action:@selector(updateSwitch:) forControlEvents:UIControlEventTouchUpInside];
-        aSwitch.on = YES;
-        _sexCell.accessoryView = aSwitch;
     }
     return _sexCell;
 }
@@ -158,7 +151,7 @@
 - (void)save:(id)sender {
     LITPerson *person = [[LITPerson alloc] init];
     person.name = self.nameCell.textField.text;
-    person.male = self.isMale;
+    person.male = [self.sexCell.textLabel.text isEqualToString:@"M"];
     person.height = [self.heightCell.textField.text integerValue];
     person.weight = [self.weightCell.textField.text doubleValue];
     
@@ -171,10 +164,6 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:kLITPersonUpdatedNotification object:nil];
     
     [self.presentingViewController dismissModalViewControllerAnimated:YES];
-}
-
-- (void)updateSwitch:(UISwitch *)inSwitch {
-    self.male = inSwitch.isOn;
 }
 
 @end
