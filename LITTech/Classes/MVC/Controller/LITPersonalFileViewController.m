@@ -140,13 +140,44 @@
             }
         }
     } else if (2 == indexPath.section) {
-        cell = [tableView dequeueReusableCellWithIdentifier:@"computedInfoCell"];
-        if (!cell) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"computedInfoCell"];
+        if (indexPath.row == 0) {
+            cell = [tableView dequeueReusableCellWithIdentifier:@"IMCCell"];
+            if (!cell) {
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"IMCCell"];
+                cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            }
+        } else {
+            cell = [tableView dequeueReusableCellWithIdentifier:@"computedInfoCell"];
+            if (!cell) {
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"computedInfoCell"];
+            }
         }
         
         if (0 == indexPath.row) {
-            cell.textLabel.text = NSLocalizedString(@"Body mass index", @"");
+            double imc = 0.0;
+            if (self.person) {
+                if (self.person.height) {
+                    imc = self.person.weight * 100 * 100 / (self.person.height * self.person.height);
+                }
+                cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f", imc];
+            }
+            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Body mass index: %.2f", @""), imc];
+            
+            NSString *detail = @"";
+            if (imc > 40) {
+                detail = @"Esti diagnosticat cu super obezitate. La acest IMC organismul tau este supus riscului aparitiei multor boli, printre care diabet, hipertensiune sau boli de inima. Se recomanda urmarea sfaturilor unui medic pentru a ajunge la o greutate optima si schimbarea obiceiurilor alimentare si sportive.";
+            } else if (imc > 35) {
+                detail = @"Esti diagnosticat cu obezitate morbida. Obezitatea este o afecțiune medicală în care grăsimea corporală s-a acumulat în exces, astfel încât poate avea un efect advers asupra sănătății, ducând la o speranță de viață redusă și/sau probleme de sănătate.";
+            } else if (imc > 30) {
+                detail = @"Esti diagnosticat cu obezitate severa.  Obezitatea este o afecțiune medicală în care grăsimea corporală s-a acumulat în exces, astfel încât poate avea un efect advers asupra sănătății, ducând la o speranță de viață redusă și/sau probleme de sănătate.";
+            } else if (imc > 25) {
+                detail = @"Esti considerat supraponderal. Doctorii de obicei definesc supraponderalitatea ca o conditie in care greutatea unei persoane este cu 10%-20% mai mare decat normal.";
+            } else if (imc > 18.5) {
+                detail = @"Ai IMC-ul ideal, cu cantitatea de grasime corporala suficienta pentru asigurarea unei sanatati optime.";
+            } else if (imc > 0) {
+                detail = @"Cantitatea de grasime corporala este foarte scazuta. Daca esti un atlet de performanta, atingerea unui IMC mic poate constitui un obiectiv pe termen scurt. Daca nu esti atlet, un IMC scazut poate indica faptul ca esti subponderal, ceea ce poate duce la o imunitate scazuta a organismului. Daca atat greutatea cat si IMC-ul au valori mici, e recomandat sa iei in greutate folosind o dieta sanatoasa si exercitii fizice menite sa-ti creasca masa musculara.";
+            }
+            cell.detailTextLabel.text = detail;
         } else if (1 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Ruffier index", @"");
         } else if (2 == indexPath.row) {
@@ -185,6 +216,23 @@
     }
     
     return cell;
+}
+
+- (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (2 == indexPath.section) {
+        return YES;
+    }
+    return NO;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    if ( (2 == indexPath.section) && (0 == indexPath.row) ) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:cell.textLabel.text message:cell.detailTextLabel.text delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
