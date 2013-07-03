@@ -13,7 +13,7 @@
 #import "LITCalorieCalculatorViewController.h"
 #import "LITSettingsViewController.h"
 #import "LITEditPersonViewController.h"
-
+#import "LITConstants.h"
 
 
 #import "LITDataManager.h"
@@ -32,6 +32,9 @@
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[personalFileViewController, medicalDictionaryViewController, alcoholTesterViewController, calorieCalculatorViewController, settingsViewController];
     
+    self.window.rootViewController = self.tabBarController;
+    [self.window makeKeyAndVisible];
+    
     NSArray *persons = [[LITDataManager sharedInstance] loadPersons];
     if (persons.count == 0) {
         LITEditPersonViewController *addPersonViewController = [[LITEditPersonViewController alloc] initWithNibName:@"LITEditPersonViewController" bundle:nil];
@@ -40,9 +43,6 @@
     } else {
         personalFileViewController.person = [persons objectAtIndex:0];
     }
-    
-    self.window.rootViewController = self.tabBarController;
-    [self.window makeKeyAndVisible];
     
 //    if (persons.count > 0) {
 //        LITPerson *currentPerson = [persons objectAtIndex:0];

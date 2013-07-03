@@ -110,6 +110,7 @@
 		67AC891D1781BB3600373159 /* LITSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITSettingsViewController.h; sourceTree = "<group>"; };
 		67AC891E1781BB3600373159 /* LITSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITSettingsViewController.m; sourceTree = "<group>"; };
 		67AC891F1781BB3700373159 /* LITSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITSettingsViewController.xib; sourceTree = "<group>"; };
+		67B0EC1C1784102200ECB143 /* LITConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LITConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +211,7 @@
 			children = (
 				677F99EE1779A68A00D42449 /* LITAppDelegate.h */,
 				677F99EF1779A68A00D42449 /* LITAppDelegate.m */,
+				67B0EC1C1784102200ECB143 /* LITConstants.h */,
 				677F99EC1779A68A00D42449 /* Categories */,
 				677F99ED1779A68A00D42449 /* DataModel */,
 				677F99F41779A68A00D42449 /* Managers */,

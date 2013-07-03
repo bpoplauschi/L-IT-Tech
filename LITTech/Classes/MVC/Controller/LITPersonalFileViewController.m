@@ -8,11 +8,15 @@
 
 #import "LITPersonalFileViewController.h"
 #import "LITPerson.h"
+#import "LITConstants.h"
+#import "LITDataManager.h"
 
 
 @interface LITPersonalFileViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+
+- (void)personUpdated:(NSNotification *)inNotification;
 
 @end
 
@@ -24,8 +28,14 @@
     if (self) {
         self.title = NSLocalizedString(@"Personal File", @"");
         self.tabBarItem.image = [UIImage imageNamed:@"personal_file.png"];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(personUpdated:) name:kLITPersonUpdatedNotification object:nil];
     }
     return self;
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)viewDidLoad {
@@ -33,6 +43,22 @@
     
     self.tableView.backgroundColor = [UIColor clearColor];
     self.tableView.backgroundView = nil;
+}
+
+- (void)personUpdated:(NSNotification *)inNotification {
+    NSArray *persons = [[LITDataManager sharedInstance] loadPersons];
+    if (persons.count) {
+        self.person = [persons objectAtIndex:0];
+    }
+    
+    [self.tableView reloadData];
+}
+
+- (void)setPerson:(LITPerson *)person {
+    if (person != _person) {
+        _person = person;
+        [self.tableView reloadData];
+    }
 }
 
 #pragma mark - UITableViewDataSource methods
@@ -108,8 +134,10 @@
             cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f kg", self.person.weight];
         } else if (3 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Age", @"");
-            NSDateComponents *components = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self.person.birthDate toDate:[NSDate date] options:0];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"%d years", components.year];
+            if (self.person.birthDate) {
+                NSDateComponents *components = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self.person.birthDate toDate:[NSDate date] options:0];
+                cell.detailTextLabel.text = [NSString stringWithFormat:@"%d years", components.year];
+            }
         }
     } else if (2 == indexPath.section) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"computedInfoCell"];

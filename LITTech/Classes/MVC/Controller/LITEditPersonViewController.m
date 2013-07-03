@@ -10,6 +10,7 @@
 #import "LITInputTableViewCell.h"
 #import "LITPerson.h"
 #import "LITDataManager.h"
+#import "LITConstants.h"
 
 
 @interface LITEditPersonViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
@@ -166,6 +167,8 @@
     person.birthDate = [dateFormatter dateFromString:self.birthdateCell.textField.text];
     
     [[LITDataManager sharedInstance] savePerson:person];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kLITPersonUpdatedNotification object:nil];
     
     [self.presentingViewController dismissModalViewControllerAnimated:YES];
 }
