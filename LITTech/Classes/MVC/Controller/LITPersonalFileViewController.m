@@ -95,7 +95,7 @@
             return 4;
             break;
         case 2:
-            return 5;
+            return 8;
             break;
         case 3:
             return 30;
@@ -159,9 +159,9 @@
                 if (self.person.height) {
                     imc = self.person.weight * 100 * 100 / (self.person.height * self.person.height);
                 }
-                cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f", imc];
             }
-            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Body mass index: %.2f", @""), imc];
+            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Body mass index: %.2f kg / m^2", @""), imc];
+            cell.textLabel.adjustsFontSizeToFitWidth = YES;
             
             NSString *detail = @"";
             if (imc > 40) {
@@ -187,7 +187,32 @@
         } else if (4 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Heart rate", @"");
         } else if (5 == indexPath.row) {
-            cell.textLabel.text = NSLocalizedString(@"Ideal weight calculator", @"");
+            NSInteger years = 0;
+            if (self.person.birthDate) {
+                NSDateComponents *components = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self.person.birthDate toDate:[NSDate date] options:0];
+                years = components.year;
+            }
+            double idealWeight = (self.person.height - 100 + (years / 10)) * 0.9;
+            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Ideal weight for a normal constitution: %.2f kg", @""), idealWeight];
+            cell.textLabel.adjustsFontSizeToFitWidth = YES;
+        } else if (6 == indexPath.row) {
+            NSInteger years = 0;
+            if (self.person.birthDate) {
+                NSDateComponents *components = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self.person.birthDate toDate:[NSDate date] options:0];
+                years = components.year;
+            }
+            double idealWeight = (self.person.height - 100 + (years / 10)) * 0.9 * 0.9;
+            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Ideal weight for a slender constitution: %.2f kg", @""), idealWeight];
+            cell.textLabel.adjustsFontSizeToFitWidth = YES;
+        } else if (7 == indexPath.row) {
+            NSInteger years = 0;
+            if (self.person.birthDate) {
+                NSDateComponents *components = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self.person.birthDate toDate:[NSDate date] options:0];
+                years = components.year;
+            }
+            double idealWeight = (self.person.height - 100 + (years / 10)) * 0.9 * 1.1;
+            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Ideal weight for a robust constitution: %.2f kg", @""), idealWeight];
+            cell.textLabel.adjustsFontSizeToFitWidth = YES;
         }
     } else if (3 == indexPath.section) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"historyCell"];
