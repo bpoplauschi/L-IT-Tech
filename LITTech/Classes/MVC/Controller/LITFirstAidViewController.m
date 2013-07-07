@@ -7,6 +7,7 @@
 //
 
 #import "LITFirstAidViewController.h"
+#import "LITMedicalDictionaryViewController.h"
 
 @interface LITFirstAidViewController ()
 
@@ -19,6 +20,8 @@
     if (self) {
         self.title = NSLocalizedString(@"First Aid", @"");
         self.tabBarItem.image = [UIImage imageNamed:@"med_dex.png"];
+        
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Med Dex", @"") style:UIBarButtonItemStyleBordered target:self action:@selector(medicalDictAction:)];
     }
     return self;
 }
@@ -26,6 +29,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)medicalDictAction:(id)sender {
+    LITMedicalDictionaryViewController *medicalDictViewController = [[LITMedicalDictionaryViewController alloc] initWithNibName:@"LITMedicalDictionaryViewController" bundle:nil];
+    [self.navigationController pushViewController:medicalDictViewController animated:YES];
 }
 
 @end

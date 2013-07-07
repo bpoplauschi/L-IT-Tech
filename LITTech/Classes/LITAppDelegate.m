@@ -8,7 +8,6 @@
 
 #import "LITAppDelegate.h"
 #import "LITPersonalFileViewController.h"
-#import "LITMedicalDictionaryViewController.h"
 #import "LITAlcoholTestViewController.h"
 #import "LITCalorieCalculatorViewController.h"
 #import "LITSettingsViewController.h"
@@ -26,13 +25,16 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     LITPersonalFileViewController *personalFileViewController = [[LITPersonalFileViewController alloc] initWithNibName:@"LITPersonalFileViewController" bundle:nil];
-    UIViewController *medicalDictionaryViewController = [[LITMedicalDictionaryViewController alloc] initWithNibName:@"LITMedicalDictionaryViewController" bundle:nil];
     UIViewController *alcoholTesterViewController = [[LITAlcoholTestViewController alloc] initWithNibName:@"LITAlcoholTestViewController" bundle:nil];
     UIViewController *calorieCalculatorViewController = [[LITCalorieCalculatorViewController alloc] initWithNibName:@"LITCalorieCalculatorViewController" bundle:nil];
+    
     UIViewController *firstAidViewController = [[LITFirstAidViewController alloc] initWithNibName:@"LITFirstAidViewController" bundle:nil];
+    UINavigationController *firstAidNavCtlr = [[UINavigationController alloc] initWithRootViewController:firstAidViewController];
+    firstAidNavCtlr.navigationBar.barStyle = UIBarStyleBlack;
+    
     UIViewController *settingsViewController = [[LITSettingsViewController alloc] initWithNibName:@"LITSettingsViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[personalFileViewController, calorieCalculatorViewController, alcoholTesterViewController, medicalDictionaryViewController, firstAidViewController, settingsViewController];
+    self.tabBarController.viewControllers = @[personalFileViewController, calorieCalculatorViewController, alcoholTesterViewController, firstAidNavCtlr, settingsViewController];
     
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
