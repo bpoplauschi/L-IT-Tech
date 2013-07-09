@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6701D629178C8F3C00198683 /* LITEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6701D628178C8F3C00198683 /* LITEvent.m */; };
+		6701D635178C9CA200198683 /* downArrowBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 6701D633178C9CA200198683 /* downArrowBlack.png */; };
+		6701D636178C9CA200198683 /* upArrowBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 6701D634178C9CA200198683 /* upArrowBlack.png */; };
 		6703627F178C74EA00836DCE /* meal_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 6703627D178C74EA00836DCE /* meal_large.png */; };
 		67036280178C74EA00836DCE /* meal_large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6703627E178C74EA00836DCE /* meal_large@2x.png */; };
 		67036284178C75FE00836DCE /* LITAddWorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67036282178C75FE00836DCE /* LITAddWorkoutViewController.m */; };
@@ -69,6 +71,8 @@
 /* Begin PBXFileReference section */
 		6701D627178C8F3C00198683 /* LITEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITEvent.h; sourceTree = "<group>"; };
 		6701D628178C8F3C00198683 /* LITEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITEvent.m; sourceTree = "<group>"; };
+		6701D633178C9CA200198683 /* downArrowBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downArrowBlack.png; sourceTree = "<group>"; };
+		6701D634178C9CA200198683 /* upArrowBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upArrowBlack.png; sourceTree = "<group>"; };
 		6703627D178C74EA00836DCE /* meal_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = meal_large.png; path = LITTech/Resources/Images/meal_large.png; sourceTree = SOURCE_ROOT; };
 		6703627E178C74EA00836DCE /* meal_large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "meal_large@2x.png"; path = "LITTech/Resources/Images/meal_large@2x.png"; sourceTree = SOURCE_ROOT; };
 		67036281178C75FE00836DCE /* LITAddWorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITAddWorkoutViewController.h; sourceTree = "<group>"; };
@@ -235,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				677F9A061779AC1800D42449 /* Tabbar */,
+				6701D633178C9CA200198683 /* downArrowBlack.png */,
+				6701D634178C9CA200198683 /* upArrowBlack.png */,
 				6703627D178C74EA00836DCE /* meal_large.png */,
 				6703627E178C74EA00836DCE /* meal_large@2x.png */,
 				670E7BBD178C70E00053BD68 /* workout_large.png */,
@@ -460,6 +466,8 @@
 				67036280178C74EA00836DCE /* meal_large@2x.png in Resources */,
 				67036285178C75FE00836DCE /* LITAddWorkoutViewController.xib in Resources */,
 				6703628A178C763400836DCE /* LITAddMealViewController.xib in Resources */,
+				6701D635178C9CA200198683 /* downArrowBlack.png in Resources */,
+				6701D636178C9CA200198683 /* upArrowBlack.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

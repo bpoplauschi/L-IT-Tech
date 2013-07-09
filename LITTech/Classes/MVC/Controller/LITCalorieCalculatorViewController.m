@@ -39,7 +39,8 @@
 }
 
 - (IBAction)mealAction:(id)sender {
-    
+    LITAddMealViewController *addMealViewController = [[LITAddMealViewController alloc] initWithNibName:@"LITAddMealViewController" bundle:nil];
+    [self.navigationController pushViewController:addMealViewController animated:YES];
 }
 
 @end
