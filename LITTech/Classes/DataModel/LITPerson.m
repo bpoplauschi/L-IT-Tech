@@ -7,6 +7,9 @@
 //
 
 #import "LITPerson.h"
+#import "LITEvent.h"
+#import "LITDataManager.h"
+#import "LITConstants.h"
 
 @implementation LITPerson
 
@@ -18,6 +21,7 @@
         self.height = [aDecoder decodeIntegerForKey:@"height"];
         self.weight = [aDecoder decodeDoubleForKey:@"weight"];
         self.birthDate = [aDecoder decodeObjectForKey:@"birthDate"];
+        self.events = [NSMutableArray arrayWithArray:[aDecoder decodeObjectForKey:@"events"]];
     }
     return self;
 }
@@ -28,6 +32,7 @@
     [aCoder encodeInteger:self.height forKey:@"height"];
     [aCoder encodeDouble:self.weight forKey:@"weight"];
     [aCoder encodeObject:self.birthDate forKey:@"birthDate"];
+    [aCoder encodeObject:self.events forKey:@"events"];
 }
 
 - (double)imc {
@@ -67,6 +72,17 @@
         bmr = (9.56 * self.weight + 1.85 * self.height - 4.68 * [self yearsOld] + 655) / 24;
     }
     return bmr;
+}
+
+- (void)addWorkoutEventWithInfo:(NSString *)inInfo {
+    LITEvent *event = [[LITEvent alloc] init];
+    event.date = [NSDate date];
+    event.info = inInfo;
+    [self.events addObject:event];
+    
+    [[LITDataManager sharedInstance] savePerson:self];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kLITPersonUpdatedNotification object:nil];
 }
 
 @end

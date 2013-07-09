@@ -15,6 +15,7 @@
 @property (nonatomic, assign) NSUInteger height;            // in centimeters
 @property (nonatomic, assign) double weight;                // in kilograms
 @property (nonatomic, strong) NSDate *birthDate;
+@property (nonatomic, strong) NSMutableArray *events;
 
 - (double)imc;
 
@@ -25,5 +26,7 @@
 - (int)yearsOld;
 
 - (double)bmr; // per 24 hours
+
+- (void)addWorkoutEventWithInfo:(NSString *)inInfo;
 
 @end

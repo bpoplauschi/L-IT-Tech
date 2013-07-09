@@ -38,7 +38,6 @@
                         @"Dancing" : @4.8,
                         @"Weightlifting (vigorous)" : @6.0,
                         @"Shoveling snow" : @6.0,
-                        @"Shoveling snow" : @6.5,
                         @"Skiing, downhill" : @7.0,
                         @"Backpacking" : @7.0,
                         @"Bicycling" : @8.0,
@@ -93,13 +92,16 @@
     if (buttonIndex != 0 && alertView.tag == 1) {
         double MET = [[self.activities valueForKey:[self.activitiesArray objectAtIndex:self.selectedIndex]] doubleValue];
         
+        double calories = [LITPersonManager sharedInstance].currentPerson.bmr * [[alertView textFieldAtIndex:0].text intValue] / 60 * MET;
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Workout added!"
-                                                        message:[NSString stringWithFormat:@"You just burned %.2f calories. Check your history in Personal file to see all your workouts.", [LITPersonManager sharedInstance].currentPerson.bmr * [[alertView textFieldAtIndex:0].text intValue] / 60 * MET]
+                                                        message:[NSString stringWithFormat:@"You just burned %.2f calories. Check your history in Personal file to see all your workouts.", calories]
                                                        delegate:self
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
         alert.tag = 2;
         [alert show];
+        
+        [[LITPersonManager sharedInstance].currentPerson addWorkoutEventWithInfo:[NSString stringWithFormat:@"%@ - burned %.2f calories", [self.activitiesArray objectAtIndex:self.selectedIndex], calories]];
     } else if (alertView.tag == 2) {
         [self.navigationController popViewControllerAnimated:YES];
     }

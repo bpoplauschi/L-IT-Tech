@@ -10,11 +10,16 @@
 #import "LITPerson.h"
 #import "LITConstants.h"
 #import "LITDataManager.h"
+#import "LITEvent.h"
 
 
 @interface LITPersonalFileViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) UIImage *alcoholImage;
+@property (nonatomic, strong) UIImage *mealImage;
+@property (nonatomic, strong) UIImage *workoutImage;
+@property (nonatomic, strong) NSDateFormatter *dateFormatter;
 
 - (void)personUpdated:(NSNotification *)inNotification;
 
@@ -28,6 +33,9 @@
     if (self) {
         self.title = NSLocalizedString(@"Personal File", @"");
         self.tabBarItem.image = [UIImage imageNamed:@"personal_file.png"];
+        
+        self.dateFormatter = [[NSDateFormatter alloc] init];
+        self.dateFormatter.dateFormat = @"MM/dd/YYYY";
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(personUpdated:) name:kLITPersonUpdatedNotification object:nil];
     }
@@ -43,6 +51,10 @@
     
     self.tableView.backgroundColor = [UIColor clearColor];
     self.tableView.backgroundView = nil;
+    
+    self.alcoholImage = [UIImage imageNamed:@"alcohol.png"];
+    self.mealImage = [UIImage imageNamed:@"meal.png"];
+    self.workoutImage = [UIImage imageNamed:@"workout.png"];
 }
 
 - (void)personUpdated:(NSNotification *)inNotification {
@@ -98,7 +110,7 @@
             return 8;
             break;
         case 3:
-            return 30;
+            return self.person.events.count;
             break;
         default:
             break;
@@ -197,24 +209,35 @@
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"historyCell"];
             cell.detailTextLabel.adjustsFontSizeToFitWidth = YES;
         }
+        LITEvent *event = [self.person.events objectAtIndex:indexPath.row];
         
-        UIImage *alcoholImage = [UIImage imageNamed:@"alcohol.png"];
-        UIImage *mealImage = [UIImage imageNamed:@"meal.png"];
-        UIImage *workoutImage = [UIImage imageNamed:@"workout.png"];
-        
-        if (0 == indexPath.row % 3) {
-            cell.textLabel.text = [NSString stringWithFormat:@"Meal - 6/%d/2013", indexPath.row];
-            cell.detailTextLabel.text = @"Total of 948 calories";
-            cell.imageView.image = mealImage;
-        } else if (1 == indexPath.row % 3) {
-            cell.textLabel.text = [NSString stringWithFormat:@"Alcohol entry - 6/%d/2013", indexPath.row];
-            cell.detailTextLabel.text = @"You had 0.4 mg of alcohol in your blood.";
-            cell.imageView.image = alcoholImage;
-        } else if (2 == indexPath.row % 3) {
-            cell.textLabel.text = [NSString stringWithFormat:@"Workout - 6/%d/2013", indexPath.row];
-            cell.detailTextLabel.text = @"600 calories burnt.";
-            cell.imageView.image = workoutImage;
+        if (LITEventTypeWorkout == event.type) {
+            cell.imageView.image = self.workoutImage;
+            cell.textLabel.text = [NSString stringWithFormat:@"Workout - %@", [self.dateFormatter stringFromDate:event.date]];
+            cell.detailTextLabel.text = event.info;
+        } else if (LITEventTypeMeal == event.type) {
+            cell.imageView.image = self.mealImage;
+            cell.textLabel.text = [NSString stringWithFormat:@"Meal - %@", [self.dateFormatter stringFromDate:event.date]];
+            cell.detailTextLabel.text = event.info;
+        } else if (LITEventTypeAlcohol == event.type) {
+            cell.imageView.image = self.alcoholImage;
+            cell.textLabel.text = [NSString stringWithFormat:@"Alcohol - %@", [self.dateFormatter stringFromDate:event.date]];
+            cell.detailTextLabel.text = event.info;
         }
+        
+//        if (0 == indexPath.row % 3) {
+//            cell.textLabel.text = [NSString stringWithFormat:@"Meal - 6/%d/2013", indexPath.row];
+//            cell.detailTextLabel.text = @"Total of 948 calories";
+//            cell.imageView.image = mealImage;
+//        } else if (1 == indexPath.row % 3) {
+//            cell.textLabel.text = [NSString stringWithFormat:@"Alcohol entry - 6/%d/2013", indexPath.row];
+//            cell.detailTextLabel.text = @"You had 0.4 mg of alcohol in your blood.";
+//            cell.imageView.image = alcoholImage;
+//        } else if (2 == indexPath.row % 3) {
+//            cell.textLabel.text = [NSString stringWithFormat:@"Workout - 6/%d/2013", indexPath.row];
+//            cell.detailTextLabel.text = @"600 calories burnt.";
+//            cell.imageView.image = workoutImage;
+//        }
     }
     
     return cell;
