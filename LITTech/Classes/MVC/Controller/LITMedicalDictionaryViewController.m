@@ -100,36 +100,4 @@
     [self.tableView reloadData];
 }
 
-/*
- - (void)searchBarCancelButtonClicked:(UISearchBar *)inSearchBar {
- [inSearchBar resignFirstResponder];
- [self filterRecipes];
- }
- 
- - (void)searchBarSearchButtonClicked:(UISearchBar *)inSearchBar {
- [inSearchBar resignFirstResponder];
- [self filterRecipes];
- }
- 
- - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
- [self filterRecipes];
- }
- 
- - (void)filterRecipes {
- NSString *filter = self.searchBar.text;
- if (filter.length) {
- NSPredicate *predicate = [NSPredicate predicateWithFormat:@"title contains[c] %@ OR introText contains[c] %@ OR ingredients contains[c] %@ OR steps contains[c] %@", filter, filter, filter, filter];
- self.filteredRecipes = [self.recipes filteredArrayUsingPredicate:predicate];
- } else {
- self.filteredRecipes = self.recipes;
- }
- [self updateRecipes];
- }
- 
- - (void)updateRecipes {
- [self.tableView reloadData];
- }
-
- */
-
 @end

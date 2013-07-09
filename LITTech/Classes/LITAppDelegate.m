@@ -17,6 +17,7 @@
 
 
 #import "LITDataManager.h"
+#import "LITPersonManager.h"
 //#import "LITPerson.h"
 
 @implementation LITAppDelegate
@@ -27,6 +28,8 @@
     LITPersonalFileViewController *personalFileViewController = [[LITPersonalFileViewController alloc] initWithNibName:@"LITPersonalFileViewController" bundle:nil];
     UIViewController *alcoholTesterViewController = [[LITAlcoholTestViewController alloc] initWithNibName:@"LITAlcoholTestViewController" bundle:nil];
     UIViewController *calorieCalculatorViewController = [[LITCalorieCalculatorViewController alloc] initWithNibName:@"LITCalorieCalculatorViewController" bundle:nil];
+    UINavigationController *calorieCalculatorNavCtlr = [[UINavigationController alloc] initWithRootViewController:calorieCalculatorViewController];
+    calorieCalculatorNavCtlr.navigationBar.barStyle = UIBarStyleBlack;
     
     UIViewController *firstAidViewController = [[LITFirstAidViewController alloc] initWithNibName:@"LITFirstAidViewController" bundle:nil];
     UINavigationController *firstAidNavCtlr = [[UINavigationController alloc] initWithRootViewController:firstAidViewController];
@@ -34,7 +37,7 @@
     
     UIViewController *settingsViewController = [[LITSettingsViewController alloc] initWithNibName:@"LITSettingsViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[personalFileViewController, calorieCalculatorViewController, alcoholTesterViewController, firstAidNavCtlr, settingsViewController];
+    self.tabBarController.viewControllers = @[personalFileViewController, calorieCalculatorNavCtlr, alcoholTesterViewController, firstAidNavCtlr, settingsViewController];
     
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
@@ -45,7 +48,8 @@
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:addPersonViewController];
         [self.tabBarController presentModalViewController:navigationController animated:NO];
     } else {
-        personalFileViewController.person = [persons objectAtIndex:0];
+        [LITPersonManager sharedInstance].currentPerson = [persons objectAtIndex:0];
+        personalFileViewController.person = [LITPersonManager sharedInstance].currentPerson;
     }
     
 //    if (persons.count > 0) {

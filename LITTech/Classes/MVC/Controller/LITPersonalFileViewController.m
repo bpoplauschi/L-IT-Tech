@@ -154,12 +154,7 @@
         }
         
         if (0 == indexPath.row) {
-            double imc = 0.0;
-            if (self.person) {
-                if (self.person.height) {
-                    imc = self.person.weight * 100 * 100 / (self.person.height * self.person.height);
-                }
-            }
+            double imc = [self.person imc];
             cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Body mass index: %.2f kg / m^2", @""), imc];
             cell.textLabel.adjustsFontSizeToFitWidth = YES;
             
@@ -181,37 +176,19 @@
         } else if (1 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Ruffier index", @"");
         } else if (2 == indexPath.row) {
-            cell.textLabel.text = NSLocalizedString(@"Basal metabolism", @"");
+            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Basal metabolism: %.2f", @""), self.person.bmr];
         } else if (3 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Daltonism test", @"");
         } else if (4 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Heart rate", @"");
         } else if (5 == indexPath.row) {
-            NSInteger years = 0;
-            if (self.person.birthDate) {
-                NSDateComponents *components = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self.person.birthDate toDate:[NSDate date] options:0];
-                years = components.year;
-            }
-            double idealWeight = (self.person.height - 100 + (years / 10)) * 0.9;
-            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Ideal weight for a normal constitution: %.2f kg", @""), idealWeight];
+            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Ideal weight for a normal constitution: %.2f kg", @""), self.person.idealWeightNormal];
             cell.textLabel.adjustsFontSizeToFitWidth = YES;
         } else if (6 == indexPath.row) {
-            NSInteger years = 0;
-            if (self.person.birthDate) {
-                NSDateComponents *components = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self.person.birthDate toDate:[NSDate date] options:0];
-                years = components.year;
-            }
-            double idealWeight = (self.person.height - 100 + (years / 10)) * 0.9 * 0.9;
-            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Ideal weight for a slender constitution: %.2f kg", @""), idealWeight];
+            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Ideal weight for a slender constitution: %.2f kg", @""), self.person.idealWeightSlender];
             cell.textLabel.adjustsFontSizeToFitWidth = YES;
         } else if (7 == indexPath.row) {
-            NSInteger years = 0;
-            if (self.person.birthDate) {
-                NSDateComponents *components = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self.person.birthDate toDate:[NSDate date] options:0];
-                years = components.year;
-            }
-            double idealWeight = (self.person.height - 100 + (years / 10)) * 0.9 * 1.1;
-            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Ideal weight for a robust constitution: %.2f kg", @""), idealWeight];
+            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Ideal weight for a robust constitution: %.2f kg", @""), self.person.idealWeightRobust];
             cell.textLabel.adjustsFontSizeToFitWidth = YES;
         }
     } else if (3 == indexPath.section) {

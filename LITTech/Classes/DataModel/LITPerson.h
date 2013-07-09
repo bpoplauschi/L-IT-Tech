@@ -16,4 +16,14 @@
 @property (nonatomic, assign) double weight;                // in kilograms
 @property (nonatomic, strong) NSDate *birthDate;
 
+- (double)imc;
+
+- (double)idealWeightNormal;
+- (double)idealWeightSlender;
+- (double)idealWeightRobust;
+
+- (int)yearsOld;
+
+- (double)bmr; // per 24 hours
+
 @end
