@@ -11,6 +11,7 @@
 #import "LITPerson.h"
 #import "LITDataManager.h"
 #import "LITConstants.h"
+#import "LITPersonManager.h"
 
 
 @interface LITEditPersonViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
@@ -160,6 +161,7 @@
     person.birthDate = [dateFormatter dateFromString:self.birthdateCell.textField.text];
     
     [[LITDataManager sharedInstance] savePerson:person];
+    [LITPersonManager sharedInstance].currentPerson = person;
     
     [[NSNotificationCenter defaultCenter] postNotificationName:kLITPersonUpdatedNotification object:nil];
     

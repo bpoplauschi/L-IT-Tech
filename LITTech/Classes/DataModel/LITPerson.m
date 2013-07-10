@@ -13,6 +13,14 @@
 
 @implementation LITPerson
 
+- (id)init {
+    self = [super init];
+    if (self) {
+        _events = [NSMutableArray array];
+    }
+    return self;
+}
+
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super init];
     if (self) {
