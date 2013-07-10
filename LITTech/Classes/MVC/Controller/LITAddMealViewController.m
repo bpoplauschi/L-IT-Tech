@@ -7,14 +7,19 @@
 //
 
 #import "LITAddMealViewController.h"
+#import "LITPersonManager.h"
+#import "LITPerson.h"
 
-@interface LITAddMealViewController ()
+@interface LITAddMealViewController () <UIAlertViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView  *tableView;
 @property (nonatomic, strong) NSArray               *sectionTitleArray;
 @property (nonatomic, strong) NSMutableDictionary   *sectionContentDict;
 @property (nonatomic, strong) NSMutableArray        *arrayForBool;
+@property (nonatomic, strong) NSMutableArray        *currentMealItems;
+@property (nonatomic, strong) NSIndexPath           *selectedIndexPath;
 
+- (void)saveAction:(id)sender;
 
 @end
 
@@ -96,6 +101,11 @@
          @{@"Sugar": @410},
          ]
                                forKey:_sectionTitleArray[6]];
+        
+        _currentMealItems = [NSMutableArray array];
+        _selectedIndexPath = nil;
+        
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStylePlain target:self action:@selector(saveAction:)];
     }
     return self;
 }
@@ -105,11 +115,26 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (void)saveAction:(id)sender {
+    int calories = 0;
+    for (NSDictionary *dict in self.currentMealItems) {
+        calories += [[dict valueForKey:@"calories"] intValue];
+    }
+    [[LITPersonManager sharedInstance].currentPerson addMealEventWithInfo:[NSString stringWithFormat:@"Consumed %d calories", calories]];
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return [self.sectionTitleArray count];
+    return [self.sectionTitleArray count] + 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if (section == self.arrayForBool.count) {
+        // meal list
+        return [_currentMealItems count] + 1;
+    }
+    
     if ([[self.arrayForBool objectAtIndex:section] boolValue]) {
         return [[self.sectionContentDict valueForKey:[self.sectionTitleArray objectAtIndex:section]] count];
     }
@@ -117,15 +142,29 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    UIView *headerView              = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 50)];
+    if (section == self.arrayForBool.count) {
+        UIView *aHeaderView             = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 34)];
+        aHeaderView.tag                 = section;
+        aHeaderView.backgroundColor     = [UIColor whiteColor];
+        UILabel *headerString           = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, self.view.frame.size.width-20-50, 34)];
+        headerString.font               = [UIFont boldSystemFontOfSize:18];
+        headerString.text               = @"Current meal";
+        headerString.textAlignment      = NSTextAlignmentLeft;
+        headerString.textColor          = [UIColor blackColor];
+        [aHeaderView addSubview:headerString];
+        
+        return aHeaderView;
+    }
+    
+    UIView *headerView              = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 34)];
     headerView.tag                  = section;
     headerView.backgroundColor      = [UIColor whiteColor];
-    UILabel *headerString           = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, self.view.frame.size.width-20-50, 50)];
+    UILabel *headerString           = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, self.view.frame.size.width-20-50, 34)];
     BOOL manyCells                  = [[self.arrayForBool objectAtIndex:section] boolValue];
-    headerString.font = [UIFont boldSystemFontOfSize:20];
-    headerString.text = [_sectionTitleArray objectAtIndex:section];
+    headerString.font               = [UIFont boldSystemFontOfSize:18];
+    headerString.text               = [_sectionTitleArray objectAtIndex:section];
     headerString.textAlignment      = NSTextAlignmentLeft;
-    headerString.textColor          = [UIColor blackColor];
+    headerString.textColor          = [UIColor darkGrayColor];
     [headerView addSubview:headerString];
     
     UITapGestureRecognizer  *headerTapped   = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(sectionHeaderTapped:)];
@@ -134,7 +173,7 @@
     //up or down arrow depending on the bool
     UIImageView *upDownArrow        = [[UIImageView alloc] initWithImage:manyCells ? [UIImage imageNamed:@"upArrowBlack"] : [UIImage imageNamed:@"downArrowBlack"]];
     upDownArrow.autoresizingMask    = UIViewAutoresizingFlexibleLeftMargin;
-    upDownArrow.frame               = CGRectMake(self.view.frame.size.width-40, 10, 30, 30);
+    upDownArrow.frame               = CGRectMake(self.view.frame.size.width-40, manyCells ? 2 : 0, 30, 30);
     [headerView addSubview:upDownArrow];
     
     return headerView;
@@ -145,31 +184,73 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 50;
+    if (section == self.arrayForBool.count) {
+        return 34;
+    }
+    return 34;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return 1;
 }
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == self.arrayForBool.count) {
+        return 40;
+    }
+    
     if ([[self.arrayForBool objectAtIndex:indexPath.section] boolValue]) {
-        return 50;
+        return 30;
     }
     return 1;
 }
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = nil;
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    BOOL manyCells  = [[self.arrayForBool objectAtIndex:indexPath.section] boolValue];
-    if (manyCells) {
-        NSArray *content = [self.sectionContentDict valueForKey:[self.sectionTitleArray objectAtIndex:indexPath.section]];
-        cell.textLabel.text = [[[content objectAtIndex:indexPath.row] allKeys] lastObject];
-        cell.textLabel.font = [UIFont systemFontOfSize:18];
-        cell.textLabel.textColor = [UIColor darkGrayColor];
+    if (indexPath.section == self.arrayForBool.count) {
+        if (indexPath.row == 0) {
+            cell = [tableView dequeueReusableCellWithIdentifier:@"total_meal"];
+            if (!cell) {
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"total_meal"];
+            }
+            int calories = 0;
+            for (NSDictionary *dict in self.currentMealItems) {
+                calories += [[dict valueForKey:@"calories"] intValue];
+            }
+            
+            cell.textLabel.text = [NSString stringWithFormat:@"TOTAL: %d calories", calories];
+            cell.textLabel.font = [UIFont systemFontOfSize:18];
+            cell.textLabel.textColor = [UIColor blackColor];
+        } else {
+            cell = [tableView dequeueReusableCellWithIdentifier:@"current_meal"];
+            if (!cell) {
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"current_meal"];
+            }
+            NSDictionary *itemDict = [self.currentMealItems objectAtIndex:indexPath.row - 1];
+            
+            cell.textLabel.text = [NSString stringWithFormat:@"%d g/ml of %@", [[itemDict valueForKey:@"quantity"] intValue], [itemDict valueForKey:@"item"]];
+            cell.textLabel.font = [UIFont systemFontOfSize:16];
+            cell.textLabel.textColor = [UIColor grayColor];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%d calories", [[itemDict valueForKey:@"calories"] intValue]];
+            cell.indentationWidth = 30;
+            cell.indentationLevel = 1;
+        }
+    } else  {
+        static NSString *CellIdentifier = @"Cell";
+        
+        cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        }
+        BOOL manyCells  = [[self.arrayForBool objectAtIndex:indexPath.section] boolValue];
+        if (manyCells) {
+            NSArray *content = [self.sectionContentDict valueForKey:[self.sectionTitleArray objectAtIndex:indexPath.section]];
+            cell.textLabel.text = [[[content objectAtIndex:indexPath.row] allKeys] lastObject];
+            cell.indentationWidth = 20;
+            cell.indentationLevel = 1;
+            cell.textLabel.font = [UIFont systemFontOfSize:16];
+            cell.textLabel.textColor = [UIColor darkGrayColor];
+        }
     }
     
     return cell;
@@ -177,16 +258,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-//    DetailViewController *dvc;
-//    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone) {
-//        dvc = [[DetailViewController alloc] initWithNibName:@"DetailViewController_iPhone"  bundle:[NSBundle mainBundle]];
-//    }else{
-//        dvc = [[DetailViewController alloc] initWithNibName:@"DetailViewController_iPad"  bundle:[NSBundle mainBundle]];
-//    }
-//    dvc.title        = [sectionTitleArray objectAtIndex:indexPath.section];
-//    dvc.detailItem   = [[sectionContentDict valueForKey:[sectionTitleArray objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
-//    [self.navigationController pushViewController:dvc animated:YES];
-//    
+    if (indexPath.section != self.arrayForBool.count) {
+        self.selectedIndexPath = indexPath;
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[tableView cellForRowAtIndexPath:indexPath].textLabel.text
+                                                            message:@"Add quantity (g / ml):"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Cancel"
+                                                  otherButtonTitles:@"Continue", nil];
+        alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
+        [alertView show];
+    }
 }
 
 
@@ -202,6 +283,22 @@
         NSRange range   = NSMakeRange(indexPath.section, 1);
         NSIndexSet *sectionToReload = [NSIndexSet indexSetWithIndexesInRange:range];
         [self.tableView reloadSections:sectionToReload withRowAnimation:UITableViewRowAnimationFade];
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex != 0) {
+        int quantity = [[alertView textFieldAtIndex:0].text intValue];
+        
+        NSDictionary *itemDict = [[self.sectionContentDict objectForKey:self.sectionTitleArray[self.selectedIndexPath.section]] objectAtIndex:self.selectedIndexPath.row];
+        NSString *name = [[itemDict allKeys] lastObject];
+        NSNumber *value = [itemDict objectForKey:name];
+        
+        double calories = (double)quantity / 100 * [value doubleValue];
+        
+        [self.currentMealItems addObject:@{@"quantity": [NSNumber numberWithInt:quantity], @"item": name, @"value": value, @"calories": [NSNumber numberWithDouble:calories] }];
+        
+        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:self.arrayForBool.count] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
 }
 

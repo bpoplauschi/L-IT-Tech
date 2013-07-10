@@ -78,6 +78,19 @@
     LITEvent *event = [[LITEvent alloc] init];
     event.date = [NSDate date];
     event.info = inInfo;
+    event.type = LITEventTypeWorkout;
+    [self.events addObject:event];
+    
+    [[LITDataManager sharedInstance] savePerson:self];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kLITPersonUpdatedNotification object:nil];
+}
+
+- (void)addMealEventWithInfo:(NSString *)inInfo {
+    LITEvent *event = [[LITEvent alloc] init];
+    event.date = [NSDate date];
+    event.info = inInfo;
+    event.type = LITEventTypeMeal;
     [self.events addObject:event];
     
     [[LITDataManager sharedInstance] savePerson:self];

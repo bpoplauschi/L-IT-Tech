@@ -28,5 +28,6 @@
 - (double)bmr; // per 24 hours
 
 - (void)addWorkoutEventWithInfo:(NSString *)inInfo;
+- (void)addMealEventWithInfo:(NSString *)inInfo;
 
 @end
