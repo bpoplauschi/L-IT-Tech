@@ -56,6 +56,14 @@
 		679F2C1B1782C9AF00E7682C /* LITDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 679F2C1A1782C9AF00E7682C /* LITDataManager.m */; };
 		67A77C941790391500D9C1CC /* LITRuffierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A77C921790391500D9C1CC /* LITRuffierViewController.m */; };
 		67A77C951790391500D9C1CC /* LITRuffierViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A77C931790391500D9C1CC /* LITRuffierViewController.xib */; };
+		67A77C9D1790474500D9C1CC /* daltonism_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A77C971790474500D9C1CC /* daltonism_1.png */; };
+		67A77C9E1790474500D9C1CC /* daltonism_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A77C981790474500D9C1CC /* daltonism_2.png */; };
+		67A77C9F1790474500D9C1CC /* daltonism_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A77C991790474500D9C1CC /* daltonism_3.png */; };
+		67A77CA01790474500D9C1CC /* daltonism_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A77C9A1790474500D9C1CC /* daltonism_4.png */; };
+		67A77CA11790474500D9C1CC /* daltonism_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A77C9B1790474500D9C1CC /* daltonism_5.png */; };
+		67A77CA21790474500D9C1CC /* daltonism_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A77C9C1790474500D9C1CC /* daltonism_6.png */; };
+		67A77CA61790475700D9C1CC /* LITDaltonismTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A77CA41790475700D9C1CC /* LITDaltonismTestViewController.m */; };
+		67A77CA71790475700D9C1CC /* LITDaltonismTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A77CA51790475700D9C1CC /* LITDaltonismTestViewController.xib */; };
 		67AC89111781B95100373159 /* LITMedicalDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC890F1781B95000373159 /* LITMedicalDictionaryViewController.m */; };
 		67AC89121781B95100373159 /* LITMedicalDictionaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67AC89101781B95000373159 /* LITMedicalDictionaryViewController.xib */; };
 		67AC89161781B9EB00373159 /* LITAlcoholTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC89141781B9EB00373159 /* LITAlcoholTestViewController.m */; };
@@ -135,6 +143,15 @@
 		67A77C911790391500D9C1CC /* LITRuffierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITRuffierViewController.h; sourceTree = "<group>"; };
 		67A77C921790391500D9C1CC /* LITRuffierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITRuffierViewController.m; sourceTree = "<group>"; };
 		67A77C931790391500D9C1CC /* LITRuffierViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITRuffierViewController.xib; sourceTree = "<group>"; };
+		67A77C971790474500D9C1CC /* daltonism_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daltonism_1.png; sourceTree = "<group>"; };
+		67A77C981790474500D9C1CC /* daltonism_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daltonism_2.png; sourceTree = "<group>"; };
+		67A77C991790474500D9C1CC /* daltonism_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daltonism_3.png; sourceTree = "<group>"; };
+		67A77C9A1790474500D9C1CC /* daltonism_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daltonism_4.png; sourceTree = "<group>"; };
+		67A77C9B1790474500D9C1CC /* daltonism_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daltonism_5.png; sourceTree = "<group>"; };
+		67A77C9C1790474500D9C1CC /* daltonism_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daltonism_6.png; sourceTree = "<group>"; };
+		67A77CA31790475700D9C1CC /* LITDaltonismTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITDaltonismTestViewController.h; sourceTree = "<group>"; };
+		67A77CA41790475700D9C1CC /* LITDaltonismTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITDaltonismTestViewController.m; sourceTree = "<group>"; };
+		67A77CA51790475700D9C1CC /* LITDaltonismTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITDaltonismTestViewController.xib; sourceTree = "<group>"; };
 		67AC890E1781B95000373159 /* LITMedicalDictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITMedicalDictionaryViewController.h; sourceTree = "<group>"; };
 		67AC890F1781B95000373159 /* LITMedicalDictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITMedicalDictionaryViewController.m; sourceTree = "<group>"; };
 		67AC89101781B95000373159 /* LITMedicalDictionaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITMedicalDictionaryViewController.xib; sourceTree = "<group>"; };
@@ -243,6 +260,7 @@
 		677F99D71779A5ED00D42449 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				67A77C961790474500D9C1CC /* Daltonism */,
 				677F9A061779AC1800D42449 /* Tabbar */,
 				6701D633178C9CA200198683 /* downArrowBlack.png */,
 				6701D634178C9CA200198683 /* upArrowBlack.png */,
@@ -342,6 +360,9 @@
 				67A77C911790391500D9C1CC /* LITRuffierViewController.h */,
 				67A77C921790391500D9C1CC /* LITRuffierViewController.m */,
 				67A77C931790391500D9C1CC /* LITRuffierViewController.xib */,
+				67A77CA31790475700D9C1CC /* LITDaltonismTestViewController.h */,
+				67A77CA41790475700D9C1CC /* LITDaltonismTestViewController.m */,
+				67A77CA51790475700D9C1CC /* LITDaltonismTestViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -383,6 +404,19 @@
 				679F2C131782BE4B00E7682C /* workout@2x.png */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		67A77C961790474500D9C1CC /* Daltonism */ = {
+			isa = PBXGroup;
+			children = (
+				67A77C971790474500D9C1CC /* daltonism_1.png */,
+				67A77C981790474500D9C1CC /* daltonism_2.png */,
+				67A77C991790474500D9C1CC /* daltonism_3.png */,
+				67A77C9A1790474500D9C1CC /* daltonism_4.png */,
+				67A77C9B1790474500D9C1CC /* daltonism_5.png */,
+				67A77C9C1790474500D9C1CC /* daltonism_6.png */,
+			);
+			path = Daltonism;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,6 +511,13 @@
 				6701D635178C9CA200198683 /* downArrowBlack.png in Resources */,
 				6701D636178C9CA200198683 /* upArrowBlack.png in Resources */,
 				67A77C951790391500D9C1CC /* LITRuffierViewController.xib in Resources */,
+				67A77C9D1790474500D9C1CC /* daltonism_1.png in Resources */,
+				67A77C9E1790474500D9C1CC /* daltonism_2.png in Resources */,
+				67A77C9F1790474500D9C1CC /* daltonism_3.png in Resources */,
+				67A77CA01790474500D9C1CC /* daltonism_4.png in Resources */,
+				67A77CA11790474500D9C1CC /* daltonism_5.png in Resources */,
+				67A77CA21790474500D9C1CC /* daltonism_6.png in Resources */,
+				67A77CA71790475700D9C1CC /* LITDaltonismTestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +546,7 @@
 				6703628D178C766100836DCE /* LITPersonManager.m in Sources */,
 				6701D629178C8F3C00198683 /* LITEvent.m in Sources */,
 				67A77C941790391500D9C1CC /* LITRuffierViewController.m in Sources */,
+				67A77CA61790475700D9C1CC /* LITDaltonismTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

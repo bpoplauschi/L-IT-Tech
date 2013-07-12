@@ -39,7 +39,7 @@
     [super viewDidLoad];
     
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
-    self.navigationItem.title = NSLocalizedString(@"Enter your data", @"");
+    self.navigationItem.title = NSLocalizedString(@"Ruffier", @"");
     
     UIBarButtonItem *calculateButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Calculate", @"")
                                                                    style:UIBarButtonItemStyleDone

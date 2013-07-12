@@ -12,6 +12,7 @@
 #import "LITDataManager.h"
 #import "LITEvent.h"
 #import "LITRuffierViewController.h"
+#import "LITDaltonismTestViewController.h"
 
 
 @interface LITPersonalFileViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -251,6 +252,9 @@
     } else if ( (2 == indexPath.section) && (1 == indexPath.row) ) {
         LITRuffierViewController *ruffierViewController = [[LITRuffierViewController alloc] initWithNibName:@"LITRuffierViewController" bundle:nil];
         [self.navigationController pushViewController:ruffierViewController animated:YES];
+    } else if ( (2 == indexPath.section) && (3 == indexPath.row) ) {
+        LITDaltonismTestViewController *daltonismTestViewController = [[LITDaltonismTestViewController alloc] initWithNibName:@"LITDaltonismTestViewController" bundle:nil];
+        [self.navigationController pushViewController:daltonismTestViewController animated:YES];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
