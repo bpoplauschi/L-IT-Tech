@@ -11,6 +11,7 @@
 #import "LITConstants.h"
 #import "LITDataManager.h"
 #import "LITEvent.h"
+#import "LITRuffierViewController.h"
 
 
 @interface LITPersonalFileViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -158,6 +159,11 @@
                 cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"IMCCell"];
                 cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             }
+        } else if (indexPath.row < 5) {
+            cell = [tableView dequeueReusableCellWithIdentifier:@"computedInfoCellSubtitle"];
+            if (!cell) {
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"computedInfoCellSubtitle"];
+            }
         } else {
             cell = [tableView dequeueReusableCellWithIdentifier:@"computedInfoCell"];
             if (!cell) {
@@ -188,20 +194,21 @@
         } else if (1 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Ruffier index", @"");
         } else if (2 == indexPath.row) {
-            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Basal metabolism: %.2f", @""), self.person.bmr];
+            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Basal metabolic rate: %.2f", @""), self.person.bmr];
+            cell.detailTextLabel.text = @"BMR represents the minimum amount of energy (kcal / kJ) used by the body to keep us alive, when in a state of complete rest, normal mental activity, a neutral temperature and inactivity of the digestive system.";
         } else if (3 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Daltonism test", @"");
         } else if (4 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Heart rate", @"");
         } else if (5 == indexPath.row) {
-            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Ideal weight for a normal constitution: %.2f kg", @""), self.person.idealWeightNormal];
-            cell.textLabel.adjustsFontSizeToFitWidth = YES;
+            cell.textLabel.text = NSLocalizedString(@"Ideal weight (normal):", @"");
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f kg", self.person.idealWeightNormal];
         } else if (6 == indexPath.row) {
-            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Ideal weight for a slender constitution: %.2f kg", @""), self.person.idealWeightSlender];
-            cell.textLabel.adjustsFontSizeToFitWidth = YES;
+            cell.textLabel.text = NSLocalizedString(@"Ideal weight (slender):", @"");
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f kg", self.person.idealWeightSlender];
         } else if (7 == indexPath.row) {
-            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Ideal weight for a robust constitution: %.2f kg", @""), self.person.idealWeightRobust];
-            cell.textLabel.adjustsFontSizeToFitWidth = YES;
+            cell.textLabel.text = NSLocalizedString(@"Ideal weight (robust):", @"");
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f kg", self.person.idealWeightRobust];
         }
     } else if (3 == indexPath.section) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"historyCell"];
@@ -224,20 +231,6 @@
             cell.textLabel.text = [NSString stringWithFormat:@"Alcohol - %@", [self.dateFormatter stringFromDate:event.date]];
             cell.detailTextLabel.text = event.info;
         }
-        
-//        if (0 == indexPath.row % 3) {
-//            cell.textLabel.text = [NSString stringWithFormat:@"Meal - 6/%d/2013", indexPath.row];
-//            cell.detailTextLabel.text = @"Total of 948 calories";
-//            cell.imageView.image = mealImage;
-//        } else if (1 == indexPath.row % 3) {
-//            cell.textLabel.text = [NSString stringWithFormat:@"Alcohol entry - 6/%d/2013", indexPath.row];
-//            cell.detailTextLabel.text = @"You had 0.4 mg of alcohol in your blood.";
-//            cell.imageView.image = alcoholImage;
-//        } else if (2 == indexPath.row % 3) {
-//            cell.textLabel.text = [NSString stringWithFormat:@"Workout - 6/%d/2013", indexPath.row];
-//            cell.detailTextLabel.text = @"600 calories burnt.";
-//            cell.imageView.image = workoutImage;
-//        }
     }
     
     return cell;
@@ -252,9 +245,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    if ( (2 == indexPath.section) && (0 == indexPath.row) ) {
+    if ( ( (2 == indexPath.section) && (0 == indexPath.row) ) || ( (2 == indexPath.section) && (2 == indexPath.row) ) ) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:cell.textLabel.text message:cell.detailTextLabel.text delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
+    } else if ( (2 == indexPath.section) && (1 == indexPath.row) ) {
+        LITRuffierViewController *ruffierViewController = [[LITRuffierViewController alloc] initWithNibName:@"LITRuffierViewController" bundle:nil];
+        [self.navigationController pushViewController:ruffierViewController animated:YES];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

@@ -26,6 +26,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     LITPersonalFileViewController *personalFileViewController = [[LITPersonalFileViewController alloc] initWithNibName:@"LITPersonalFileViewController" bundle:nil];
+    UINavigationController *personalFileViewNavCtlr = [[UINavigationController alloc] initWithRootViewController:personalFileViewController];
+    personalFileViewNavCtlr.navigationBar.barStyle = UIBarStyleBlack;
+    
     UIViewController *alcoholTesterViewController = [[LITAlcoholTestViewController alloc] initWithNibName:@"LITAlcoholTestViewController" bundle:nil];
     UIViewController *calorieCalculatorViewController = [[LITCalorieCalculatorViewController alloc] initWithNibName:@"LITCalorieCalculatorViewController" bundle:nil];
     UINavigationController *calorieCalculatorNavCtlr = [[UINavigationController alloc] initWithRootViewController:calorieCalculatorViewController];
@@ -37,7 +40,7 @@
     
     UIViewController *settingsViewController = [[LITSettingsViewController alloc] initWithNibName:@"LITSettingsViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[personalFileViewController, calorieCalculatorNavCtlr, alcoholTesterViewController, firstAidNavCtlr, settingsViewController];
+    self.tabBarController.viewControllers = @[personalFileViewNavCtlr, calorieCalculatorNavCtlr, alcoholTesterViewController, firstAidNavCtlr, settingsViewController];
     
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
