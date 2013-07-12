@@ -129,6 +129,10 @@
     return self.cells.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 40.0f;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LITInputTableViewCell *cell = [self.cells objectAtIndex:indexPath.row];
     cell.textField.delegate = self;

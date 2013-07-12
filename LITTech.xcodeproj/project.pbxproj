@@ -64,6 +64,10 @@
 		67A77CA21790474500D9C1CC /* daltonism_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A77C9C1790474500D9C1CC /* daltonism_6.png */; };
 		67A77CA61790475700D9C1CC /* LITDaltonismTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A77CA41790475700D9C1CC /* LITDaltonismTestViewController.m */; };
 		67A77CA71790475700D9C1CC /* LITDaltonismTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A77CA51790475700D9C1CC /* LITDaltonismTestViewController.xib */; };
+		67A77CAB17904E8000D9C1CC /* LITPulseCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A77CA917904E7F00D9C1CC /* LITPulseCalculatorViewController.m */; };
+		67A77CAC17904E8000D9C1CC /* LITPulseCalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A77CAA17904E7F00D9C1CC /* LITPulseCalculatorViewController.xib */; };
+		67A77CAF1790549D00D9C1CC /* heartRate.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A77CAD1790549D00D9C1CC /* heartRate.png */; };
+		67A77CB01790549D00D9C1CC /* heartRate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A77CAE1790549D00D9C1CC /* heartRate@2x.png */; };
 		67AC89111781B95100373159 /* LITMedicalDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC890F1781B95000373159 /* LITMedicalDictionaryViewController.m */; };
 		67AC89121781B95100373159 /* LITMedicalDictionaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67AC89101781B95000373159 /* LITMedicalDictionaryViewController.xib */; };
 		67AC89161781B9EB00373159 /* LITAlcoholTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC89141781B9EB00373159 /* LITAlcoholTestViewController.m */; };
@@ -152,6 +156,11 @@
 		67A77CA31790475700D9C1CC /* LITDaltonismTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITDaltonismTestViewController.h; sourceTree = "<group>"; };
 		67A77CA41790475700D9C1CC /* LITDaltonismTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITDaltonismTestViewController.m; sourceTree = "<group>"; };
 		67A77CA51790475700D9C1CC /* LITDaltonismTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITDaltonismTestViewController.xib; sourceTree = "<group>"; };
+		67A77CA817904E7F00D9C1CC /* LITPulseCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITPulseCalculatorViewController.h; sourceTree = "<group>"; };
+		67A77CA917904E7F00D9C1CC /* LITPulseCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITPulseCalculatorViewController.m; sourceTree = "<group>"; };
+		67A77CAA17904E7F00D9C1CC /* LITPulseCalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITPulseCalculatorViewController.xib; sourceTree = "<group>"; };
+		67A77CAD1790549D00D9C1CC /* heartRate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heartRate.png; sourceTree = "<group>"; };
+		67A77CAE1790549D00D9C1CC /* heartRate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heartRate@2x.png"; sourceTree = "<group>"; };
 		67AC890E1781B95000373159 /* LITMedicalDictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITMedicalDictionaryViewController.h; sourceTree = "<group>"; };
 		67AC890F1781B95000373159 /* LITMedicalDictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITMedicalDictionaryViewController.m; sourceTree = "<group>"; };
 		67AC89101781B95000373159 /* LITMedicalDictionaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITMedicalDictionaryViewController.xib; sourceTree = "<group>"; };
@@ -363,6 +372,9 @@
 				67A77CA31790475700D9C1CC /* LITDaltonismTestViewController.h */,
 				67A77CA41790475700D9C1CC /* LITDaltonismTestViewController.m */,
 				67A77CA51790475700D9C1CC /* LITDaltonismTestViewController.xib */,
+				67A77CA817904E7F00D9C1CC /* LITPulseCalculatorViewController.h */,
+				67A77CA917904E7F00D9C1CC /* LITPulseCalculatorViewController.m */,
+				67A77CAA17904E7F00D9C1CC /* LITPulseCalculatorViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -392,6 +404,8 @@
 				677F9A0A1779AC1800D42449 /* caloric_scale@2x.png */,
 				67B0EC1D178435D500ECB143 /* dict.png */,
 				67B0EC1E178435D500ECB143 /* dict@2x.png */,
+				67A77CAD1790549D00D9C1CC /* heartRate.png */,
+				67A77CAE1790549D00D9C1CC /* heartRate@2x.png */,
 				679F2C0E1782BC9E00E7682C /* meal.png */,
 				679F2C0F1782BC9E00E7682C /* meal@2x.png */,
 				677F9A0B1779AC1800D42449 /* med_dex.png */,
@@ -518,6 +532,9 @@
 				67A77CA11790474500D9C1CC /* daltonism_5.png in Resources */,
 				67A77CA21790474500D9C1CC /* daltonism_6.png in Resources */,
 				67A77CA71790475700D9C1CC /* LITDaltonismTestViewController.xib in Resources */,
+				67A77CAC17904E8000D9C1CC /* LITPulseCalculatorViewController.xib in Resources */,
+				67A77CAF1790549D00D9C1CC /* heartRate.png in Resources */,
+				67A77CB01790549D00D9C1CC /* heartRate@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +564,7 @@
 				6701D629178C8F3C00198683 /* LITEvent.m in Sources */,
 				67A77C941790391500D9C1CC /* LITRuffierViewController.m in Sources */,
 				67A77CA61790475700D9C1CC /* LITDaltonismTestViewController.m in Sources */,
+				67A77CAB17904E8000D9C1CC /* LITPulseCalculatorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

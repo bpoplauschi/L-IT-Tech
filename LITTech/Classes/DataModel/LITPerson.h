@@ -29,5 +29,7 @@
 
 - (void)addWorkoutEventWithInfo:(NSString *)inInfo;
 - (void)addMealEventWithInfo:(NSString *)inInfo;
+- (void)addAlcholEventWithInfo:(NSString *)inInfo;
+- (void)addHeartRateEventWithInfo:(NSString *)inInfo;
 
 @end

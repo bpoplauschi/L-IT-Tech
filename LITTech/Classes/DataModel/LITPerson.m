@@ -106,4 +106,28 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:kLITPersonUpdatedNotification object:nil];
 }
 
+- (void)addAlcholEventWithInfo:(NSString *)inInfo {
+    LITEvent *event = [[LITEvent alloc] init];
+    event.date = [NSDate date];
+    event.info = inInfo;
+    event.type = LITEventTypeAlcohol;
+    [self.events addObject:event];
+    
+    [[LITDataManager sharedInstance] savePerson:self];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kLITPersonUpdatedNotification object:nil];
+}
+
+- (void)addHeartRateEventWithInfo:(NSString *)inInfo {
+    LITEvent *event = [[LITEvent alloc] init];
+    event.date = [NSDate date];
+    event.info = inInfo;
+    event.type = LITEventTypeHeartRate;
+    [self.events addObject:event];
+    
+    [[LITDataManager sharedInstance] savePerson:self];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kLITPersonUpdatedNotification object:nil];
+}
+
 @end

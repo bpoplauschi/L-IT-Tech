@@ -11,7 +11,8 @@
 typedef NS_ENUM(NSInteger, LITEventType) {
     LITEventTypeWorkout = 0,
     LITEventTypeMeal,
-    LITEventTypeAlcohol
+    LITEventTypeAlcohol,
+    LITEventTypeHeartRate
 };
 
 @interface LITEvent : NSObject

@@ -13,6 +13,7 @@
 #import "LITEvent.h"
 #import "LITRuffierViewController.h"
 #import "LITDaltonismTestViewController.h"
+#import "LITPulseCalculatorViewController.h"
 
 
 @interface LITPersonalFileViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -21,6 +22,7 @@
 @property (nonatomic, strong) UIImage *alcoholImage;
 @property (nonatomic, strong) UIImage *mealImage;
 @property (nonatomic, strong) UIImage *workoutImage;
+@property (nonatomic, strong) UIImage *heartRateImage;
 @property (nonatomic, strong) NSDateFormatter *dateFormatter;
 
 - (void)personUpdated:(NSNotification *)inNotification;
@@ -57,6 +59,7 @@
     self.alcoholImage = [UIImage imageNamed:@"alcohol.png"];
     self.mealImage = [UIImage imageNamed:@"meal.png"];
     self.workoutImage = [UIImage imageNamed:@"workout.png"];
+    self.heartRateImage = [UIImage imageNamed:@"heartRate.png"];
 }
 
 - (void)personUpdated:(NSNotification *)inNotification {
@@ -231,6 +234,10 @@
             cell.imageView.image = self.alcoholImage;
             cell.textLabel.text = [NSString stringWithFormat:@"Alcohol - %@", [self.dateFormatter stringFromDate:event.date]];
             cell.detailTextLabel.text = event.info;
+        } else if (LITEventTypeHeartRate == event.type) {
+            cell.imageView.image = self.heartRateImage;
+            cell.textLabel.text = [NSString stringWithFormat:@"Heart Rate - %@", [self.dateFormatter stringFromDate:event.date]];
+            cell.detailTextLabel.text = event.info;
         }
     }
     
@@ -255,6 +262,9 @@
     } else if ( (2 == indexPath.section) && (3 == indexPath.row) ) {
         LITDaltonismTestViewController *daltonismTestViewController = [[LITDaltonismTestViewController alloc] initWithNibName:@"LITDaltonismTestViewController" bundle:nil];
         [self.navigationController pushViewController:daltonismTestViewController animated:YES];
+    } else if ( (2 == indexPath.section) && (4 == indexPath.row) ) {
+        LITPulseCalculatorViewController *pulseCalculatorViewController = [[LITPulseCalculatorViewController alloc] initWithNibName:@"LITPulseCalculatorViewController" bundle:nil];
+        [self.navigationController pushViewController:pulseCalculatorViewController animated:YES];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
