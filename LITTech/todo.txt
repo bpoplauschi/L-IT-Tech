@@ -1,0 +1,12 @@
+Alcohol test
+Translations (check all string are english)
+first aid
+settings
+age bug on device???
+choose person
+edit person
+delete person
+
+
+App Name -> see email
+demo movie

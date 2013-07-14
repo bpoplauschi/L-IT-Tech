@@ -99,6 +99,7 @@
 		6703628C178C766100836DCE /* LITPersonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITPersonManager.m; sourceTree = "<group>"; };
 		670E7BBD178C70E00053BD68 /* workout_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = workout_large.png; sourceTree = "<group>"; };
 		670E7BBE178C70E00053BD68 /* workout_large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout_large@2x.png"; sourceTree = "<group>"; };
+		6779A0D61792FE8D0022E184 /* todo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = todo.txt; path = LITTech/todo.txt; sourceTree = "<group>"; };
 		677F998E1779A4B900D42449 /* LITTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LITTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		677F99911779A4B900D42449 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		677F99931779A4B900D42449 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -198,6 +199,7 @@
 		677F99851779A4B800D42449 = {
 			isa = PBXGroup;
 			children = (
+				6779A0D61792FE8D0022E184 /* todo.txt */,
 				677F99971779A4B900D42449 /* LITTech */,
 				677F99901779A4B900D42449 /* Frameworks */,
 				677F998F1779A4B900D42449 /* Products */,

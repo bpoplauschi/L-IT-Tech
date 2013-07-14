@@ -15,10 +15,8 @@
 #import "LITFirstAidViewController.h"
 #import "LITConstants.h"
 
-
 #import "LITDataManager.h"
 #import "LITPersonManager.h"
-//#import "LITPerson.h"
 
 @implementation LITAppDelegate
 
@@ -55,26 +53,6 @@
         personalFileViewController.person = [LITPersonManager sharedInstance].currentPerson;
     }
     
-//    if (persons.count > 0) {
-//        LITPerson *currentPerson = [persons objectAtIndex:0];
-//        currentPerson.height += 10;
-//        [[LITDataManager sharedInstance] savePerson:currentPerson];
-//    } else {
-//        LITPerson *person = [[LITPerson alloc] init];
-//        person.name = @"Bogdan";
-//        person.male = YES;
-//        person.height = 178;
-//        person.weight = 80.0;
-//        
-//        NSDateComponents *comps = [[NSDateComponents alloc] init];
-//        [comps setDay:4];
-//        [comps setMonth:6];
-//        [comps setYear:1985];
-//        person.birthDate = [[NSCalendar currentCalendar] dateFromComponents:comps];
-//        [[LITDataManager sharedInstance] savePerson:person];
-//    }
-    
-    
     return YES;
 }
 
@@ -95,23 +73,5 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
-/*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
-{
-}
-*/
-
-/*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
-{
-}
-*/
 
 @end

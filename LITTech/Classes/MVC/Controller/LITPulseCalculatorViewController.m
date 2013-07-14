@@ -11,7 +11,7 @@
 #import "LITPersonManager.h"
 #import "LITPerson.h"
 
-@interface LITPulseCalculatorViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
+@interface LITPulseCalculatorViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UIAlertViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 
@@ -61,7 +61,7 @@
         else
             message = @"Wrong value";
         
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Heart rate" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Heart rate" message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alertView show];
     } else {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Missing value" message:@"Please enter the measurement " delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -125,6 +125,10 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
 	[textField resignFirstResponder];
 	return YES;
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 

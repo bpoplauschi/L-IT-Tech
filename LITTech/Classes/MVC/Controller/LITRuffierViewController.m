@@ -10,7 +10,7 @@
 #import "LITInputTableViewCell.h"
 
 
-@interface LITRuffierViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
+@interface LITRuffierViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UIAlertViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 
@@ -62,7 +62,7 @@
         else if (index > 0)
             message = @"Good index value";
         
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Ruffier index" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Ruffier index" message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alertView show];
     } else {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Missing value" message:@"Please enter all 3 pulse measurements" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -181,5 +181,8 @@
 	return YES;
 }
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 @end
