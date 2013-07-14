@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Abscess</key>
+	<string>a local accumulation of pus anywhere in the body. Examples of abscess:
+a skin abscess is better known as a common boil;
+a peritonsillar abscess is a persistent collection of pus behind the tonsils;
+a perianal abscess is a pool of pus that forms next to the anus, often causing considerable tenderness and swelling in that area and pain on sitting down and on defecating.</string>
+    
+    <key>Access</key>
+	<string>in general, a means of approaching something.
+2. In health care, the opportunity or right to receive health care.
+3. In dialysis, the point on the body where a needle or catheter is inserted to gain entry to the bloodstream.</string>
+    
+    <key>Acid Reflux</key>
+	<string>a common condition and an abnormal one in which acid in thestomach rises up into the esophagus. This occurs because the valve separating the contents of the stomach from the esophagus does not function properly. See also: GERD</string>
+
+    <key>Acute Illness</key>
+	<string>a disease with an abrupt onset and, usually, a short course.</string>
+
+    <key>Allergy</key>
+	<string>a misguided reaction to foreign substances by the immune system, the body system of defense against foreign invaders, particularly pathogens(the agents of infection). The allergic reaction is misguided in that these foreign substances are usually harmless. The substances that trigger allergy are called allergen. Examples include pollens, dust mite, molds,danders, and certain foods.</string>
+
+    <key>Babinski Reflex</key>
+	<string>a reflex used to determine adequacy of the higher (central) nervous system. The Babinski reflex is obtained by stimulating the outside of the sole of the foot, causing extension of the big toe while fanning the other toes. The examiner begins the stimulation at the heel and goes forward to the base of the toes. Most newborn babies and young infants are not neurologically mature, and they therefore show a Babinski reflex. A Babinski reflex in an older child or an adult is abnormal and is a sign of a problem in the brain or spinal cord. A Babinski reflex that is present on one side but not the other is also abnormal, and it can indicate which side of the brain is involved. Also known as plantar response, big toe sign, and Babinski phenomenon, response, or sign.</string>
+
+    <key>Back Pain</key>
+	<string>pain felt in the low or upper back. Causes of pain in the low and upper back include conditions affecting the bony spine; discs between the vertebrae; ligaments around the spine and discs; spinal inflammation; spinal cord and nerves; muscles; internal organs of the pelvis, chest, and abdomen; tumors; and the skin</string>
+
+    <key>Baldness</key>
+	<string>Medically known as alopecia. There are many types of baldness, each with a different cause. Baldness may be localized to the front and top of the head, as in the very common type of male-pattern baldness; baldness may be patchy, a condition called alopecia areata; or it may involve the entire head, as in alopecia capitis totalis. The word "alopecia" comes from the Greek "alopex" for "fox." Foxes are less furry when afflicted with a skindisease called the "mange" which causes them to lose their hair. When a fancier word for "baldness" was sought, the mangy fox supplied it, "alopecia" or, if you wish, "fox-mange", not a very positive image to associate with baldness!</string>
+
+    <key>Becker Muscular Dystrophy</key>
+	<string>A chronic, progressive muscle degeneration disease. A form of muscular dystrophy that is quite similar to Duchenne muscular dystrophy, except that patients with Becker do produce some of the key protein, dystrophin, whereas those with Duchenne do not. Progression of the disease in Becker type is slower than in Duchenne, and symptoms may appear as late as the mid-twenties.
+        Becker muscular dystrophy is a mild version of Duchenne. Both diseases result from mutations in the huge gene in region Xp21.2 on the X chromosome that encodes dystrophin. (The other principal form of X-linked, late-onset muscular dystrophy is Emery-Dreifuss muscular dystrophy, which results from mutation in the gene encoding emerin on Xq28.)</string>
+    
+    <key>Bile Acid</key>
+	<string>an acid made by the liver that works with bile to break down fats.
+        On a more technical level, bile acids are steroid carboxylic acids derived from cholesterol. The primary bile acids are cholic and chenodeoxycholic acids. They are conjugated with glycine or taurine before they are secreted into the bile.</string>
+    
+    <key>Calorie</key>
+	<string>a unit of food energy. The word calorie is ordinarily used instead of the more precise, scientific term kilocalorie. A kilocalorie represents the amount of energy required to raise the temperature of a liter of water 1' centigrade at sea level. Technically, a kilocalorie represents 1,000 true calories of energy.</string>
+    
+    <key>Cancer</key>
+	<string>an abnormal growth of cells which tend to proliferate in an uncontrolled way and, in some cases, to metastasize (spread).
+        Cancer is not one disease. It is a group of more than 100 different and distinctive diseases.</string>
+    
+    <key>Cardiovascular Disease</key>
+	<string>a disease affecting the heart or blood vessels.
+        Cardiovascular diseases include arteriosclerosis, coronary artery disease,heart valve disease, arrhythmia, heart failure, hypertension, orthostatic hypotension, shock, endocarditis, diseases of the aorta and its branches, disorders of the peripheral vascular system, and congenital heart disease.</string>
+    
+    <key>Cataract</key>
+	<string>A clouding or loss of transparency of the lens in the eye as a result of tissue breakdown and protein clumping. There are many causes ofcataracts, including aging, cortisone medication, trauma, diabetes, and other diseases. Cataracts affect most people who live into an old age. Symptoms include double or blurred vision and sensitivity to light and glare. A physician can diagnose cataracts by examining the eyes with a viewing instrument. Sunglasses can help to prevent cataracts.</string>
+    
+    <key>Deficiency, calcium</key>
+	<string>A low blood level of calcium (hypocalcemia), which can make the nervous system highly irritable, causing spasms of the hands and feet (tetany), muscle cramps, abdominal cramps, overly active reflexes, and so on. Chronic calcium deficiency contributes to poor mineralization of bones, soft bones (osteomalacia) and osteoporosis, and, in children, ricketsand impaired growth.</string>
+    
+    <key>Delirium</key>
+	<string>A sudden state of severe confusion and rapid changes in brain function, sometimes associated with hallucinations and hyperactivity, during which the patient is inaccessible to normal contact. Delirium can be due to a number of conditions, including infection, drug toxicity or withdrawal, seizures, brain tumor, poisoning, head injury, and metabolic disturbances.</string>
+    
+    <key>Dementia</key>
+	<string>Significant loss of intellectual abilities, such as memory capacity, that is severe enough to interfere with social or occupational functioning. Criteria for the diagnosis of dementia include impairment of attention, orientation, memory, judgment, language, motor and spatial skills, and function. By definition, dementia is not due to major depression orschizophrenia. Alzheimer's disease is the most common cause of dementia. Other causes include AIDS, alcoholism, brain injury, vascular dementia (damage to the blood vessels leading to the brain), dementia with Lewy bodies, brain tumors, drug toxicity, infection of brain, Creutzfeldt-Jakob disease, meningitis, Pick disease, syphilis, and hypothyroidism.</string>
+    
+    <key>Diabetes</key>
+	<string>Refers to diabetes mellitus or, less often, to diabetes insipidus. Diabetes mellitus and diabetes insipidus share the name "diabetes" because they are both conditions characterized by excessive urination (polyuria).</string>
+    
+    <key>Disease, Addison</key>
+	<string>Long-term underfunction of the outer portion of the adrenal gland. In medical terms, chronic insufficiency of the adrenal cortex. This may be due to a number of different insults to the adrenal including physical trauma, hemorrhage, and tuberculosis of the adrenal, and destruction of the cells in the pituitary gland that secrete ACTH (adrenocorticotropic hormone) which normally drives the adrenal. Addison disease is characterized by bronzing of the skin, anemia, weakness, and low blood pressure. The U.S. President J.F. Kennedy is said to have had Addison disease. Named after the British physician Thomas Addison (1793-1860). When Addison first identified adrenal insufficiency in 1849, tuberculosis (TB) was responsible for 70-90% of cases. As the treatment for TB improved, the incidence of adrenal insufficiency due to TB of the adrenal glands greatly decreased. TB now accounts for about 20% of cases of primary adrenal insufficiency in developed countries.</string>
+    
+    <key>Ear</key>
+	<string>The hearing organ. There are three sections of the ear, according to the anatomy textbooks. They are the outer ear (the part we see along the sides of our head behind the temples), the middle ear, and the inner ear</string>
+    
+    <key>Echinacea</key>
+	<string>An herb that has been claimed to boost the body's immune system and help fight off infections.</string>
+    
+    <key>Eczema</key>
+	<string>A particular type of inflammatory reaction of the skin in which there are typically vesicles (tiny blister-like raised areas) in the first stage followed byerythema (reddening), edema (swelling), papules (bumps), and crusting of the skin followed, finally, by lichenification (thickening) and scaling of the skin. Eczema characteristically causes itching and burning of the skin.</string>
+    
+    <key>Familial cancer</key>
+	<string>Cancer or a predisposition (tendency) to it that runs in families.</string>
+    
+    <key>Fat</key>
+	<string>1 Along with proteins and carbohydrates, one of the three nutrients used as energy sources by the body. The energy produced by fats is 9 calories per gram. Proteins and carbohydrates each provide 4 calories per gram. 2 Total fat; the sum of saturated, monounsaturated and polyunsaturated fats. Intake of monounsaturated and polyunsaturated fats can help reduce blood cholesterol when substituted for saturated fats in the diet. 3 A slang term for obese or adipose. 4 In chemistry, a compound formed from chemicals called fatty acids. These fats are greasy, solid materials found in animal tissues and in some plants. Fats are the major component of the flabby material of a body, commonly known as blubber.</string>
+    
+    <key>Fever</key>
+	<string>Although a fever technically is any body temperature above the normal of 98.6 degrees F. (37 degrees C.), in practice a person is usually not considered to have a significant fever until the temperature is above 100.4 degrees F (38 degrees C.).
+        Fever is part of the body's own disease-fighting arsenal: rising body temperatures apparently are capable of killing off many disease- producing organisms. For that reason, low fevers should normally go untreated, although you may need to see your doctor to be sure if the fever is accompanied by any other troubling symptoms. As fevers range to 104 degrees F and above, however, there can be unwanted consequences, particularly for children. These can include delirium and convulsions. A fever of this sort demands immediate home treatment and then medical attention. Home treatment possibilities include the use of aspirin or, in children, non-aspirin pain-killers such as acetaminophen, cool baths, or sponging to reduce the fever while seeking medical help. Fever may occur with almost any type of infection of illness. The temperature is measured with a thermometer.</string>
+    
+    <key>Flatfeet</key>
+	<string>A condition of the feet in which the arch of the instep is flattened and the entire sole touches the ground. The Latin term pes plans is used to denote flat foot.
+        All babies have flat feet because their arches are not yet built up (and their feet tend to be plump). This condition may persist into adulthood, or an arch may form as the child grows.
+        Flat feet can also be acquired, as in jobs that require a great deal of walkingand carrying heavy objects.</string>
+    
+    <key>Fracture</key>
+	<string>A break in bone or cartilage. Although usually a result of trauma, a fracture can be the result of an acquired disease of bone, such asosteoporosis, or of abnormal formation of bone in a congenital disease of bone, such as osteogenesis imperfecta ('brittle bone disease'). Fractures are classified according to their character and location (for example, greenstick fracture of the radius).</string>
+    
+    <key>Gastric ulcer</key>
+	<string>A hole in the lining of the stomach corroded by the acidic digestive juices which are secreted by the stomach cells. Ulcer formation is related to H. pyloridus bacteria in the stomach, anti-inflammatory medications, and smoking cigarettes. Ulcer pain may not correlate with the presence or severity of ulceration. Diagnosis is made with barium x-ray or with the use of a viewing tube slipped through the throat to the stomach (endoscopy).</string>
+    
+    <key>Gastroenterologic disease</key>
+	<string>Any disease of the digestive system. Gastroenterologic disorders include Barrett's esophagus, bile duct disease,celiac disease, cirrhosis of the liver, colon polyps and colon cancer,constipation and diarrhea, Crohn's disease, diverticulosis and diverticulitis, gallbladder disease and gallstones, gastritis, GERD (gastroesophageal reflux), GI bleeding, hepatitis, hiatal hernia, indigestion, IBS (irritable bowel syndrome), jaundice, liver disease, malabsorption, nausea and vomiting,nutrition, pancreatitis, peptic ulcer, rectal bleeding, swallowing abnormalities, and ulcerative colitis.</string>
+    
+    <key>Gallstones</key>
+	<string>Stones that form when substances in the bile harden.Gallstones can be as small as a grain of sand or as large as a golf ball. There can be just one large stone, hundreds of tiny stones, or any combination.Gallstones can block the normal flow of bile if they lodge in any of the ducts that carry bile from the liver to the small intestine.</string>
+    
+    <key>Hallucination</key>
+	<string>A profound distortion in a person's perception of reality, typically accompanied by a powerful sense of reality. An hallucination may be a sensory experience in which a person can see, hear, smell, taste, or feel something that is not there.</string>
+    
+    <key>Habitus</key>
+	<string>The physique or body build. Also the posture. For example, corticosteroid therapy can produce a characteristic cushingoid habitus with a moon face, "buffalo hump" at the back of the neck, and obesity of the trunk.</string>
+    
+    <key>Hair loss</key>
+	<string>Hair loss is the thinning of hair on the scalp. The medical term for hair loss is alopecia. Alopecia can be temporary or permanent. The most common form of hair loss occurs gradually and is referred to as "androgenetic alopecia," meaning that a combination of hormones (androgens are male hormones) and heredity (genetics) is needed to develop the condition.</string>
+    
+    <key>Idiopathic</key>
+	<string>Of unknown cause. Any disease that is of uncertain or unknown origin may be termed idiopathic. For example, acute idiopathic polyneuritis,diffuse idiopathic skeletal hyperostosis, idiopathic pulmonary fibrosis,idiopathic scoliosis, etc.
+        Illusion: A perception that occurs when a sensory stimulus is present but is incorrectly perceived and misinterpreted, such as hearing the wind as someone crying. Everyone may occasionally experience an illusion. However, illusions are extraordinarily common in people suffering from schizophrenia.</string>
+    
+    <key>Ilium</key>
+	<string>The upper part of the pelvic bone, which forms the receptacle of the hip.</string>
+    
+    <key>JC virus</key>
+	<string>A virus that commonly causes infections of no consequence in children with a normal immune system, but which is responsible for an infection of the brain and spinal cord called progressive multifocal leukoencephalopathy (PML) in people with AIDS and other forms of immune system impairment. Abbreviated JVC. The JC virus is a human polyomavirus. It is a small virus with a closed circular genome consisting of double-stranded DNA. The letters JC are the initials of a patient with PML from whose brain the virus was first isolated.</string>
+    
+    <key>Jimmy Fund</key>
+	<string>A children's cancer fund that has been responsible for highly significant work, especially on chemotherapy, that has reduced the death rate with some childhood cancers — particularly, the most common form of leukemia in children — from 90% to 10%. The Fund was started by Dr. Sidney Farber, the father of modern chemotherapy.</string>
+    
+    <key>Jet lag</key>
+	<string>A temporary disorder that causes fatigue, insomnia, and other symptoms as a result of rapid air travel across time zones. Other symptoms of jet lag include anxiety, constipation, diarrhea, confusion, dehydration, headache, irritability, nausea, sweating, coordination problems, and even memory loss. Some individuals may report additional symptoms, such as heartbeat irregularities and an increased susceptibility to illness.</string>
+    
+    <key>Jammed finger</key>
+	<string>Lay terminology that refers to an injury of the finger joints. The most common joint affected is the proximal interphalangeal joint (PIP), the joint formed by the first and second finger bones. A jammed finger occurs because of an on-end injury to the tip of a finger. The injury most commonly occurs during athletic activity, particularly with ball-handling sports.</string>
+    
+    <key>Jakob's disease</key>
+	<string>Better known as Creutzfeldt-Jakob disease (CJD), a dementing disease of the brain. It is believed due to an unconventional, transmissible agent (a prion). Symptoms of CJD include forgetfulness, nervousness, jerky trembling hand movements, unsteady gait, muscle spasms, chronic dementia, balance disorder, and loss of facial expression. CJD is classified as a spongiform encephalopathy. Most cases occur randomly (sporadically), but inherited forms exist. There is neither treatment nor cure for CJD. Other names for CJD include Creutzfeldt-Jakob syndrome, Jakob-Creutzfeldt disease, and spastic pseudoparalysis.</string>
+    
+    <key>Kissing disease</key>
+	<string>A name for infectious mononucleosis ("mono"), a very common illness caused by the Epstein-Barr virus (EBV). By the time most people reach adulthood, an antibody against EBV can be detected in their blood meaning they have been infected with EBV. The illness is less severe in young children. The infection can be spread by saliva. The incubation period for "mono" is 4 to 8 weeks. Symptoms include fever, fatigue, sore throat, and swollen lymph glands. "Mono" can cause liver inflammation (hepatitis) and spleen enlargement. Vigorous contact sports should be avoided to prevent spleen rupture.</string>
+    
+    <key>Kyphosis</key>
+	<string>Outward curvature of the spine, causing a humped back. Treatment includes physical therapy and wearing a back brace, and in some cases surgery. Surgery for kyphosis may involve inserting a metal rod in the spine and restructuring some bones, and it is usually followed by wearing a back cast and then a back brace for some time.</string>
+    
+    <key>Kleine-Levin syndrome</key>
+	<string>A rare condition that is characterized by periods of excessive drowsiness and sleep, lasting up to 20 hours per day. Affected individuals usually have excessive food intake and may be confused, irritable, and lethargic. Some patients have hallucinations or sexual disinhibition. Most patients with Kleine-Levin syndrome are adolescent males. The cause is unknown. Most cases resolve over time without treatment. Also known as Kleine-Levin hibernation syndrome.</string>
+    
+    <key>Keloid</key>
+	<string>A scar that rises quite abruptly above the rest of the skin. It is irregularly shaped, usually pink to red in color, tends to enlarge progressively, and may be harder than the surrounding skin. Keloids are a response to trauma, such as a cut to the skin. In creating a normal scar, connective tissue in the skin is repaired by the formation of collagen. Keloids arise when extra collagen forms. Susceptibility to keloids is genetic, and keloids are particularly common in people of African descent.</string>
+    
+    <key>Ketogenic diet</key>
+	<string>A diet devised as a treatment for severe seizure disorders that do not respond to conventional medication. The ketogenic diet is comprised almost entirely of fats and protein. All portion must be precisely weighed and timed. Because this diet can cause the buildup of ketone bodies in the blood, it is highly risky and should only be tried under close medical supervision.</string>
+    
+    <key>Lactase deficiency</key>
+	<string>Lack of the enzyme lactase in the small intestine. Lactase is needed to digest lactose, a sugar found in milk and most other dairy products and also used as an ingredient in other foods. Although most people are born with the ability to make adequate amounts of lactase, the production of lactase normally decreases with age, and there are significant differences in lactase production among ethnic groups. People of African or Asian descent commonly have difficulty digesting products that contain lactose. The most common symptoms of lactase deficiency are diarrhea, bloating, and gas. Treatment usually involves avoiding lactose in the diet or taking over-the-counter lactase supplements before eating foods that contain lactose.</string>
+    
+    <key>LDL cholesterol</key>
+	<string>Low-density lipoprotein cholesterol, commonly referred to as 'bad' cholesterol. Elevated LDL levels are associated with an increased risk of heart disease. Lipoproteins, which are combinations of fats (lipids) and proteins, are the form in which lipids are transported in the blood. Low-density lipoproteins transport cholesterol from the liver to the tissues of the body.</string>
+    
+    <key>Leucemia</key>
+	<string>A different spelling of leukemia, cancer of the blood cells. The growth and development of the blood cells are abnormal. Strictly speaking, leukemia should refer only to cancer of the white blood cells (the leukocytes) but in practice it can apply to malignancy of any cellular element in the blood or bone marrow, as in red cell leukemia (erythroleukemia).</string>
+    
+    <key>Lumpectomy</key>
+	<string>The surgical removal of a small tumor, which may be benign or cancerous. In common use, lumpectomy refers especially to removal of a lump from the breast. Lumpectomy, often with chemotherapy or radiation therapy, can be an alternative to mastectomy in cases of nonmetastatic breast cancer.</string>
+    
+    <key>Lung cancer</key>
+	<string>Cancer of the major organ of respiration - the lung. Lung cancer kills more men and women than any other form of cancer. Since the majority of lung cancer is diagnosed at a relatively late stage, only 10% of all lung cancer patients are ultimately cured. Eight out of 10 lung cancers are due to tobacco smoke. Lung cancers are classified as either small cell or non-small cell cancers. Persistent cough and bloody sputum can be symptoms of lung cancer. Lung cancer can be diagnosed based on examination of sputum, or tissue examination with biopsy using bronchoscopy, needle through the chest wall, or surgical excision.</string>
+    
+    <key>Mastectomy</key>
+	<string>A general term for removal of the breast, usually to remove cancerous tissue. The operation can be done in a hospital or in an outpatient clinic, depending on how extensive it needs to be. After a mastectomy, reconstructive surgery may be performed to restore a more normal appearance. In cases of nonmetastatic breast cancer, a lumpectomy'with radiation, chemotherapy, or a combination of these treatments'is sometimes performed as an alternative to mastectomy.</string>
+    
+    <key>Myelitis</key>
+	<string>Inflammation of the spinal cord, such as from infection or immune inflammation</string>
+    
+    <key>Macroglossia</key>
+	<string>An abnormally large tongue. Macroglossia is sometimes said to be associated with Down syndrome, but in that disorder the tongue is actually large only in relationship to a smaller-than-normal mouth cavity.</string>
+    
+    <key>MADH4</key>
+	<string>A tumor suppressor gene (also known as SMAD4/DPC4) located on chromosome 18 in band 18q21 1. About 15% to 20% of cases of juvenile polyposis are due to germline mutations in MADH4. About 90% of pancreatic carcinomas show homozgous loss (loss of both copies) of MADH4.</string>
+    
+    <key>Myocarditis</key>
+	<string>Inflammation of the myocardium, the heart muscle.
+    Myocarditis can be caused by a number of different conditions. The most common cause is infection of the heart muscle by a virus. The virus causes the initial heart muscle inflammation. After the initial viral infection subsides, the body's immune system continues to inflict inflammatory damage on the heart muscles, prolonging the myocarditis, a process termed autoimmunity. Other causes of myocarditis include such as a disease called sarcoidosis, various autoimmune diseases such as systemic lupus, and certain drugs.</string>
+    
+    <key>Nausea</key>
+	<string>Stomach queasiness, the urge to vomit. Nausea can be brought on by many causes, including systemic illnesses (such as influenza), medications, pain, and inner ear disease.</string>
+    
+    <key>Nyctophobia</key>
+	<string>Pathological fear of the dark.</string>
+    
+    <key>Neurofibromatosis</key>
+	<string>A genetic disorder of the nervous system that primarily affects the development and growth of neural (nerve) cell tissues, causes tumors to grow on nerves, and may produce other abnormalities. Neurofibromatosis consists of two very different disorders: neurofibromatosis type 1 (NF1) and neurofibromatosis type 2 (NF2).</string>
+    
+    <key>Nervine</key>
+	<string>A nerve tonic, a medicine that acts therapeutically upon the nerves, particularly in the sense of a sedative that serves to calm ruffled nerves.The word nervine comes from the Latin nervinus, belonging to a sinew. Nervine travelled across the Channel from France to 17th-century England. There it was first applied to the sinews. That is not illogical because the Latin nervinus derives from nervus meaning "a sinew, tendon, thong, string (as a bowstring), or wire." In ancient anatomy the Romans (and Greeks) did not distinguish between and tendons and nerves. The name "nervus" referred to any white cordlike structure, whether it be a band of connective tissue or a fiber in the nervous system.</string>
+    
+    <key>Oophoritis</key>
+	<string>Inflammation of the ovary, or egg sac.</string>
+    
+    <key>Osteochondroma</key>
+	<string>An abnormal, solitary, benign growth of bone and cartilage, typically at the end of a long bone. Osteochondromas are usually discovered in persons 15 to 25 years of age and are the most common benign bone tumor. An osteochondroma is typically detected when the area around it is injured or when it becomes large.</string>
+    
+    <key>Ophthalmitis</key>
+	<string>Inflammation of the eye. Also known as ophthalmia.</string>
+    
+    <key>Opisthotonos</key>
+	<string>A great rigid spasm of the body, with the back fully arched and the heels and head bent back. Opisthotonos occurs in meningitis, especially in infants, due to irritation of the membranes surrounding the brain and spinal cord. It also occurs with depressed brain function and injury to the brain. Opisthotonos is an ominous neurologic sign.</string>
+    
+    <key>Onycholysis</key>
+	<string>Loosening of a nail from the nail bed, usually starting at the border of the nail. The nail tends to turn whitish or yellowish, reflecting the presence of air under it. The treatment is to trim the nail short, not to clean under the nail, and to be patient.</string>
+    
+    <key>Pagetic</key>
+	<string>Pertaining to Paget disease, a chronic disorder that typically results in enlarged, deformed bones due to excessive breakdown and formation of bone tissue that can cause bones to weaken and may result in bone pain, arthritis, bony deformities and fractures. Pagetic bone has a characteristic appearance on X-rays.</string>
+    
+    <key>Palliate</key>
+	<string>To treat partially and incompletely. To palliate a diseases is to treat it partially but not cure it completely. Palliation cloaks a disease. Palliate has several senses, including: to reduce the severity of (a disease); to moderate the intensity of something; and to cover by excuses and apologies. The Latin "pallium" referred to a type of cloak in ancient Greece and Rome and, later, to a white woolen band with pendants in front and back worn by the pope or an archbishop as a symbol of full episcopal authority.</string>
+    
+    <key>Pallidum</key>
+	<string>Part of what are called the basal ganglia of the brain which consist of the globus pallidus and the ventral pallidum. The globus pallidus itself is a pale-appearing spherical area in the brain. (Globus is a Latin word meaning a globe or sphere. Pallidus refers to its pallor relative to the surrounding brain substance.) The globus pallidus is specifically part of what is called the lentiform nucleus which, in turn, is part of the striate body, a component of the basal ganglia, large masses of gray matter at the base of the cerebral hemispheres of the brain.</string>
+    
+    <key>Panuveitis</key>
+	<string>a serious inflammation of the uveal tract of the eye. The uveal tract includes the iris, the ciliary body, and the choroid. Panuveitis also typically involves the retina and the vitreous humor. Panuveitis can be caused by infections, chronic inflammatory diseases, or its cause may be unknown. Uveitis is a major cause of blindness worldwide. Panuveitis is most common in Asia, Africa, and South American than in other parts of the world.</string>
+    
+    <key>Quadriceps</key>
+	<string>Although the term "quadriceps" technically may refer to any four-headed muscle, it usually refers to and is synonymous with the quadriceps muscle of the thigh, the large muscle that comes down the femur (the bone of the upper leg), goes over the patella (the kneecap) and anchors into the top of thetibia (the big bone in the lower leg). The function of the quadriceps is to extend (to straighten out) the leg.</string>
+    
+    <key>Qualify</key>
+	<string>In medicine, to finish training and be eligible for certification examination or licensure.</string>
+    
+    <key>Qualitative</key>
+	<string>Having to do with quality. In contrast to quantitative (which pertains to quantity, the amount).</string>
+    
+    <key>Quantitative</key>
+	<string>Having to do with quantity or with the amount.</string>
+    
+    <key>Quarantine</key>
+	<string>A period of isolation decreed to control the spread of infectious disease. Before the era of antibiotics and other medications, quarantine was one of the few available means for halting the spread of infectious diseases.</string>
+    
+    <key>Rabies</key>
+	<string>A potentially fatal viral infection that attacks the central nervous system. Rabies is carried by wild animals (particularly bats and raccoons) and finds its way to humans by many routes. </string>
+    
+    <key>Radial</key>
+	<string>A word with diverse meanings in medicine and the biomedical sciences:
+        1.	Pertaining to the radius, the smaller bone in the forearm. The radial artery is so named because of its proximity to the radius.
+        2.	Pertaining to the radius of a circle.
+        3.	Spreading from a central point. A radial keratotomy is an eye operation in which incisions are made in the cornea that resemble the spokes in a wheel.
+        The word "radial" comes from the Latin "radius" meaning a spoke in a wheel which this bone was thought to resemble. The word "radiation" is derived from the same Latin word -- "radius."</string>
+    
+    <key>Radiolucent</key>
+	<string>Permeable to one or another form of radiation, such as X-rays. Radiolucent objects do not block radiation but let it pass. Plastic is usually radiolucent. The opposite of radiolucent is radiopaque.</string>
+    
+    <key>Spastic colon</key>
+	<string>A term sometimes used to refer to irritable bowel syndrome (IBS). Although the term "spastic" colon implies the occurrence of muscle contractions, or spasms, in the large bowel , this may not hold true for all cases of IBS. See also irritable bowel syndrome.</string>
+    
+    <key>Spondylosis</key>
+	<string>Degeneration of the disc spaces between the vertebrae. Spondylosis is common with aging and affects virtually everyone to some degree after the age of 60 years. When severe, it can cause local pain and decreased range of motion of the spine, requiring pain and/or anti-inflammatory medications.</string>
+    
+    <key>Stasis ulcer</key>
+	<string>A stasis ulcer is an ulcer (a crater) that develops in an area in which the circulation is sluggish and the venous return (the return of venous blood toward the heart) is poor. A common location for stasis ulcers is on the ankle. Stasis refers to a stoppage or slowdown in the flow of blood (or other body fluid such as lymph).</string>
+    
+    <key>Tetanus</key>
+	<string>An often fatal infectious disease that is caused by the bacterium Clostridium tetani, which usually enters the body through a puncture, a cut, or an open wound. Tetanus leads to profound painful spasms of muscles, including 'locking' of the jaw so that the mouth cannot open, and death. Prevention involves immediately cleaning and covering any open wound and getting a tetanus vaccination. Regular boosters are necessary to ensure immunity.</string>
+    
+    <key>Thymoma</key>
+	<string>A rare type of tumor that is the most common tumor type located in the area in the center of the chest between the lungs (the anterior mediastinum). Thymomas originate from epithelial cells in the thymus, a gland located behind the breast bone in the mediastinum, which is responsible for the development of many immunologic functions in early life.  Cancers of the thymus (thymic carcinomas) have a much greater tendency to spread to other areas of the body than thymomas. Myasthenia gravis and also other autoimmune diseases have been associated with thymoma.</string>
+    
+    <key>Tumor</key>
+	<string>An abnormal mass of tissue. Tumors are a classic sign of inflammation, and can be benign or malignant (cancerous). There are dozens of different types of tumors. Their names usually reflect the kind of tissue they arise in, and may also tell you something about their shape or how they grow. Treatment is also specific to the location and type of the tumor. Benign tumors can sometimes simply be ignored, or they may be reduced in size (debulked) or removed entirely via surgery. For cancerous tumors, options include chemotherapy, radiation, and surgery.</string>
+    
+    <key>Ulcer</key>
+	<string>A lesion that is eroding away the skin or mucous membrane. Ulcers can have various causes, depending on their location. Ulcers on the skin are usually due to irritation, as in the case of bedsores, and may become inflamed and/or infected as they grow. Ulcers in the gastrointestinal tract were once attributed to stress, but most are now believed to be due to infection with the bacterium Helicobacter pylori. GI ulcers, however, are often made worse by stress, smoking, and other noninfectious factors.</string>
+    
+    <key>Urticaria</key>
+	<string>Another name for the hives. Raised, itchy areas of skin that are usually a sign of an allergic reaction. Hives can be rounded or flat-topped but are always elevated above the surrounding skin. They reflect circumscribed dermal edema (local swelling of the skin). The hives are usually well circumscribed but may be coalescent and will blanch with pressure. The hives typically last less than 4 hours but they may stay for days or weeks.</string>
+    
+    <key>Undulant fever</key>
+	<string>An infectious disease due to the bacteria Brucella that characteristically causes rising and falling fevers, sweats, malaise, weakness, anorexia, headache, myalgia (muscle pain) and back pain.The disease is called undulant fever because the fever is typically undulant, rising and falling like a wave. It is also called brucellosis after its bacterial cause.The disease is transmitted through contaminated and untreated milk and milk products and by direct contact with infected animals (cattle, sheep, goats, pigs, camels, buffaloes, wild ruminants and, very recently, seals), and animal carcasses. Transmission can be through abrasions of the skin from handling infected animals.</string>
+    
+    <key>Varicella</key>
+	<string>A highly infectious viral disease, known familiarly as chickenpox. (In many countries, this disease is always called "varicella.")The name was meant to distinguish this "weak" form of the pox from smallpox.  However, there can be very major problems from chickenpox including pneumonia and encephalitis. Reactivation of the same herpes virus is responsible for shingles (zoster). Chickenpox is responsible for more deaths than measles (rubeola), mumps, whooping cough (pertussis) and H. flu (Haemophilus influenzae type B) meningitis combined. Contrary to what many people believe, chickenpox is by no means a mild disease.</string>
+    
+    <key>Viral infection</key>
+	<string>Infection caused by the presence of a virus in the body. Depending on the virus and the person's state of health, various viruses can infect almost any type of body tissue, from the brain to the skin. Viral infections cannot be treated with antibiotics; in fact, in some cases the use of antibiotics makes the infection worse. The vast majority of human viral infections can be effectively fought by the body's own immune system, with a little help in the form of proper diet, hydration, and rest. As for the rest, treatment depends on the type and location of the virus, and may include anti-viral or other drugs.</string>
+    
+    <key>Vasodepressor syncope</key>
+	<string>The temporary loss of consciousness in a particular kind of situation.. The situations that trigger this reaction are diverse and include having blood drawn, straining while urinating or defecating or coughing. The reaction also can be due to the emotional stress of fear or pain.
+        In these situations, people subject to vasodepressor syncope often become pale and feel nauseated, sweaty, and weak just before they lose consciousness.Vasodepressor syncope is caused a reflex of the involuntary nervous system called the vasovagal reaction. The vasovagal reaction leads the heart to slow down (bradycardia) and, at the same time, it leads the nerves to the blood vessels in the legs to permit those vessels to dilate (widen). The result is that the heart puts out less blood, the blood pressure drops, and what blood is circulating tends to go into the legs rather than to the head. The brain is deprived of oxygen and the fainting episode occurs.</string>
+    
+    <key>Water</key>
+	<string>1. A tasteless odorless colorless liquid with the chemical formula H2O.
+        2. The liquid which forms rain, rivers, and the sea and makes up a large part of the bodies of most organisms, including humans.
+        3. The amniotic fluid, as in the bag of waters.
+        4. The cerebrospinal fluid, especially under increased pressure, as in water on the brain.</string>
+    
+    <key>Weight loss</key>
+	<string>Weight loss is a decrease in body weight resulting from either voluntary (diet, exercise) or involuntary (illness) circumstances. Most instances of weight loss arise due to the loss of body fat, but in cases of extreme or severe weight loss, protein and other substances in the body can also be depleted. Examples of involuntary weight loss include the weight loss associated with cancer, malabsorption (such as from chronic diarrheal illnesses ), and chronic inflammation (such as with rheumatoid arthritis)</string>
+    
+    <key>Word blindness</key>
+	<string>A neurological disorder characterized by loss of the ability to read or understand the written word. Word blindness is a complex visual disturbance resulting from disease in the visual-association areas at the back of the brain. </string>
+    
+    <key>X, factor</key>
+	<string>A coagulation factor, a substance in blood essential to the normal clotting process. Production of factor X takes place in the liver and requires vitamin K. The gene for factor X is located on chromosome 13 and is in band 13q34.
+        Xerophthalmia: Dry eyes. Xerophthalmia can be associated with systemic diseases, such as Sjogren's syndrome, systemic lupus erythematosus, andrheumatoid arthritis; deficiency of vitamin A; and use of some medications. It results from inadequate function of the lacrimal glands, which produce tears. When xerophthalmia is due to vitamin A deficiency, the condition begins with night blindness and conjunctival xerosis (dryness of the eye membranes), progresses to corneal xerosis (dryness of the cornea), and in its late stages develops into keratomalacia (softening of the cornea).</string>
+    
+    <key>X chromosome</key>
+	<string>The sex chromosome that is found twice in normal females and singly, along with a Y chromosome, in normal males. The completechromosome complement consists of 46 chromosomes, including the 2 sex chromosomes, and is thus conventionally written as 46,XX for chromosomally normal females and 46,XY for chromosomally normal males.</string>
+    
+    <key>Yersiniosis</key>
+	<string>An infectious disease caused by a bacterium called Yersinia enterocolitica (and, less often, other forms of Yersinia). The infection can cause a variety of symptoms depending on the age of the person infected. Common symptoms in children (who most often contract the disease) are fever, abdominal pain, and diarrhea, which is often bloody.</string>
+    
+    <key>Yeast</key>
+	<string>A group of single-celled fungi that reproduce by budding.Most yeast are harmless (some are used in baking and brewing). Yeast is commonly present on normal human skin and in areas of moisture, such as the mouth and vagina, usually without causing any problems.However, yeast can produce disease in people.</string>
+    
+    <key>Yersinia</key>
+	<string>A group of bacteria that appear rod-like under the microscope and include Yersinia pestis (the cause of the bubonic and pneumonic plague), Yersinia entercolitica (the cause of a disease called yersinosis), and Yersinia pseudotuberculosis (which causes a condition called mesenteric adenitis, particularly in immunocompromised patients). Both Y. entercolitica and Y. pseudotuberculosis have also been implicated in a viral form of arthritis. Infection with Yersinia bacteria can be treated with antibiotics.</string>
+    
+    <key>Zebra</key>
+	<string>In medicine, a very unlikely diagnostic possibility. It comes from an old saying used in teaching medical students about how to think logically in regard to the differential diagnosis: 'When you hear hoof beats, think of horses, not zebras.' For example, when someone develops a mild transient cough, a virus infection is the most logical and likely cause, and tuberculosis is a zebra.</string>
+    
+    <key>Zinc</key>
+	<string>A mineral that is essential to the body and is a constituent of many enzymes that permit chemical reactions to proceed at normal rates. Zinc is involved in the manufacture of protein (protein synthesis) and in cell division. Zinc is also a constituent of insulin, and it is involved with the sense of smell. Food sources of zinc include meat, particularly liver and seafood; eggs; nuts; and cereal grains.</string>
+    
+    <key>Zoophobia</key>
+	<string>An abnormal and persistent fear of animals. Zoophobia is a term that encompasses fears of specific types of animals such as of spiders (arachnophobia), birds (ornithophobia), bees (apiphobia), etc. It is a zoo-ful of beastly phobias.</string>
+
+    <key>Zygote</key>
+	<string>The cell formed by the union of a male sex cell (a sperm) and a female sex cell (an ovum). The zygote develops into the embryo following the instruction encoded in its genetic material, the DNA.
+        The unification of a sperm and an ovum to form a zygote constitutes fertilization.tissue. Xanthelasma typically appears in or near the eyelids.</string>
+</dict>
+</plist>
