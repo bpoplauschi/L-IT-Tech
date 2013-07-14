@@ -19,6 +19,8 @@
 		6703628D178C766100836DCE /* LITPersonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6703628C178C766100836DCE /* LITPersonManager.m */; };
 		670E7BC1178C70E00053BD68 /* workout_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 670E7BBD178C70E00053BD68 /* workout_large.png */; };
 		670E7BC2178C70E00053BD68 /* workout_large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 670E7BBE178C70E00053BD68 /* workout_large@2x.png */; };
+		6779A0DA179301270022E184 /* LITAlcoholTesterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6779A0D8179301270022E184 /* LITAlcoholTesterViewController.m */; };
+		6779A0DB179301270022E184 /* LITAlcoholTesterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6779A0D9179301270022E184 /* LITAlcoholTesterViewController.xib */; };
 		677F99921779A4B900D42449 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677F99911779A4B900D42449 /* UIKit.framework */; };
 		677F99941779A4B900D42449 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677F99931779A4B900D42449 /* Foundation.framework */; };
 		677F99961779A4B900D42449 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677F99951779A4B900D42449 /* CoreGraphics.framework */; };
@@ -70,8 +72,6 @@
 		67A77CB01790549D00D9C1CC /* heartRate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A77CAE1790549D00D9C1CC /* heartRate@2x.png */; };
 		67AC89111781B95100373159 /* LITMedicalDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC890F1781B95000373159 /* LITMedicalDictionaryViewController.m */; };
 		67AC89121781B95100373159 /* LITMedicalDictionaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67AC89101781B95000373159 /* LITMedicalDictionaryViewController.xib */; };
-		67AC89161781B9EB00373159 /* LITAlcoholTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC89141781B9EB00373159 /* LITAlcoholTestViewController.m */; };
-		67AC89171781B9EB00373159 /* LITAlcoholTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67AC89151781B9EB00373159 /* LITAlcoholTestViewController.xib */; };
 		67AC891B1781BA8D00373159 /* LITCalorieCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC89191781BA8D00373159 /* LITCalorieCalculatorViewController.m */; };
 		67AC891C1781BA8D00373159 /* LITCalorieCalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67AC891A1781BA8D00373159 /* LITCalorieCalculatorViewController.xib */; };
 		67AC89201781BB3800373159 /* LITSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC891E1781BB3600373159 /* LITSettingsViewController.m */; };
@@ -100,6 +100,9 @@
 		670E7BBD178C70E00053BD68 /* workout_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = workout_large.png; sourceTree = "<group>"; };
 		670E7BBE178C70E00053BD68 /* workout_large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout_large@2x.png"; sourceTree = "<group>"; };
 		6779A0D61792FE8D0022E184 /* todo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = todo.txt; path = LITTech/todo.txt; sourceTree = "<group>"; };
+		6779A0D7179301270022E184 /* LITAlcoholTesterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITAlcoholTesterViewController.h; sourceTree = "<group>"; };
+		6779A0D8179301270022E184 /* LITAlcoholTesterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITAlcoholTesterViewController.m; sourceTree = "<group>"; };
+		6779A0D9179301270022E184 /* LITAlcoholTesterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITAlcoholTesterViewController.xib; sourceTree = "<group>"; };
 		677F998E1779A4B900D42449 /* LITTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LITTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		677F99911779A4B900D42449 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		677F99931779A4B900D42449 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -165,9 +168,6 @@
 		67AC890E1781B95000373159 /* LITMedicalDictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITMedicalDictionaryViewController.h; sourceTree = "<group>"; };
 		67AC890F1781B95000373159 /* LITMedicalDictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITMedicalDictionaryViewController.m; sourceTree = "<group>"; };
 		67AC89101781B95000373159 /* LITMedicalDictionaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITMedicalDictionaryViewController.xib; sourceTree = "<group>"; };
-		67AC89131781B9EA00373159 /* LITAlcoholTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITAlcoholTestViewController.h; sourceTree = "<group>"; };
-		67AC89141781B9EB00373159 /* LITAlcoholTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITAlcoholTestViewController.m; sourceTree = "<group>"; };
-		67AC89151781B9EB00373159 /* LITAlcoholTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITAlcoholTestViewController.xib; sourceTree = "<group>"; };
 		67AC89181781BA8C00373159 /* LITCalorieCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITCalorieCalculatorViewController.h; sourceTree = "<group>"; };
 		67AC89191781BA8D00373159 /* LITCalorieCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITCalorieCalculatorViewController.m; sourceTree = "<group>"; };
 		67AC891A1781BA8D00373159 /* LITCalorieCalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITCalorieCalculatorViewController.xib; sourceTree = "<group>"; };
@@ -347,9 +347,6 @@
 				67AC890E1781B95000373159 /* LITMedicalDictionaryViewController.h */,
 				67AC890F1781B95000373159 /* LITMedicalDictionaryViewController.m */,
 				67AC89101781B95000373159 /* LITMedicalDictionaryViewController.xib */,
-				67AC89131781B9EA00373159 /* LITAlcoholTestViewController.h */,
-				67AC89141781B9EB00373159 /* LITAlcoholTestViewController.m */,
-				67AC89151781B9EB00373159 /* LITAlcoholTestViewController.xib */,
 				67AC89181781BA8C00373159 /* LITCalorieCalculatorViewController.h */,
 				67AC89191781BA8D00373159 /* LITCalorieCalculatorViewController.m */,
 				67AC891A1781BA8D00373159 /* LITCalorieCalculatorViewController.xib */,
@@ -377,6 +374,9 @@
 				67A77CA817904E7F00D9C1CC /* LITPulseCalculatorViewController.h */,
 				67A77CA917904E7F00D9C1CC /* LITPulseCalculatorViewController.m */,
 				67A77CAA17904E7F00D9C1CC /* LITPulseCalculatorViewController.xib */,
+				6779A0D7179301270022E184 /* LITAlcoholTesterViewController.h */,
+				6779A0D8179301270022E184 /* LITAlcoholTesterViewController.m */,
+				6779A0D9179301270022E184 /* LITAlcoholTesterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -503,7 +503,6 @@
 				677F9A191779AC1800D42449 /* settings.png in Resources */,
 				677F9A1A1779AC1800D42449 /* settings@2x.png in Resources */,
 				67AC89121781B95100373159 /* LITMedicalDictionaryViewController.xib in Resources */,
-				67AC89171781B9EB00373159 /* LITAlcoholTestViewController.xib in Resources */,
 				67AC891C1781BA8D00373159 /* LITCalorieCalculatorViewController.xib in Resources */,
 				67AC89211781BB3800373159 /* LITSettingsViewController.xib in Resources */,
 				679F2C061782B2D000E7682C /* Icon.png in Resources */,
@@ -537,6 +536,7 @@
 				67A77CAC17904E8000D9C1CC /* LITPulseCalculatorViewController.xib in Resources */,
 				67A77CAF1790549D00D9C1CC /* heartRate.png in Resources */,
 				67A77CB01790549D00D9C1CC /* heartRate@2x.png in Resources */,
+				6779A0DB179301270022E184 /* LITAlcoholTesterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,7 +552,6 @@
 				677F99FE1779A6A900D42449 /* LITBaseViewController.m in Sources */,
 				677F9A041779A74100D42449 /* LITPersonalFileViewController.m in Sources */,
 				67AC89111781B95100373159 /* LITMedicalDictionaryViewController.m in Sources */,
-				67AC89161781B9EB00373159 /* LITAlcoholTestViewController.m in Sources */,
 				67AC891B1781BA8D00373159 /* LITCalorieCalculatorViewController.m in Sources */,
 				67AC89201781BB3800373159 /* LITSettingsViewController.m in Sources */,
 				679F2C181782C6E100E7682C /* LITPerson.m in Sources */,
@@ -567,6 +566,7 @@
 				67A77C941790391500D9C1CC /* LITRuffierViewController.m in Sources */,
 				67A77CA61790475700D9C1CC /* LITDaltonismTestViewController.m in Sources */,
 				67A77CAB17904E8000D9C1CC /* LITPulseCalculatorViewController.m in Sources */,
+				6779A0DA179301270022E184 /* LITAlcoholTesterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

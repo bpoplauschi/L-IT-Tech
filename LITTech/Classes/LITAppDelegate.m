@@ -8,7 +8,7 @@
 
 #import "LITAppDelegate.h"
 #import "LITPersonalFileViewController.h"
-#import "LITAlcoholTestViewController.h"
+#import "LITAlcoholTesterViewController.h"
 #import "LITCalorieCalculatorViewController.h"
 #import "LITSettingsViewController.h"
 #import "LITEditPersonViewController.h"
@@ -27,18 +27,21 @@
     UINavigationController *personalFileViewNavCtlr = [[UINavigationController alloc] initWithRootViewController:personalFileViewController];
     personalFileViewNavCtlr.navigationBar.barStyle = UIBarStyleBlack;
     
-    UIViewController *alcoholTesterViewController = [[LITAlcoholTestViewController alloc] initWithNibName:@"LITAlcoholTestViewController" bundle:nil];
-    UIViewController *calorieCalculatorViewController = [[LITCalorieCalculatorViewController alloc] initWithNibName:@"LITCalorieCalculatorViewController" bundle:nil];
+    LITAlcoholTesterViewController *alcoholTesterViewController = [[LITAlcoholTesterViewController alloc] initWithNibName:@"LITAlcoholTesterViewController" bundle:nil];
+    UINavigationController *alcoholTesterNavCtlr = [[UINavigationController alloc] initWithRootViewController:alcoholTesterViewController];
+    alcoholTesterNavCtlr.navigationBar.barStyle = UIBarStyleBlack;
+    
+    LITCalorieCalculatorViewController *calorieCalculatorViewController = [[LITCalorieCalculatorViewController alloc] initWithNibName:@"LITCalorieCalculatorViewController" bundle:nil];
     UINavigationController *calorieCalculatorNavCtlr = [[UINavigationController alloc] initWithRootViewController:calorieCalculatorViewController];
     calorieCalculatorNavCtlr.navigationBar.barStyle = UIBarStyleBlack;
     
-    UIViewController *firstAidViewController = [[LITFirstAidViewController alloc] initWithNibName:@"LITFirstAidViewController" bundle:nil];
+    LITFirstAidViewController *firstAidViewController = [[LITFirstAidViewController alloc] initWithNibName:@"LITFirstAidViewController" bundle:nil];
     UINavigationController *firstAidNavCtlr = [[UINavigationController alloc] initWithRootViewController:firstAidViewController];
     firstAidNavCtlr.navigationBar.barStyle = UIBarStyleBlack;
     
     UIViewController *settingsViewController = [[LITSettingsViewController alloc] initWithNibName:@"LITSettingsViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[personalFileViewNavCtlr, calorieCalculatorNavCtlr, alcoholTesterViewController, firstAidNavCtlr, settingsViewController];
+    self.tabBarController.viewControllers = @[personalFileViewNavCtlr, calorieCalculatorNavCtlr, alcoholTesterNavCtlr, firstAidNavCtlr, settingsViewController];
     
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];

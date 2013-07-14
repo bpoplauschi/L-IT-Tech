@@ -1,4 +1,3 @@
-Alcohol test
 Translations (check all string are english)
 first aid
 settings
@@ -6,7 +5,13 @@ age bug on device???
 choose person
 edit person
 delete person
+complete medical dictionary
 
 
 App Name -> see email
 demo movie
+
+
+!!!test on iphone 5 simulator and device
+
+make build
