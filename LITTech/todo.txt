@@ -4,7 +4,6 @@ age bug on device???
 choose person
 edit person
 delete person
-complete medical dictionary
 workout icons - low priority
 
 

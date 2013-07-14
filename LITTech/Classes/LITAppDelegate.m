@@ -40,8 +40,11 @@
     medDictNavCtlr.navigationBar.barStyle = UIBarStyleBlack;
     
     UIViewController *settingsViewController = [[LITSettingsViewController alloc] initWithNibName:@"LITSettingsViewController" bundle:nil];
+    UINavigationController *settingsNavCtlr = [[UINavigationController alloc] initWithRootViewController:settingsViewController];
+    settingsNavCtlr.navigationBar.barStyle = UIBarStyleBlack;
+    
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[personalFileViewNavCtlr, calorieCalculatorNavCtlr, alcoholTesterNavCtlr, medDictNavCtlr, settingsViewController];
+    self.tabBarController.viewControllers = @[personalFileViewNavCtlr, calorieCalculatorNavCtlr, alcoholTesterNavCtlr, medDictNavCtlr, settingsNavCtlr];
     
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];

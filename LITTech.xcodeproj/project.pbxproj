@@ -48,6 +48,10 @@
 		67855BBD1782D41900DA05C1 /* LITInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67855BBC1782D41900DA05C1 /* LITInputTableViewCell.m */; };
 		679C8498179314B700F38FDE /* final.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 679C8497179314B700F38FDE /* final.pdf */; };
 		679C849A1793223B00F38FDE /* MedDex.plist in Resources */ = {isa = PBXBuildFile; fileRef = 679C84991793223B00F38FDE /* MedDex.plist */; };
+		679C849D17932E8100F38FDE /* jaye_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 679C849B17932E8100F38FDE /* jaye_logo.png */; };
+		679C849E17932E8100F38FDE /* jaye_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 679C849C17932E8100F38FDE /* jaye_logo@2x.png */; };
+		679C84A21793301F00F38FDE /* LITAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679C84A01793301E00F38FDE /* LITAboutViewController.m */; };
+		679C84A31793301F00F38FDE /* LITAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 679C84A11793301F00F38FDE /* LITAboutViewController.xib */; };
 		679F2C061782B2D000E7682C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 679F2C021782B2D000E7682C /* Icon.png */; };
 		679F2C071782B2D000E7682C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 679F2C031782B2D000E7682C /* Icon@2x.png */; };
 		679F2C081782B2D000E7682C /* icon512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 679F2C041782B2D000E7682C /* icon512x512.png */; };
@@ -138,6 +142,11 @@
 		67855BBC1782D41900DA05C1 /* LITInputTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITInputTableViewCell.m; sourceTree = "<group>"; };
 		679C8497179314B700F38FDE /* final.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = final.pdf; sourceTree = "<group>"; };
 		679C84991793223B00F38FDE /* MedDex.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MedDex.plist; sourceTree = "<group>"; };
+		679C849B17932E8100F38FDE /* jaye_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jaye_logo.png; sourceTree = "<group>"; };
+		679C849C17932E8100F38FDE /* jaye_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jaye_logo@2x.png"; sourceTree = "<group>"; };
+		679C849F1793301E00F38FDE /* LITAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITAboutViewController.h; sourceTree = "<group>"; };
+		679C84A01793301E00F38FDE /* LITAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITAboutViewController.m; sourceTree = "<group>"; };
+		679C84A11793301F00F38FDE /* LITAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITAboutViewController.xib; sourceTree = "<group>"; };
 		679F2C021782B2D000E7682C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		679F2C031782B2D000E7682C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		679F2C041782B2D000E7682C /* icon512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon512x512.png; sourceTree = "<group>"; };
@@ -280,6 +289,8 @@
 				6703627E178C74EA00836DCE /* meal_large@2x.png */,
 				670E7BBD178C70E00053BD68 /* workout_large.png */,
 				670E7BBE178C70E00053BD68 /* workout_large@2x.png */,
+				679C849B17932E8100F38FDE /* jaye_logo.png */,
+				679C849C17932E8100F38FDE /* jaye_logo@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -375,6 +386,9 @@
 				6779A0D7179301270022E184 /* LITAlcoholTesterViewController.h */,
 				6779A0D8179301270022E184 /* LITAlcoholTesterViewController.m */,
 				6779A0D9179301270022E184 /* LITAlcoholTesterViewController.xib */,
+				679C849F1793301E00F38FDE /* LITAboutViewController.h */,
+				679C84A01793301E00F38FDE /* LITAboutViewController.m */,
+				679C84A11793301F00F38FDE /* LITAboutViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -536,6 +550,9 @@
 				6779A0DB179301270022E184 /* LITAlcoholTesterViewController.xib in Resources */,
 				679C8498179314B700F38FDE /* final.pdf in Resources */,
 				679C849A1793223B00F38FDE /* MedDex.plist in Resources */,
+				679C849D17932E8100F38FDE /* jaye_logo.png in Resources */,
+				679C849E17932E8100F38FDE /* jaye_logo@2x.png in Resources */,
+				679C84A31793301F00F38FDE /* LITAboutViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +582,7 @@
 				67A77CA61790475700D9C1CC /* LITDaltonismTestViewController.m in Sources */,
 				67A77CAB17904E8000D9C1CC /* LITPulseCalculatorViewController.m in Sources */,
 				6779A0DA179301270022E184 /* LITAlcoholTesterViewController.m in Sources */,
+				679C84A21793301F00F38FDE /* LITAboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,7 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
-    self.navigationItem.title = NSLocalizedString(@"Pulse", @"");
+    self.navigationItem.title = NSLocalizedString(@"Heart Rate", @"");
     
     UIBarButtonItem *calculateButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Calculate", @"")
                                                                         style:UIBarButtonItemStyleDone
@@ -72,7 +72,7 @@
 - (LITInputTableViewCell *)pulseCell {
     if (!_pulseCell) {
         _pulseCell = [[LITInputTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"pulse1"];
-        _pulseCell.textLabel.text = NSLocalizedString(@"Enter pulse value", @"");
+        _pulseCell.textLabel.text = NSLocalizedString(@"Enter heart rate", @"");
 		_pulseCell.textField.keyboardType = UIKeyboardTypeNumberPad;
         _pulseCell.detailTextLabel.text = @"example: 12";
         _pulseCell.textField.textColor = [UIColor lightGrayColor];

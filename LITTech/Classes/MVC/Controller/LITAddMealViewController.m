@@ -228,7 +228,7 @@
             }
             NSDictionary *itemDict = [self.currentMealItems objectAtIndex:indexPath.row - 1];
             
-            cell.textLabel.text = [NSString stringWithFormat:@"%d g/ml of %@", [[itemDict valueForKey:@"quantity"] intValue], [itemDict valueForKey:@"item"]];
+            cell.textLabel.text = [NSString stringWithFormat:@"%@ (%d g/ml)", [itemDict valueForKey:@"item"], [[itemDict valueForKey:@"quantity"] intValue]];
             cell.textLabel.font = [UIFont systemFontOfSize:16];
             cell.textLabel.textColor = [UIColor grayColor];
             cell.detailTextLabel.text = [NSString stringWithFormat:@"%d calories", [[itemDict valueForKey:@"calories"] intValue]];
