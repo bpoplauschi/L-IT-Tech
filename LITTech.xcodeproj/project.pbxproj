@@ -46,6 +46,7 @@
 		67855BB91782CFF700DA05C1 /* LITEditPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67855BB71782CFF700DA05C1 /* LITEditPersonViewController.m */; };
 		67855BBA1782CFF700DA05C1 /* LITEditPersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67855BB81782CFF700DA05C1 /* LITEditPersonViewController.xib */; };
 		67855BBD1782D41900DA05C1 /* LITInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67855BBC1782D41900DA05C1 /* LITInputTableViewCell.m */; };
+		679C8498179314B700F38FDE /* final.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 679C8497179314B700F38FDE /* final.pdf */; };
 		679F2C061782B2D000E7682C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 679F2C021782B2D000E7682C /* Icon.png */; };
 		679F2C071782B2D000E7682C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 679F2C031782B2D000E7682C /* Icon@2x.png */; };
 		679F2C081782B2D000E7682C /* icon512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 679F2C041782B2D000E7682C /* icon512x512.png */; };
@@ -78,8 +79,6 @@
 		67AC89211781BB3800373159 /* LITSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67AC891F1781BB3700373159 /* LITSettingsViewController.xib */; };
 		67B0EC1F178435D500ECB143 /* dict.png in Resources */ = {isa = PBXBuildFile; fileRef = 67B0EC1D178435D500ECB143 /* dict.png */; };
 		67B0EC20178435D500ECB143 /* dict@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67B0EC1E178435D500ECB143 /* dict@2x.png */; };
-		67B0EC241784360900ECB143 /* LITFirstAidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B0EC221784360800ECB143 /* LITFirstAidViewController.m */; };
-		67B0EC251784360900ECB143 /* LITFirstAidViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67B0EC231784360800ECB143 /* LITFirstAidViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +135,7 @@
 		67855BB81782CFF700DA05C1 /* LITEditPersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITEditPersonViewController.xib; sourceTree = "<group>"; };
 		67855BBB1782D41900DA05C1 /* LITInputTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITInputTableViewCell.h; sourceTree = "<group>"; };
 		67855BBC1782D41900DA05C1 /* LITInputTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITInputTableViewCell.m; sourceTree = "<group>"; };
+		679C8497179314B700F38FDE /* final.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = final.pdf; sourceTree = "<group>"; };
 		679F2C021782B2D000E7682C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		679F2C031782B2D000E7682C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		679F2C041782B2D000E7682C /* icon512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon512x512.png; sourceTree = "<group>"; };
@@ -177,9 +177,6 @@
 		67B0EC1C1784102200ECB143 /* LITConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LITConstants.h; sourceTree = "<group>"; };
 		67B0EC1D178435D500ECB143 /* dict.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dict.png; sourceTree = "<group>"; };
 		67B0EC1E178435D500ECB143 /* dict@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dict@2x.png"; sourceTree = "<group>"; };
-		67B0EC211784360800ECB143 /* LITFirstAidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITFirstAidViewController.h; sourceTree = "<group>"; };
-		67B0EC221784360800ECB143 /* LITFirstAidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITFirstAidViewController.m; sourceTree = "<group>"; };
-		67B0EC231784360800ECB143 /* LITFirstAidViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITFirstAidViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +243,7 @@
 		677F99CC1779A5ED00D42449 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				679C8497179314B700F38FDE /* final.pdf */,
 				677F99CD1779A5ED00D42449 /* InfoPlist.strings */,
 				677F99D31779A5ED00D42449 /* Icons */,
 				677F99D71779A5ED00D42449 /* Images */,
@@ -356,9 +354,6 @@
 				67855BB61782CFF700DA05C1 /* LITEditPersonViewController.h */,
 				67855BB71782CFF700DA05C1 /* LITEditPersonViewController.m */,
 				67855BB81782CFF700DA05C1 /* LITEditPersonViewController.xib */,
-				67B0EC211784360800ECB143 /* LITFirstAidViewController.h */,
-				67B0EC221784360800ECB143 /* LITFirstAidViewController.m */,
-				67B0EC231784360800ECB143 /* LITFirstAidViewController.xib */,
 				67036281178C75FE00836DCE /* LITAddWorkoutViewController.h */,
 				67036282178C75FE00836DCE /* LITAddWorkoutViewController.m */,
 				67036283178C75FE00836DCE /* LITAddWorkoutViewController.xib */,
@@ -516,7 +511,6 @@
 				67855BBA1782CFF700DA05C1 /* LITEditPersonViewController.xib in Resources */,
 				67B0EC1F178435D500ECB143 /* dict.png in Resources */,
 				67B0EC20178435D500ECB143 /* dict@2x.png in Resources */,
-				67B0EC251784360900ECB143 /* LITFirstAidViewController.xib in Resources */,
 				670E7BC1178C70E00053BD68 /* workout_large.png in Resources */,
 				670E7BC2178C70E00053BD68 /* workout_large@2x.png in Resources */,
 				6703627F178C74EA00836DCE /* meal_large.png in Resources */,
@@ -537,6 +531,7 @@
 				67A77CAF1790549D00D9C1CC /* heartRate.png in Resources */,
 				67A77CB01790549D00D9C1CC /* heartRate@2x.png in Resources */,
 				6779A0DB179301270022E184 /* LITAlcoholTesterViewController.xib in Resources */,
+				679C8498179314B700F38FDE /* final.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,7 +553,6 @@
 				679F2C1B1782C9AF00E7682C /* LITDataManager.m in Sources */,
 				67855BB91782CFF700DA05C1 /* LITEditPersonViewController.m in Sources */,
 				67855BBD1782D41900DA05C1 /* LITInputTableViewCell.m in Sources */,
-				67B0EC241784360900ECB143 /* LITFirstAidViewController.m in Sources */,
 				67036284178C75FE00836DCE /* LITAddWorkoutViewController.m in Sources */,
 				67036289178C763400836DCE /* LITAddMealViewController.m in Sources */,
 				6703628D178C766100836DCE /* LITPersonManager.m in Sources */,

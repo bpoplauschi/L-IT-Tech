@@ -1,11 +1,11 @@
 Translations (check all string are english)
-first aid
 settings
 age bug on device???
 choose person
 edit person
 delete person
 complete medical dictionary
+workout icons - low priority
 
 
 App Name -> see email

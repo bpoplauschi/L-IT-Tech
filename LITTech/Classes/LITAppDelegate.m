@@ -12,7 +12,7 @@
 #import "LITCalorieCalculatorViewController.h"
 #import "LITSettingsViewController.h"
 #import "LITEditPersonViewController.h"
-#import "LITFirstAidViewController.h"
+#import "LITMedicalDictionaryViewController.h"
 #import "LITConstants.h"
 
 #import "LITDataManager.h"
@@ -35,13 +35,13 @@
     UINavigationController *calorieCalculatorNavCtlr = [[UINavigationController alloc] initWithRootViewController:calorieCalculatorViewController];
     calorieCalculatorNavCtlr.navigationBar.barStyle = UIBarStyleBlack;
     
-    LITFirstAidViewController *firstAidViewController = [[LITFirstAidViewController alloc] initWithNibName:@"LITFirstAidViewController" bundle:nil];
-    UINavigationController *firstAidNavCtlr = [[UINavigationController alloc] initWithRootViewController:firstAidViewController];
-    firstAidNavCtlr.navigationBar.barStyle = UIBarStyleBlack;
+    LITMedicalDictionaryViewController *medDictViewController = [[LITMedicalDictionaryViewController alloc] initWithNibName:@"LITMedicalDictionaryViewController" bundle:nil];
+    UINavigationController *medDictNavCtlr = [[UINavigationController alloc] initWithRootViewController:medDictViewController];
+    medDictNavCtlr.navigationBar.barStyle = UIBarStyleBlack;
     
     UIViewController *settingsViewController = [[LITSettingsViewController alloc] initWithNibName:@"LITSettingsViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[personalFileViewNavCtlr, calorieCalculatorNavCtlr, alcoholTesterNavCtlr, firstAidNavCtlr, settingsViewController];
+    self.tabBarController.viewControllers = @[personalFileViewNavCtlr, calorieCalculatorNavCtlr, alcoholTesterNavCtlr, medDictNavCtlr, settingsViewController];
     
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];

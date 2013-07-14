@@ -8,7 +8,7 @@
 
 #import "LITMedicalDictionaryViewController.h"
 
-@interface LITMedicalDictionaryViewController () <UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface LITMedicalDictionaryViewController () <UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate, UIDocumentInteractionControllerDelegate>
 
 @property (nonatomic, strong) IBOutlet UISearchBar *searchBar;
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
@@ -16,6 +16,8 @@
 @property (nonatomic, strong) NSDictionary *words;
 @property (nonatomic, strong) NSArray *wordsArray;
 @property (nonatomic, strong) NSArray *filteredWordsArray;
+
+- (void)firstAidAction:(id)sender;
 
 @end
 
@@ -27,6 +29,8 @@
     if (self) {
         self.title = NSLocalizedString(@"Med Dex", @"");
         self.tabBarItem.image = [UIImage imageNamed:@"dict.png"];
+        
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"First Aid", @"") style:UIBarButtonItemStyleBordered target:self action:@selector(firstAidAction:)];
         
         _words = @{@"abces" : @"Colectie purulenta constituita, plecand de la un focar local de infectie, pe seama tesuturilor normale. Prin extensie se mai numeste abces sau empiem, colectia purulenta constituita intr-o cavitate seroasa (peritoneu, pleura, meninge). Abcesele se pot dezvolta in oricare punct al organismului. abcesul superficial, accesibil vederii si palparii este amplasat cel mai des la degete (panaritiu) sau pe marginea anusului dar si in gat, pe sezut, subsuoara sau pe partea ventrala. abcesul profund poate fi localizat la nivelul ficatului, rinichiului, creierului, plamanului. Gravitatea sa depinde de localizare: abcesul creierului, fiind asemanator cu tumora, poate provoca hipertensiune intracraniana. Dupa modul lor de constituire si dupa viteza de evolutie, se pot distinge abcesele calde de abcesele reci.",
                    @"balonare" : @"Simptom caracterizat prin marirea volumului abdomenului provocata de acumularea de gaze in stomac sau in intestin.",
@@ -98,6 +102,21 @@
     }
     
     [self.tableView reloadData];
+}
+
+- (void)firstAidAction:(id)sender {
+    NSString * path = [[NSBundle mainBundle] pathForResource:@"final" ofType:@"pdf"];
+    
+    
+    UIDocumentInteractionController *docIC = [UIDocumentInteractionController interactionControllerWithURL:[NSURL fileURLWithPath:path]];
+    docIC.delegate = self;
+    [docIC presentPreviewAnimated:YES];
+    
+    return;
+}
+
+- (UIViewController *)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *)controller {
+    return self;
 }
 
 @end
