@@ -17,5 +17,7 @@
 @property (nonatomic, strong) LITPerson *currentPerson;
 
 + (LITPersonManager *)sharedInstance;
+- (NSArray *)persons;
+- (void)selectPersonAtIndex:(int)index;
 
 @end

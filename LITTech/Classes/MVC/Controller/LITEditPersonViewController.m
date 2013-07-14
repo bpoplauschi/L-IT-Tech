@@ -169,7 +169,11 @@
     
     [[NSNotificationCenter defaultCenter] postNotificationName:kLITPersonUpdatedNotification object:nil];
     
-    [self.presentingViewController dismissModalViewControllerAnimated:YES];
+    if (self.isModal) {
+        [self.presentingViewController dismissModalViewControllerAnimated:YES];
+    } else {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
 }
 
 @end

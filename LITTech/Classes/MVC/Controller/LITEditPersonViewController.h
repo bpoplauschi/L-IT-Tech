@@ -10,4 +10,6 @@
 
 @interface LITEditPersonViewController : LITBaseViewController
 
+@property (nonatomic, assign, getter = isModal) BOOL modal;
+
 @end

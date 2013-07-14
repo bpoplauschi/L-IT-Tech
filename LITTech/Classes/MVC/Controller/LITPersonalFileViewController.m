@@ -14,6 +14,7 @@
 #import "LITRuffierViewController.h"
 #import "LITDaltonismTestViewController.h"
 #import "LITPulseCalculatorViewController.h"
+#import "LITPersonManager.h"
 
 
 @interface LITPersonalFileViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -63,19 +64,7 @@
 }
 
 - (void)personUpdated:(NSNotification *)inNotification {
-    NSArray *persons = [[LITDataManager sharedInstance] loadPersons];
-    if (persons.count) {
-        self.person = [persons objectAtIndex:0];
-    }
-    
     [self.tableView reloadData];
-}
-
-- (void)setPerson:(LITPerson *)person {
-    if (person != _person) {
-        _person = person;
-        [self.tableView reloadData];
-    }
 }
 
 #pragma mark - UITableViewDataSource methods
@@ -115,7 +104,7 @@
             return 8;
             break;
         case 3:
-            return self.person.events.count;
+            return [LITPersonManager sharedInstance].currentPerson.events.count;
             break;
         default:
             break;
@@ -133,7 +122,7 @@
         }
         
         cell.textLabel.text = NSLocalizedString(@"Name", @"");
-        cell.detailTextLabel.text = self.person.name;
+        cell.detailTextLabel.text = [LITPersonManager sharedInstance].currentPerson.name;
     } else if (1 == indexPath.section) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"personalInfoCell"];
         if (!cell) {
@@ -142,17 +131,17 @@
         
         if (0 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Sex", @"");
-            cell.detailTextLabel.text = self.person.isMale ? NSLocalizedString(@"Male", @"") : NSLocalizedString(@"Female", @"");
+            cell.detailTextLabel.text = [LITPersonManager sharedInstance].currentPerson.isMale ? NSLocalizedString(@"Male", @"") : NSLocalizedString(@"Female", @"");
         } else if (1 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Height", @"");
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"%d cm", self.person.height];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%d cm", [LITPersonManager sharedInstance].currentPerson.height];
         } else if (2 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Weight", @"");
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f kg", self.person.weight];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f kg", [LITPersonManager sharedInstance].currentPerson.weight];
         } else if (3 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Age", @"");
-            if (self.person.birthDate) {
-                NSDateComponents *components = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:self.person.birthDate toDate:[NSDate date] options:0];
+            if ([LITPersonManager sharedInstance].currentPerson.birthDate) {
+                NSDateComponents *components = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:[LITPersonManager sharedInstance].currentPerson.birthDate toDate:[NSDate date] options:0];
                 cell.detailTextLabel.text = [NSString stringWithFormat:@"%d years", components.year];
             }
         }
@@ -176,7 +165,7 @@
         }
         
         if (0 == indexPath.row) {
-            double imc = [self.person imc];
+            double imc = [[LITPersonManager sharedInstance].currentPerson imc];
             cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Body mass index: %.2f kg / m^2", @""), imc];
             cell.textLabel.adjustsFontSizeToFitWidth = YES;
             
@@ -198,7 +187,7 @@
         } else if (1 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Ruffier index", @"");
         } else if (2 == indexPath.row) {
-            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Basal metabolic rate: %.2f", @""), self.person.bmr];
+            cell.textLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Basal metabolic rate: %.2f", @""), [LITPersonManager sharedInstance].currentPerson.bmr];
             cell.detailTextLabel.text = @"BMR represents the minimum amount of energy (kcal / kJ) used by the body to keep us alive, when in a state of complete rest, normal mental activity, a neutral temperature and inactivity of the digestive system.";
         } else if (3 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Daltonism test", @"");
@@ -206,13 +195,13 @@
             cell.textLabel.text = NSLocalizedString(@"Heart rate", @"");
         } else if (5 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Ideal weight (normal):", @"");
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f kg", self.person.idealWeightNormal];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f kg", [LITPersonManager sharedInstance].currentPerson.idealWeightNormal];
         } else if (6 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Ideal weight (slender):", @"");
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f kg", self.person.idealWeightSlender];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f kg", [LITPersonManager sharedInstance].currentPerson.idealWeightSlender];
         } else if (7 == indexPath.row) {
             cell.textLabel.text = NSLocalizedString(@"Ideal weight (robust):", @"");
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f kg", self.person.idealWeightRobust];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f kg", [LITPersonManager sharedInstance].currentPerson.idealWeightRobust];
         }
     } else if (3 == indexPath.section) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"historyCell"];
@@ -220,7 +209,7 @@
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"historyCell"];
             cell.detailTextLabel.adjustsFontSizeToFitWidth = YES;
         }
-        LITEvent *event = [self.person.events objectAtIndex:indexPath.row];
+        LITEvent *event = [[LITPersonManager sharedInstance].currentPerson.events objectAtIndex:indexPath.row];
         
         if (LITEventTypeWorkout == event.type) {
             cell.imageView.image = self.workoutImage;

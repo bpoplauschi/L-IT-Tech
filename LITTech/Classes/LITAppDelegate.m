@@ -52,11 +52,10 @@
     NSArray *persons = [[LITDataManager sharedInstance] loadPersons];
     if (persons.count == 0) {
         LITEditPersonViewController *addPersonViewController = [[LITEditPersonViewController alloc] initWithNibName:@"LITEditPersonViewController" bundle:nil];
+        addPersonViewController.modal = YES;
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:addPersonViewController];
         [self.tabBarController presentModalViewController:navigationController animated:NO];
     } else {
-        [LITPersonManager sharedInstance].currentPerson = [persons objectAtIndex:0];
-        personalFileViewController.person = [LITPersonManager sharedInstance].currentPerson;
     }
     
     return YES;
