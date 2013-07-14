@@ -52,6 +52,8 @@
 		679C849E17932E8100F38FDE /* jaye_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 679C849C17932E8100F38FDE /* jaye_logo@2x.png */; };
 		679C84A21793301F00F38FDE /* LITAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679C84A01793301E00F38FDE /* LITAboutViewController.m */; };
 		679C84A31793301F00F38FDE /* LITAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 679C84A11793301F00F38FDE /* LITAboutViewController.xib */; };
+		679C84A817933AA700F38FDE /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 679C84A617933AA700F38FDE /* checkmark.png */; };
+		679C84A917933AA700F38FDE /* checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 679C84A717933AA700F38FDE /* checkmark@2x.png */; };
 		679F2C061782B2D000E7682C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 679F2C021782B2D000E7682C /* Icon.png */; };
 		679F2C071782B2D000E7682C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 679F2C031782B2D000E7682C /* Icon@2x.png */; };
 		679F2C081782B2D000E7682C /* icon512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 679F2C041782B2D000E7682C /* icon512x512.png */; };
@@ -147,6 +149,8 @@
 		679C849F1793301E00F38FDE /* LITAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITAboutViewController.h; sourceTree = "<group>"; };
 		679C84A01793301E00F38FDE /* LITAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITAboutViewController.m; sourceTree = "<group>"; };
 		679C84A11793301F00F38FDE /* LITAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITAboutViewController.xib; sourceTree = "<group>"; };
+		679C84A617933AA700F38FDE /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkmark.png; path = LITTech/Resources/Images/checkmark.png; sourceTree = SOURCE_ROOT; };
+		679C84A717933AA700F38FDE /* checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkmark@2x.png"; path = "LITTech/Resources/Images/checkmark@2x.png"; sourceTree = SOURCE_ROOT; };
 		679F2C021782B2D000E7682C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		679F2C031782B2D000E7682C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		679F2C041782B2D000E7682C /* icon512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon512x512.png; sourceTree = "<group>"; };
@@ -283,6 +287,8 @@
 			children = (
 				67A77C961790474500D9C1CC /* Daltonism */,
 				677F9A061779AC1800D42449 /* Tabbar */,
+				679C84A617933AA700F38FDE /* checkmark.png */,
+				679C84A717933AA700F38FDE /* checkmark@2x.png */,
 				6701D633178C9CA200198683 /* downArrowBlack.png */,
 				6701D634178C9CA200198683 /* upArrowBlack.png */,
 				6703627D178C74EA00836DCE /* meal_large.png */,
@@ -553,6 +559,8 @@
 				679C849D17932E8100F38FDE /* jaye_logo.png in Resources */,
 				679C849E17932E8100F38FDE /* jaye_logo@2x.png in Resources */,
 				679C84A31793301F00F38FDE /* LITAboutViewController.xib in Resources */,
+				679C84A817933AA700F38FDE /* checkmark.png in Resources */,
+				679C84A917933AA700F38FDE /* checkmark@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

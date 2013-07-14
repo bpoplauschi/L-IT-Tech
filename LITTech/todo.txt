@@ -1,13 +1,11 @@
 Translations (check all string are english)
-settings
 age bug on device???
-choose person
 edit person
 delete person
 workout icons - low priority
 
 
-App Name -> see email
+App Name -> see email, app icon
 demo movie
 
 

@@ -19,5 +19,6 @@
 + (LITPersonManager *)sharedInstance;
 - (NSArray *)persons;
 - (void)selectPersonAtIndex:(int)index;
+- (void)deletePersonAtIndex:(int)index;
 
 @end

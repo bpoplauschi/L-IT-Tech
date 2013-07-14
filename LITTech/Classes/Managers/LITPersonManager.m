@@ -44,4 +44,12 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:kLITPersonUpdatedNotification object:nil];
 }
 
+- (void)deletePersonAtIndex:(int)index {
+    NSMutableArray *persons = [NSMutableArray arrayWithArray:[[LITDataManager sharedInstance] loadPersons]];
+    if (persons.count && index < persons.count && index >= 0) {
+        [persons removeObjectAtIndex:index];
+    }
+    // TODO
+}
+
 @end

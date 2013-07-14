@@ -65,7 +65,13 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     } else  {
         if (indexPath.row != 0) {
-            cell.textLabel.text = ((LITPerson *)[[LITPersonManager sharedInstance].persons objectAtIndex:(indexPath.row - 1)]).name;
+            LITPerson *person = (LITPerson *)[[LITPersonManager sharedInstance].persons objectAtIndex:(indexPath.row - 1)];
+            cell.textLabel.text = person.name;
+            if ([person.name isEqualToString:[LITPersonManager sharedInstance].currentPerson.name]) {
+                cell.imageView.image = [UIImage imageNamed:@"checkmark.png"];
+            } else {
+                cell.imageView.image = nil;
+            }
             cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
         } else {
             cell.textLabel.text = @"Add user";
@@ -87,7 +93,15 @@
             [self.navigationController pushViewController:addPersonVC animated:YES];
         } else {
             [[LITPersonManager sharedInstance] selectPersonAtIndex:(indexPath.row - 1)];
+            [self.tableView reloadData];
         }
+    }
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [[LITPersonManager sharedInstance] deletePersonAtIndex:indexPath.row];
+        [self.tableView reloadData];
     }
 }
 
