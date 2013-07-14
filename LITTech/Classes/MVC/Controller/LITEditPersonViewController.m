@@ -184,7 +184,7 @@
 - (void)save:(id)sender {
     LITPerson *person = [[LITPerson alloc] init];
     person.name = self.nameCell.textField.text;
-    person.male = [self.sexCell.textField.text isEqualToString:@"M"];
+    person.male = [[self.sexCell.textField.text uppercaseString] isEqualToString:@"M"];
     person.height = [self.heightCell.textField.text integerValue];
     person.weight = [self.weightCell.textField.text doubleValue];
     

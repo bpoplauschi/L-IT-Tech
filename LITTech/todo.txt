@@ -1,5 +1,4 @@
 Translations (check all string are english)
-age bug on device???
 workout icons - low priority
 
 
