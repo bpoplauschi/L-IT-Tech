@@ -1,7 +1,5 @@
 Translations (check all string are english)
 age bug on device???
-edit person
-delete person
 workout icons - low priority
 
 

@@ -8,8 +8,11 @@
 
 #import "LITBaseViewController.h"
 
+@class LITPerson;
+
 @interface LITEditPersonViewController : LITBaseViewController
 
 @property (nonatomic, assign, getter = isModal) BOOL modal;
+@property (nonatomic, strong) LITPerson *inPerson;
 
 @end

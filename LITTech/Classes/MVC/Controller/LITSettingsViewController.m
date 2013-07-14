@@ -98,6 +98,16 @@
     }
 }
 
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        if (indexPath.row != 0) {
+            LITEditPersonViewController *addPersonVC = [[LITEditPersonViewController alloc] initWithNibName:@"LITEditPersonViewController" bundle:nil];
+            addPersonVC.inPerson = [[LITPersonManager sharedInstance].persons objectAtIndex:(indexPath.row - 1)];
+            [self.navigationController pushViewController:addPersonVC animated:YES];
+        }
+    }
+}
+
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [[LITPersonManager sharedInstance] deletePersonAtIndex:indexPath.row];
