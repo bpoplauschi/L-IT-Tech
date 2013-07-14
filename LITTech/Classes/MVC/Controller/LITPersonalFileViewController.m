@@ -171,17 +171,17 @@
             
             NSString *detail = @"";
             if (imc > 40) {
-                detail = @"Esti diagnosticat cu super obezitate. La acest IMC organismul tau este supus riscului aparitiei multor boli, printre care diabet, hipertensiune sau boli de inima. Se recomanda urmarea sfaturilor unui medic pentru a ajunge la o greutate optima si schimbarea obiceiurilor alimentare si sportive.";
+                detail = @"You are diagnosed with super obesity. At the BMI your body undergoes the risk of many diseases, including diabetes, hypertension or heart disease. We recommend following the advice of a physician to arrive at an optimal weight and changing eating habits and sports.";
             } else if (imc > 35) {
-                detail = @"Esti diagnosticat cu obezitate morbida. Obezitatea este o afecțiune medicală în care grăsimea corporală s-a acumulat în exces, astfel încât poate avea un efect advers asupra sănătății, ducând la o speranță de viață redusă și/sau probleme de sănătate.";
+                detail = @"You are diagnosed with morbid obesity. Obesity is a medical condition in which excess body fat has accumulated so that may have an adverse effect on health, leading to reduced life expectancy and / or health problems.";
             } else if (imc > 30) {
-                detail = @"Esti diagnosticat cu obezitate severa.  Obezitatea este o afecțiune medicală în care grăsimea corporală s-a acumulat în exces, astfel încât poate avea un efect advers asupra sănătății, ducând la o speranță de viață redusă și/sau probleme de sănătate.";
+                detail = @"You are diagnosed with severe obesity. Obesity is a medical condition in which excess body fat has accumulated so that may have an adverse effect on health, leading to reduced life expectancy and / or health problems.";
             } else if (imc > 25) {
-                detail = @"Esti considerat supraponderal. Doctorii de obicei definesc supraponderalitatea ca o conditie in care greutatea unei persoane este cu 10%-20% mai mare decat normal.";
+                detail = @"You are considered overweight. Doctors usually define overweight as a condition in which a person's weight is 10% -20% higher than normal.";
             } else if (imc > 18.5) {
-                detail = @"Ai IMC-ul ideal, cu cantitatea de grasime corporala suficienta pentru asigurarea unei sanatati optime.";
+                detail = @"You BMI ideal amount of body fat sufficient to ensure optimal health.";
             } else if (imc > 0) {
-                detail = @"Cantitatea de grasime corporala este foarte scazuta. Daca esti un atlet de performanta, atingerea unui IMC mic poate constitui un obiectiv pe termen scurt. Daca nu esti atlet, un IMC scazut poate indica faptul ca esti subponderal, ceea ce poate duce la o imunitate scazuta a organismului. Daca atat greutatea cat si IMC-ul au valori mici, e recomandat sa iei in greutate folosind o dieta sanatoasa si exercitii fizice menite sa-ti creasca masa musculara.";
+                detail = @"The amount of body fat is very low. If you are a performance athlete, achieving a low BMI may be a short-term goal. If you're not an athlete, a low BMI may indicate that you are underweight, which can lead to decreased immunity of the body. If both weight and BMI are low, it is recommended to gain weight using diet and exercise designed to increase your muscle mass.";
             }
             cell.detailTextLabel.text = detail;
         } else if (1 == indexPath.row) {

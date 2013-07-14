@@ -1,11 +1,7 @@
-Translations (check all string are english)
 workout icons - low priority
 
 
 App Name -> see email, app icon
 demo movie
-
-
-!!!test on iphone 5 simulator and device
 
 make build
