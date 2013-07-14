@@ -109,7 +109,7 @@
 		6779A0D7179301270022E184 /* LITAlcoholTesterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITAlcoholTesterViewController.h; sourceTree = "<group>"; };
 		6779A0D8179301270022E184 /* LITAlcoholTesterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITAlcoholTesterViewController.m; sourceTree = "<group>"; };
 		6779A0D9179301270022E184 /* LITAlcoholTesterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITAlcoholTesterViewController.xib; sourceTree = "<group>"; };
-		677F998E1779A4B900D42449 /* LITTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LITTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		677F998E1779A4B900D42449 /* Light App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Light App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		677F99911779A4B900D42449 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		677F99931779A4B900D42449 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		677F99951779A4B900D42449 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -221,7 +221,7 @@
 		677F998F1779A4B900D42449 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				677F998E1779A4B900D42449 /* LITTech.app */,
+				677F998E1779A4B900D42449 /* Light App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -470,7 +470,7 @@
 			);
 			name = LITTech;
 			productName = LITTech;
-			productReference = 677F998E1779A4B900D42449 /* LITTech.app */;
+			productReference = 677F998E1779A4B900D42449 /* Light App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -669,7 +669,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LITTech/LITTech-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/LITTech/Resources/LITTech-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Light App";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -680,7 +680,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LITTech/LITTech-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/LITTech/Resources/LITTech-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Light App";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -717,7 +717,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LITTech/LITTech-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/LITTech/Resources/LITTech-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Light App";
 				WRAPPER_EXTENSION = app;
 			};
 			name = AdHoc;
@@ -755,7 +755,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LITTech/LITTech-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/LITTech/Resources/LITTech-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Light App";
 				WRAPPER_EXTENSION = app;
 			};
 			name = AppStore;

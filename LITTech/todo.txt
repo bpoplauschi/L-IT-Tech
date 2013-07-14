@@ -1,7 +1,5 @@
 workout icons - low priority
 
-
-App Name -> see email, app icon
 demo movie
 
 make build
