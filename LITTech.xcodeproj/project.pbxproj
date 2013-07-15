@@ -35,7 +35,6 @@
 		6766F2181793F7E10073169C /* football@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F1F11793F7E10073169C /* football@2x.png */; };
 		6766F2191793F7E10073169C /* houseclean.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F1F21793F7E10073169C /* houseclean.png */; };
 		6766F21A1793F7E10073169C /* houseclean@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F1F31793F7E10073169C /* houseclean@2x.png */; };
-		6766F21B1793F7E10073169C /* practic.zip in Resources */ = {isa = PBXBuildFile; fileRef = 6766F1F41793F7E10073169C /* practic.zip */; };
 		6766F21C1793F7E10073169C /* run.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F1F51793F7E10073169C /* run.png */; };
 		6766F21D1793F7E10073169C /* run@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F1F61793F7E10073169C /* run@2x.png */; };
 		6766F21E1793F7E10073169C /* shovel.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F1F71793F7E10073169C /* shovel.png */; };
@@ -160,7 +159,6 @@
 		6766F1F11793F7E10073169C /* football@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "football@2x.png"; sourceTree = "<group>"; };
 		6766F1F21793F7E10073169C /* houseclean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = houseclean.png; sourceTree = "<group>"; };
 		6766F1F31793F7E10073169C /* houseclean@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "houseclean@2x.png"; sourceTree = "<group>"; };
-		6766F1F41793F7E10073169C /* practic.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = practic.zip; sourceTree = "<group>"; };
 		6766F1F51793F7E10073169C /* run.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run.png; sourceTree = "<group>"; };
 		6766F1F61793F7E10073169C /* run@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "run@2x.png"; sourceTree = "<group>"; };
 		6766F1F71793F7E10073169C /* shovel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shovel.png; sourceTree = "<group>"; };
@@ -305,7 +303,6 @@
 				6766F1F11793F7E10073169C /* football@2x.png */,
 				6766F1F21793F7E10073169C /* houseclean.png */,
 				6766F1F31793F7E10073169C /* houseclean@2x.png */,
-				6766F1F41793F7E10073169C /* practic.zip */,
 				6766F1F51793F7E10073169C /* run.png */,
 				6766F1F61793F7E10073169C /* run@2x.png */,
 				6766F1F71793F7E10073169C /* shovel.png */,
@@ -702,7 +699,6 @@
 				6766F2181793F7E10073169C /* football@2x.png in Resources */,
 				6766F2191793F7E10073169C /* houseclean.png in Resources */,
 				6766F21A1793F7E10073169C /* houseclean@2x.png in Resources */,
-				6766F21B1793F7E10073169C /* practic.zip in Resources */,
 				6766F21C1793F7E10073169C /* run.png in Resources */,
 				6766F21D1793F7E10073169C /* run@2x.png in Resources */,
 				6766F21E1793F7E10073169C /* shovel.png in Resources */,
