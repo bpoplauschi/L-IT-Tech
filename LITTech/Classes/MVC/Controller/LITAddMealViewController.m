@@ -143,28 +143,68 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     if (section == self.arrayForBool.count) {
-        UIView *aHeaderView             = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 34)];
-        aHeaderView.tag                 = section;
-        aHeaderView.backgroundColor     = [UIColor whiteColor];
-        UILabel *headerString           = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, self.view.frame.size.width-20-50, 34)];
-        headerString.font               = [UIFont boldSystemFontOfSize:18];
-        headerString.text               = @"Current meal";
-        headerString.textAlignment      = NSTextAlignmentLeft;
-        headerString.textColor          = [UIColor blackColor];
+        UIView *aHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 34)];
+        aHeaderView.tag = section;
+        aHeaderView.backgroundColor = [UIColor whiteColor];
+        UILabel *headerString = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, self.view.frame.size.width-20-50, 34)];
+        headerString.font = [UIFont boldSystemFontOfSize:18];
+        headerString.text = @"Current meal";
+        headerString.textAlignment = NSTextAlignmentLeft;
+        headerString.textColor = [UIColor blackColor];
         [aHeaderView addSubview:headerString];
         
         return aHeaderView;
     }
     
-    UIView *headerView              = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 34)];
-    headerView.tag                  = section;
-    headerView.backgroundColor      = [UIColor whiteColor];
-    UILabel *headerString           = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, self.view.frame.size.width-20-50, 34)];
-    BOOL manyCells                  = [[self.arrayForBool objectAtIndex:section] boolValue];
-    headerString.font               = [UIFont boldSystemFontOfSize:18];
-    headerString.text               = [_sectionTitleArray objectAtIndex:section];
-    headerString.textAlignment      = NSTextAlignmentLeft;
-    headerString.textColor          = [UIColor darkGrayColor];
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 34)];
+    headerView.tag = section;
+    headerView.backgroundColor = [UIColor whiteColor];
+    
+    NSString *imageName = nil;
+    switch (section) {
+        case 0:
+            imageName = @"meat_fish";
+            break;
+        case 1:
+            imageName = @"fruits";
+            break;
+        case 2:
+            imageName = @"butter";
+            break;
+        case 3:
+            imageName = @"milk";
+            break;
+        case 4:
+            imageName = @"eggs";
+            break;
+        case 5:
+            imageName = @"cereal";
+            break;
+        case 6:
+            imageName = @"sweet";
+            break;
+        default:
+            break;
+    }
+    UIImageView *imageView = nil;
+    if (imageName.length) {
+        imageName = [imageName stringByAppendingPathExtension:@"png"];
+        UIImage *image = [UIImage imageNamed:imageName];
+        imageView = [[UIImageView alloc] initWithImage:image];
+        CGRect frame = imageView.frame;
+        frame.origin.x = 8.0;
+        frame.origin.y = round((headerView.frame.size.height - frame.size.height) / 2);
+        imageView.frame = frame;
+        [headerView addSubview:imageView];
+    }
+    
+    CGFloat offsetX = imageView.frame.origin.x + imageView.frame.size.width + 8;
+    UILabel *headerString = [[UILabel alloc] initWithFrame:CGRectMake(offsetX, 0, self.view.frame.size.width - offsetX - 50, 34)];
+    BOOL manyCells = [[self.arrayForBool objectAtIndex:section] boolValue];
+    headerString.font = [UIFont boldSystemFontOfSize:18];
+    headerString.text = [_sectionTitleArray objectAtIndex:section];
+    headerString.textAlignment = NSTextAlignmentLeft;
+    headerString.textColor = [UIColor darkGrayColor];
     [headerView addSubview:headerString];
     
     UITapGestureRecognizer  *headerTapped   = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(sectionHeaderTapped:)];

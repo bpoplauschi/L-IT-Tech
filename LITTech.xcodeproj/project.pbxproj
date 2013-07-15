@@ -57,6 +57,20 @@
 		6766F22F1793F7E10073169C /* walk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F2081793F7E10073169C /* walk@2x.png */; };
 		6766F2301793F7E10073169C /* weightlift.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F2091793F7E10073169C /* weightlift.png */; };
 		6766F2311793F7E10073169C /* weightlift@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F20A1793F7E10073169C /* weightlift@2x.png */; };
+		6766F2411794030E0073169C /* butter.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F2331794030E0073169C /* butter.png */; };
+		6766F2421794030E0073169C /* butter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F2341794030E0073169C /* butter@2x.png */; };
+		6766F2431794030E0073169C /* cereal.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F2351794030E0073169C /* cereal.png */; };
+		6766F2441794030E0073169C /* cereal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F2361794030E0073169C /* cereal@2x.png */; };
+		6766F2451794030E0073169C /* eggs.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F2371794030E0073169C /* eggs.png */; };
+		6766F2461794030E0073169C /* eggs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F2381794030E0073169C /* eggs@2x.png */; };
+		6766F2471794030E0073169C /* fruits.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F2391794030E0073169C /* fruits.png */; };
+		6766F2481794030E0073169C /* fruits@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F23A1794030E0073169C /* fruits@2x.png */; };
+		6766F2491794030E0073169C /* meat_fish.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F23B1794030E0073169C /* meat_fish.png */; };
+		6766F24A1794030E0073169C /* meat_fish@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F23C1794030E0073169C /* meat_fish@2x.png */; };
+		6766F24B1794030E0073169C /* milk.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F23D1794030E0073169C /* milk.png */; };
+		6766F24C1794030E0073169C /* milk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F23E1794030E0073169C /* milk@2x.png */; };
+		6766F24D1794030E0073169C /* sweet.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F23F1794030E0073169C /* sweet.png */; };
+		6766F24E1794030E0073169C /* sweet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6766F2401794030E0073169C /* sweet@2x.png */; };
 		6779A0DA179301270022E184 /* LITAlcoholTesterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6779A0D8179301270022E184 /* LITAlcoholTesterViewController.m */; };
 		6779A0DB179301270022E184 /* LITAlcoholTesterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6779A0D9179301270022E184 /* LITAlcoholTesterViewController.xib */; };
 		677F99921779A4B900D42449 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677F99911779A4B900D42449 /* UIKit.framework */; };
@@ -181,6 +195,20 @@
 		6766F2081793F7E10073169C /* walk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walk@2x.png"; sourceTree = "<group>"; };
 		6766F2091793F7E10073169C /* weightlift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weightlift.png; sourceTree = "<group>"; };
 		6766F20A1793F7E10073169C /* weightlift@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weightlift@2x.png"; sourceTree = "<group>"; };
+		6766F2331794030E0073169C /* butter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = butter.png; sourceTree = "<group>"; };
+		6766F2341794030E0073169C /* butter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "butter@2x.png"; sourceTree = "<group>"; };
+		6766F2351794030E0073169C /* cereal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cereal.png; sourceTree = "<group>"; };
+		6766F2361794030E0073169C /* cereal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cereal@2x.png"; sourceTree = "<group>"; };
+		6766F2371794030E0073169C /* eggs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eggs.png; sourceTree = "<group>"; };
+		6766F2381794030E0073169C /* eggs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eggs@2x.png"; sourceTree = "<group>"; };
+		6766F2391794030E0073169C /* fruits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruits.png; sourceTree = "<group>"; };
+		6766F23A1794030E0073169C /* fruits@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fruits@2x.png"; sourceTree = "<group>"; };
+		6766F23B1794030E0073169C /* meat_fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meat_fish.png; sourceTree = "<group>"; };
+		6766F23C1794030E0073169C /* meat_fish@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meat_fish@2x.png"; sourceTree = "<group>"; };
+		6766F23D1794030E0073169C /* milk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = milk.png; sourceTree = "<group>"; };
+		6766F23E1794030E0073169C /* milk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "milk@2x.png"; sourceTree = "<group>"; };
+		6766F23F1794030E0073169C /* sweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sweet.png; sourceTree = "<group>"; };
+		6766F2401794030E0073169C /* sweet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sweet@2x.png"; sourceTree = "<group>"; };
 		6779A0D61792FE8D0022E184 /* todo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = todo.txt; path = LITTech/todo.txt; sourceTree = "<group>"; };
 		6779A0D7179301270022E184 /* LITAlcoholTesterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITAlcoholTesterViewController.h; sourceTree = "<group>"; };
 		6779A0D8179301270022E184 /* LITAlcoholTesterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITAlcoholTesterViewController.m; sourceTree = "<group>"; };
@@ -329,6 +357,27 @@
 			path = Workout;
 			sourceTree = "<group>";
 		};
+		6766F2321794030E0073169C /* Meal */ = {
+			isa = PBXGroup;
+			children = (
+				6766F2331794030E0073169C /* butter.png */,
+				6766F2341794030E0073169C /* butter@2x.png */,
+				6766F2351794030E0073169C /* cereal.png */,
+				6766F2361794030E0073169C /* cereal@2x.png */,
+				6766F2371794030E0073169C /* eggs.png */,
+				6766F2381794030E0073169C /* eggs@2x.png */,
+				6766F2391794030E0073169C /* fruits.png */,
+				6766F23A1794030E0073169C /* fruits@2x.png */,
+				6766F23B1794030E0073169C /* meat_fish.png */,
+				6766F23C1794030E0073169C /* meat_fish@2x.png */,
+				6766F23D1794030E0073169C /* milk.png */,
+				6766F23E1794030E0073169C /* milk@2x.png */,
+				6766F23F1794030E0073169C /* sweet.png */,
+				6766F2401794030E0073169C /* sweet@2x.png */,
+			);
+			path = Meal;
+			sourceTree = "<group>";
+		};
 		677F99851779A4B800D42449 = {
 			isa = PBXGroup;
 			children = (
@@ -417,6 +466,7 @@
 			isa = PBXGroup;
 			children = (
 				67A77C961790474500D9C1CC /* Daltonism */,
+				6766F2321794030E0073169C /* Meal */,
 				677F9A061779AC1800D42449 /* Tabbar */,
 				6766F16D1793EA210073169C /* Workout */,
 			);
@@ -721,6 +771,20 @@
 				6766F22F1793F7E10073169C /* walk@2x.png in Resources */,
 				6766F2301793F7E10073169C /* weightlift.png in Resources */,
 				6766F2311793F7E10073169C /* weightlift@2x.png in Resources */,
+				6766F2411794030E0073169C /* butter.png in Resources */,
+				6766F2421794030E0073169C /* butter@2x.png in Resources */,
+				6766F2431794030E0073169C /* cereal.png in Resources */,
+				6766F2441794030E0073169C /* cereal@2x.png in Resources */,
+				6766F2451794030E0073169C /* eggs.png in Resources */,
+				6766F2461794030E0073169C /* eggs@2x.png in Resources */,
+				6766F2471794030E0073169C /* fruits.png in Resources */,
+				6766F2481794030E0073169C /* fruits@2x.png in Resources */,
+				6766F2491794030E0073169C /* meat_fish.png in Resources */,
+				6766F24A1794030E0073169C /* meat_fish@2x.png in Resources */,
+				6766F24B1794030E0073169C /* milk.png in Resources */,
+				6766F24C1794030E0073169C /* milk@2x.png in Resources */,
+				6766F24D1794030E0073169C /* sweet.png in Resources */,
+				6766F24E1794030E0073169C /* sweet@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
