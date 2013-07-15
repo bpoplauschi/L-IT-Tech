@@ -302,4 +302,8 @@
     }
 }
 
+- (void)willPresentAlertView:(UIAlertView *)alertView {
+    [alertView textFieldAtIndex:0].keyboardType = UIKeyboardTypeDecimalPad;
+}
+
 @end

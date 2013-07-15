@@ -71,12 +71,90 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    cell.textLabel.text = [_activitiesArray objectAtIndex:indexPath.row];
+    NSString *activityName = [_activitiesArray objectAtIndex:indexPath.row];
+    
+    NSString *imageName = nil;
+    switch (indexPath.row) {
+        case 0:
+            imageName = @"sleep";
+            break;
+        case 1:
+            imageName = @"tv";
+            break;
+        case 2:
+            imageName = @"desk";
+            break;
+        case 3:
+            imageName = @"walk";
+            break;
+        case 4:
+            imageName = @"houseclean";
+            break;
+        case 5:
+            imageName = @"volleyball";
+            break;
+        case 6:
+            imageName = @"walk";
+            break;
+        case 7:
+            imageName = @"stairs";
+            break;
+        case 8:
+            imageName = @"bike";
+            break;
+        case 9:
+            imageName = @"dance";
+            break;
+        case 10:
+            imageName = @"shovel";
+            break;
+        case 11:
+            imageName = @"weightlift";
+            break;
+        case 12:
+            imageName = @"ski";
+            break;
+        case 13:
+            imageName = @"bagpack";
+            break;
+        case 14:
+            imageName = @"basketball";
+            break;
+        case 15:
+            imageName = @"bike";
+            break;
+        case 16:
+            imageName = @"swim";
+            break;
+        case 17:
+            imageName = @"aerobic";
+            break;
+        case 18:
+            imageName = @"tennis";
+            break;
+        case 19:
+            imageName = @"football";
+            break;
+        case 20:
+            imageName = @"run";
+            break;
+        default:
+            break;
+    }
+    if (imageName.length) {
+        imageName = [imageName stringByAppendingPathExtension:@"png"];
+        cell.imageView.image = [UIImage imageNamed:imageName];
+    } else {
+        cell.imageView.image = nil;
+    }
+    
+    cell.textLabel.text = activityName;
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     self.selectedIndex = indexPath.row;
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[tableView cellForRowAtIndexPath:indexPath].textLabel.text
                                                         message:@"Add duration (minutes)"
@@ -86,6 +164,12 @@
     alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
     alertView.tag = 1;
     [alertView show];
+}
+
+- (void)willPresentAlertView:(UIAlertView *)alertView {
+    if (alertView.tag == 1) {
+        [alertView textFieldAtIndex:0].keyboardType = UIKeyboardTypeDecimalPad;
+    }
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
