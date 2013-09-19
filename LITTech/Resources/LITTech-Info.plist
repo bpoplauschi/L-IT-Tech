@@ -20,7 +20,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.LITTech.LightApp</string>
+	<string>com.littech.lightapp</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
