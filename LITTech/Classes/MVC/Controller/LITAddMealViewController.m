@@ -115,6 +115,15 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    self.currentMealItems = [NSMutableArray array];
+    self.selectedIndexPath = nil;
+    
+    self.arrayForBool = [NSMutableArray arrayWithArray:@[@NO, @NO, @NO, @NO, @NO, @NO, @NO]];
+    
+    [self.tableView reloadData];
+}
+
 - (void)saveAction:(id)sender {
     int calories = 0;
     for (NSDictionary *dict in self.currentMealItems) {

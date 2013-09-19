@@ -65,6 +65,13 @@
     self.tableView.tableFooterView = footerView;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    self.alcoholEntries = [NSMutableArray array];
+    
+    [self.tableView reloadData];
+    [self recalculateTotal];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (self.alcoholEntries.count == 0)
         return 1;
@@ -83,6 +90,7 @@
     
     if (self.alcoholEntries.count == 0) {
         cell.textLabel.text = @"---";
+        cell.detailTextLabel.text = @"";
     } else {
         NSDictionary *dict = [self.alcoholEntries objectAtIndex:indexPath.row];
         

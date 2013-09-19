@@ -209,7 +209,6 @@
 		6766F23E1794030E0073169C /* milk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "milk@2x.png"; sourceTree = "<group>"; };
 		6766F23F1794030E0073169C /* sweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sweet.png; sourceTree = "<group>"; };
 		6766F2401794030E0073169C /* sweet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sweet@2x.png"; sourceTree = "<group>"; };
-		6779A0D61792FE8D0022E184 /* todo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = todo.txt; path = LITTech/todo.txt; sourceTree = "<group>"; };
 		6779A0D7179301270022E184 /* LITAlcoholTesterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITAlcoholTesterViewController.h; sourceTree = "<group>"; };
 		6779A0D8179301270022E184 /* LITAlcoholTesterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITAlcoholTesterViewController.m; sourceTree = "<group>"; };
 		6779A0D9179301270022E184 /* LITAlcoholTesterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITAlcoholTesterViewController.xib; sourceTree = "<group>"; };
@@ -381,7 +380,6 @@
 		677F99851779A4B800D42449 = {
 			isa = PBXGroup;
 			children = (
-				6779A0D61792FE8D0022E184 /* todo.txt */,
 				677F99971779A4B900D42449 /* LITTech */,
 				677F99901779A4B900D42449 /* Frameworks */,
 				677F998F1779A4B900D42449 /* Products */,
