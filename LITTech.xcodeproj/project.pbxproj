@@ -212,7 +212,7 @@
 		6779A0D7179301270022E184 /* LITAlcoholTesterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LITAlcoholTesterViewController.h; sourceTree = "<group>"; };
 		6779A0D8179301270022E184 /* LITAlcoholTesterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LITAlcoholTesterViewController.m; sourceTree = "<group>"; };
 		6779A0D9179301270022E184 /* LITAlcoholTesterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LITAlcoholTesterViewController.xib; sourceTree = "<group>"; };
-		677F998E1779A4B900D42449 /* Light App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Light App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		677F998E1779A4B900D42449 /* Light Health.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Light Health.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		677F99911779A4B900D42449 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		677F99931779A4B900D42449 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		677F99951779A4B900D42449 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -389,7 +389,7 @@
 		677F998F1779A4B900D42449 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				677F998E1779A4B900D42449 /* Light App.app */,
+				677F998E1779A4B900D42449 /* Light Health.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -640,7 +640,7 @@
 			);
 			name = LITTech;
 			productName = LITTech;
-			productReference = 677F998E1779A4B900D42449 /* Light App.app */;
+			productReference = 677F998E1779A4B900D42449 /* Light Health.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -855,8 +855,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -892,7 +893,7 @@
 				GCC_PREFIX_HEADER = "LITTech/LITTech-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/LITTech/Resources/LITTech-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "Light App";
+				PRODUCT_NAME = "Light Health";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -904,7 +905,7 @@
 				GCC_PREFIX_HEADER = "LITTech/LITTech-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/LITTech/Resources/LITTech-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "Light App";
+				PRODUCT_NAME = "Light Health";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -921,7 +922,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Outcome hugbunadur ehf";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -929,7 +930,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "C8CFCED0-E187-4E6E-99A6-F889C2515579";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -942,7 +943,7 @@
 				GCC_PREFIX_HEADER = "LITTech/LITTech-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/LITTech/Resources/LITTech-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "Light App";
+				PRODUCT_NAME = "Light Health";
 				WRAPPER_EXTENSION = app;
 			};
 			name = AdHoc;
@@ -960,7 +961,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -969,6 +970,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -981,7 +983,7 @@
 				GCC_PREFIX_HEADER = "LITTech/LITTech-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/LITTech/Resources/LITTech-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "Light App";
+				PRODUCT_NAME = "Light Health";
 				WRAPPER_EXTENSION = app;
 			};
 			name = AppStore;
