@@ -54,7 +54,7 @@
         LITEditPersonViewController *addPersonViewController = [[LITEditPersonViewController alloc] initWithNibName:@"LITEditPersonViewController" bundle:nil];
         addPersonViewController.modal = YES;
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:addPersonViewController];
-        [self.tabBarController presentModalViewController:navigationController animated:NO];
+        [self.tabBarController presentViewController:navigationController animated:NO completion:nil];
     } else {
     }
     
